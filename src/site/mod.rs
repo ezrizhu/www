@@ -86,7 +86,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                     (content)
                 }
                 div class="footer" {
-                    p { "Copyright 2018-2023 • All text here are released under (CC BY 4.0) • Website source available under the GNU AGPL 4 License." };
+                    p { "Copyright 2018-2023 • All text here are released under (CC BY 4.0) • Website source available under the GNU AGPL 3.0 License." };
                     p { "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present." };
                     p { "Last update: date • Source Code" }
                     }
