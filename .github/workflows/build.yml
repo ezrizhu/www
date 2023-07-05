@@ -40,5 +40,5 @@ jobs:
           ghcr.io/ericzty/www:latest
         build-args: |
           COMMIT=${{ github.sha }}
-          BRANCH=${{ github.ref_name }}
+          REF=${{ github.ref }}
           TIME=${{ env.TIME }}
