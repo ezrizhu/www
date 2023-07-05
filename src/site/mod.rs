@@ -1,8 +1,14 @@
 use maud::{html, Markup};
+use chrono;
 pub mod home;
 pub mod utils;
 
 pub fn base(title: &str, description: &str, extra_headers: Markup, content: Markup) -> Markup {
+    let build_info = format!("Last Update: {}, {}/{}",
+                             chrono::offset::Local::now().to_rfc2822(),
+                             std::env::var("BRANCH").unwrap_or_else(|_| String::from("Unknown")),
+                             std::env::var("COMMIT").unwrap_or_else(|_| String::from("Unknown")),
+                             );
     html! {
         (maud::DOCTYPE)
         html lang="en" {
@@ -88,7 +94,8 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                 div class="footer" {
                     p { "Copyright 2018-2023 • All text here are released under (CC BY 4.0) • Website source available under the GNU AGPL 3.0 License." };
                     p { "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present." };
-                    p { "Last update: date • Source Code" }
+                    p { "Last update:" (chrono::offset::Utc::now().to_string()) };
+                    p { (build_info)};
                     }
                 }
             }
