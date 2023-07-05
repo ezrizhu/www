@@ -1,0 +1,84 @@
+ /* hero */
+.hero img {
+    border-radius: 5%;
+    height: auto;
+}
+
+.pronouns p {
+}
+
+.biography {
+    position: relative;
+    right: 0;
+    margin-left: auto;
+}
+
+.hero h1 {
+    margin-top: 0;
+    color: var(--nord6);
+    font-size: 1.5rem;
+}
+
+@media(min-device-width:1024px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.3rem;
+    }
+}
+
+.hero strong {
+    color: var(--nord14);
+}
+
+.hero p {
+    color: var(--nord4);
+}
+
+.description a {
+    color: var(--nord8);
+    text-decoration: none;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+.links a {
+    color: var(--nord5);
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    color: var(--nord7);
+}
+
+/* recent list */
+.recent-list {
+    margin-right: 1rem;
+    padding: 0.3rem;
+    border-radius: 1vh;
+    background: var(--nord1);
+}
+
+.recent-list li {
+    margin-top: 0.3rem;
+}
+
+/* featured projects */
+.home-box {
+    border-radius: 1vh;
+    background: var(--nord1);
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home-box h2 {
+    margin: 0;
+}

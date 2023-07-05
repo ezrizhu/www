@@ -1,0 +1,7 @@
+.footer {
+    font-size: 0.8vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    color: var(--nord4);
+}

@@ -1,0 +1,34 @@
+.home-menu img {
+    max-width: 30%;
+}
+
+.home-menu {
+    padding: 2em;
+    float: left;
+}
+
+.home-menu ul {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
+}
+
+.pure-menu-link:hover {
+    background: unset;
+    color: var(--nord7);
+    text-decoration: underline;
+}
+
+.pure-menu-selected {
+    color: var(--nord14);
+}
+
+
+.pure-menu-link {
+    color: var(--nord6);
+}
+
+.pure-menu-selected > .pure-menu-link, .pure-menu-selected > .pure-menu-link:visited {
+    color: unset;
+}
