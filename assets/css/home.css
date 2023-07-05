@@ -4,7 +4,8 @@
     height: auto;
 }
 
-.pronouns p {
+.pronouns {
+    margin-top: 0.5rem;
 }
 
 .biography {
@@ -56,6 +57,7 @@
 
 .separator {
     color: var(--nord7);
+    margin-bottom: 0.5rem;
 }
 
 /* recent list */
