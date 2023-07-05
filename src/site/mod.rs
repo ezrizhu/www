@@ -1,12 +1,11 @@
 use maud::{html, Markup};
-use chrono;
 pub mod home;
 pub mod utils;
 
 pub fn base(title: &str, description: &str, extra_headers: Markup, content: Markup) -> Markup {
-    let build_info = format!("Last Update: {}, {}/{}",
-                             chrono::offset::Local::now().to_rfc2822(),
-                             std::env::var("BRANCH").unwrap_or_else(|_| String::from("Unknown")),
+    let build_info = format!("Built on: {} Ref: {} Commit: {}",
+                             std::env::var("TIME").unwrap_or_else(|_| String::from("Unknown")),
+                             std::env::var("REF").unwrap_or_else(|_| String::from("Unknown")),
                              std::env::var("COMMIT").unwrap_or_else(|_| String::from("Unknown")),
                              );
     html! {
@@ -92,9 +91,13 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                     (content)
                 }
                 div class="footer" {
-                    p { "Copyright 2018-2023 • All text here are released under (CC BY 4.0) • Website source available under the GNU AGPL 3.0 License." };
+                    p { 
+                        "Copyright 2018-2023 • All text here are released under "
+                        a target="_blank" href="https://creativecommons.org/licenses/by/4.0/" { "(CC BY 4.0)" }
+                        " • Source code "
+                        a target="_blank" href="https://github.com/ericzty/www" { "available here" }
+                        ", released under the AGPLv3 license." };
                     p { "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present." };
-                    p { "Last update:" (chrono::offset::Utc::now().to_string()) };
                     p { (build_info)};
                     }
                 }

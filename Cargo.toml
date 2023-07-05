@@ -5,7 +5,6 @@ edition = "2021"
 
 [dependencies]
 axum = "0.6.18"
-chrono = "0.4.26"
 comrak = "0.18.0"
 kuchiki = "0.8.1"
 maud = { version = "0.25.0", features = ["axum"] }

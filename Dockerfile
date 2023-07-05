@@ -1,11 +1,12 @@
 FROM rust:1.70-alpine
 
-ARG BRANCH="main"
+ARG REF=""
 ARG COMMIT=""
-LABEL branch=${BRANCH}
-LABEL commit=${COMMIT}
+ARG TIME=""
+
 ENV COMMIT=${COMMIT}
-ENV BRANCH=${BRANCH}
+ENV REF=${REF}
+ENV TIME=${TIME}
 
 ADD . .
 
