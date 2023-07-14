@@ -6,6 +6,15 @@ body {
     color: var(--nord4);
 }
 
+a {
+    text-decoration: none;
+    color: var(--nord8);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .main {
     margin-left: auto;
     margin-right: auto;
@@ -57,8 +66,6 @@ body {
 
 .pure-menu-link:hover {
     background: unset;
-    color: var(--nord7);
-    text-decoration: underline;
 }
 
 .pure-menu-active > .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
@@ -88,13 +95,4 @@ body {
     font-size: 0.75rem;
     color: var(--nord4);
     text-align: center;
-}
-
-.footer a {
-    color: var(--nord8);
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
 }
