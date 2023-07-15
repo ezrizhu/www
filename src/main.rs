@@ -18,7 +18,8 @@ async fn main() {
     let app = Router::new()
         .route("/health", get(health))
         .nest_service("/assets", get_service(ServeDir::new("./assets")))
-        .route("/", get(site::home::home));
+        .route("/", get(site::home::home))
+        .route("/contact", get(site::contact::contact));
 
     axum::Server::bind(&"0.0.0.0:3000".parse().unwrap())
         .serve(app.into_make_service())

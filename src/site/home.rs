@@ -1,23 +1,14 @@
 use maud::{html, Markup, PreEscaped};
 use comrak::{markdown_to_html, ComrakOptions};
 use super::{base, utils};
+use std::fs;
 
 pub async fn home() -> Markup {
     let description = "Student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps";
-
-    let intro_raw = "# Hey, I'm a student interested in software **development**, computer **networking**, managing **infrastructure** at **scale**, **cybersecurity**, and **DevOps**.";
-    let intro = markdown_to_html(intro_raw, &ComrakOptions::default());
-    let intro = intro.trim_end();
-
-    let desc_raw = "I am a raising sophomore undergraduate student at [Stevens Institute of Technology](https://www.stevens.edu/school-engineering-science/departments/computer-science) pursuing a Bachelor of Science degree in Computer Science. I'm currently working with [Michael Greenberg](https://greenberg.science/) and the rest of the [PaSH Team](https://binpa.sh/) on [a speculative execution engine for the shell](https://sigops.org/s/conferences/hotos/2023/papers/liargkovas.pdf).";
-    let desc = markdown_to_html(desc_raw, &ComrakOptions::default());
-    let desc = utils::add_target_blank_to_links(desc);
-    let desc = desc.trim_end();
-
-    let links_raw = "[Github](https://github.com/ericzty) • [LinkedIn](https://linkedin.com/in/tianyu-zhu-577356250) • [Fedi](https://uwu.social/@eric) • [Bsky](https://bsky.app/profile/ericz.me) • [Twitter](https://twitter.com/ericzty) • [Steam](https://steamcommunity.com/id/finnekit) • [Email](mailto:eric@ericz.me)";
-    let links = markdown_to_html(links_raw, &ComrakOptions::default());
-    let links = utils::add_target_blank_to_links(links);
-    let links = links.trim_end();
+    let bio_raw = fs::read_to_string("content/home.md").expect("Failed to read file");
+    let bio = markdown_to_html(&bio_raw, &ComrakOptions::default());
+    let bio = utils::add_target_blank_to_links(bio);
+    let bio = bio.trim_end();
 
     let content = html! {
         div class="hero pure-g" {
@@ -27,9 +18,7 @@ pub async fn home() -> Markup {
             }
             div class="pure-u-1 pure-u-md-2-3" {
                 div class="biography" {
-                    div class="intro" { (PreEscaped(intro)) };
-                    div class="description" { (PreEscaped(desc)) };
-                    div class="links" { (PreEscaped(links)) };
+                    { (PreEscaped(bio)) };
                 }
             }
         }

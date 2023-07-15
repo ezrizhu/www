@@ -1,9 +1,10 @@
 use maud::{html, Markup};
 pub mod home;
+pub mod contact;
 pub mod utils;
 
 pub fn base(title: &str, description: &str, extra_headers: Markup, content: Markup) -> Markup {
-    let build_info = format!("Built on: {} Ref: {} Commit: {} CT: {}",
+    let build_info = format!("Built on: {} • Ref: {} • Commit: {} • CT: {}",
                              std::env::var("TIME").unwrap_or_else(|_| String::from("Unknown")),
                              std::env::var("REF").unwrap_or_else(|_| String::from("Unknown")),
                              std::env::var("COMMIT").unwrap_or_else(|_| String::from("Unknown")),
@@ -93,15 +94,17 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                 }
                 div class="footer" {
                     p { 
+                        p { "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present." };
+
                         "Copyright 2018-2023 • All text here are released under "
                         a target="_blank" href="https://creativecommons.org/licenses/by/4.0/" { "(CC BY 4.0)" }
                         " • Source code "
                         a target="_blank" href="https://github.com/ericzty/www" { "available here" }
-                        ", released under the"
+                        ", released under the "
                         a target="_blank" href="https://github.com/ericzty/www/blob/main/COPYING" { "AGPLv3 license" }
                         "." };
-                    p { "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present." };
-                    p { (build_info)};
+
+                        p { (build_info)};
                     }
                 }
             }
