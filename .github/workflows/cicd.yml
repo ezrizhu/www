@@ -50,10 +50,10 @@ jobs:
     - name: wait 10 sec
       run: sleep 10
     - name: see if www0 is updated
-      run: curl -H "X-Server-Select: www0" https://ericz.dev | grep {{ github.sha }}
+      run: 'curl -H "X-Server-Select: www0" https://ericz.dev | grep {{ github.sha }}'
     - name: trigger www1 to update
       run: {{ secrets.WTWWW1 }}
     - name: wait 10 sec
       run: sleep 10
     - name: see if www1 is updated
-      run: curl -H "X-Server-Select: www1" https://ericz.dev | grep {{ github.sha }}
+      run: 'curl -H "X-Server-Select: www1" https://ericz.dev | grep {{ github.sha }}'
