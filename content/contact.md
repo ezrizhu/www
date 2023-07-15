@@ -1,8 +1,11 @@
-# Contact me
+# Contact
 
 The best way to reach me is via email at [eric@ericz.me](mailto:eric@ericz.me)
 or [tzhu22@stevens.edu](mailto:tzhu22@stevens.edu). I also have a [public
 inbox](https://lists.sr.ht/~finnekit/public-inbox).
+
+If you wish to send encrypted email to me, I have a PGP key
+[0xC15ECEC52397343B](/publickey.asc).
 
 I currently live in the New York Metropolitan Area, so my timezone is the U.S.
 Eastern Time Zone (GMT-5), with daylight savings time (GMT-4) from March to
@@ -14,10 +17,10 @@ reject requests if you're not in a mutual server with me, feel free to join the
 [Rust Programming Language Community
 Server](https://discord.gg/rust-lang-community) if you need a mutual.
 
-Phone: +1 9294842069
+Phone (Recorded, Toll-free): +1 8772066280
+Fax: +1 9292070306
 
-Feel free to also write to me, I'd love to get postcards.
-
+Mailing address
 ```
 Student Tianyu Zhu
 Stevens Institute of Technology
@@ -33,6 +36,3 @@ Hoboken NJ 07030 USA
 [Telegram](https://t.me/finnekit) •
 [Steam](https://steamcommunity.com/id/finnekit) •
 [Insta](https://www.instagram.com/eric.zty/)
-
-If you wish to send encrypted email to me, I have a PGP key
-[0xC15ECEC52397343B](/publickey.asc).

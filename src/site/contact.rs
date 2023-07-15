@@ -4,7 +4,7 @@ use super::{base, utils};
 use std::fs;
 
 pub async fn contact() -> Markup {
-    let description = "Contact: eric@ericz.me";
+    let description = "Contact: eric@ericz.me\nPhone (Recorded, Toll-free) +1 8772066280";
     let contact_raw = fs::read_to_string("content/contact.md").expect("Failed to read file");
     let contact = markdown_to_html(&contact_raw, &ComrakOptions::default());
     let contact = utils::add_target_blank_to_links(contact);
