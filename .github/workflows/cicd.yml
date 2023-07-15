@@ -42,7 +42,8 @@ jobs:
           COMMIT=${{ github.sha }}
           REF=${{ github.ref }}
           TIME=${{ env.TIME }}
-  build:
+
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - name: trigger www0 to update
