@@ -40,7 +40,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
             }
             body {
                 div class="home-menu pure-menu pure-menu-horizontal" {
-                    img class="logo" src="assets/img/logo.svg" alt="Tianyu (Eric) Zhu";
+                    a href="/" {
+                        img class="logo" src="assets/img/logo.svg" alt="Tianyu (Eric) Zhu";
+                    }
                     ul class="pure-menu-list" {
                         li class="pure-menu-item" {
                             a class="pure-menu-link" href="/" {
