@@ -76,7 +76,7 @@ a:hover {
 .pure-menu-link {
     color: var(--nord6) !important;
     padding: 0;
-    padding-right: 5vw;
+    padding-right: 3vw;
 }
 
 @media(min-device-width:1024px) {

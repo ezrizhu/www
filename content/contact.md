@@ -18,6 +18,7 @@ reject requests if you're not in a mutual server with me, feel free to join the
 Server](https://discord.gg/rust-lang-community) if you need a mutual.
 
 Phone (Recorded, Toll-free): +1 8772066280
+
 Fax: +1 9292070306
 
 Mailing address
