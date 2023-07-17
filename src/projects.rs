@@ -1,13 +1,14 @@
 use std::fs;
+use super::utils;
 use gray_matter::Matter;
 use gray_matter::engine::YAML;
 
 #[derive(Clone)]
 pub struct Project {
-    slug: String,
-    title: String,
-    description: String,
-    body: String,
+    pub slug: String,
+    pub title: String,
+    pub description: String,
+    pub body: String,
 }
 
 pub fn init() -> Vec<Project> {
@@ -25,7 +26,7 @@ pub fn init() -> Vec<Project> {
                 let result = matter.parse(&raw);
                 let title = result.data.as_ref().unwrap()["Title"].as_string().unwrap();
                 let description = result.data.as_ref().unwrap()["Description"].as_string().unwrap();
-                let body = result.content;
+                let body = utils::md_to_html(&result.content);
                 let project = Project { slug, title, description, body };
                 projects.push(project);
             }

@@ -27,7 +27,7 @@ pub struct SiteState {
 async fn main() {
     println!("Loading state.");
 
-    let mut state = SiteState {
+    let state = SiteState {
         css: css::init(),
         five_news: utils::init_news(),
         contact: utils::path_to_html(&"content/contact.md"),
@@ -42,9 +42,22 @@ async fn main() {
         .route("/health", get(health))
         .route("/assets/css/:name", get(css::get))
         .nest_service("/assets/img", get_service(ServeDir::new("./assets/img")))
+        .nest_service("/files", get_service(ServeDir::new("./files")))
         .route("/", get(site::home::home))
         .route("/contact", get(site::contact::contact))
         .route("/news", get(site::news::news))
+        .route("/projects", get(site::projects::project_index))
+        .route("/projects/", get(site::projects::project_index))
+        .route("/projects/:name", get(site::projects::project_handler))
+        .route("/blog", get(site::wip::wip))
+        .route("/blog/", get(site::wip::wip))
+        .route("/friends", get(site::wip::wip))
+        .route("/friends/", get(site::wip::wip))
+        .route("/affiliates", get(site::wip::wip))
+        .route("/affiliates/", get(site::wip::wip))
+        .route("/resume", get(site::wip::wip))
+        .route("/cv", get(site::wip::wip))
+        .fallback(site::not_found::not_found)
         .with_state(state);
     
 

@@ -1,9 +1,11 @@
 use maud::{html, Markup};
 use super::SiteState;
-use super::projects;
 pub mod home;
 pub mod contact;
 pub mod news;
+pub mod projects;
+pub mod not_found;
+pub mod wip;
 
 pub fn base(title: &str, description: &str, extra_headers: Markup, content: Markup) -> Markup {
     let build_info = format!("Built on: {} • Ref: {} • Commit: {} • CT: {}",
@@ -40,7 +42,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
             body {
                 div class="home-menu pure-menu pure-menu-horizontal" {
                     a href="/" {
-                        img class="logo" src="assets/img/logo.svg" alt="Tianyu (Eric) Zhu";
+                        img class="logo" src="/assets/img/logo.svg" alt="Tianyu (Eric) Zhu";
                     }
                     ul class="pure-menu-list" {
                         li class="pure-menu-item" {
@@ -69,7 +71,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                             }
                         }
                         li class="pure-menu-item" {
-                            a class="pure-menu-link" href="/resume" {
+                            a class="pure-menu-link" href="/files/Tianyu_Zhu_Resume.pdf" {
                                 "Resume"
                             }
                         }

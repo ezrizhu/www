@@ -5,7 +5,7 @@ or [tzhu22@stevens.edu](mailto:tzhu22@stevens.edu). I also have a [public
 inbox](https://lists.sr.ht/~finnekit/public-inbox).
 
 If you wish to send encrypted email to me, I have a PGP key
-[0xC15ECEC52397343B](/publickey.asc).
+[0xC15ECEC52397343B](/files/publickey.asc).
 
 I currently live in the New York Metropolitan Area, so my timezone is the U.S.
 Eastern Time Zone (GMT-5), with daylight savings time (GMT-4) from March to

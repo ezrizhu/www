@@ -68,6 +68,10 @@
 }
 
 /* featured projects */
+.featured-projects a {
+    color: var(--nord4);
+}
+
 .home-box {
     border-radius: 1vh;
     background: var(--nord1);

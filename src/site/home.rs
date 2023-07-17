@@ -1,6 +1,7 @@
 use maud::{html, Markup, PreEscaped};
 use axum::extract::State;
 use super::base;
+use crate::projects::get_title_and_desc;
 
 pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let description = "Student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps";
@@ -8,9 +9,13 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let bio = state.home;
     let news = state.five_news;
 
-    let (p1_title, p1_desc) = super::projects::get_title_and_desc(state.projects.clone(), "ericnet").unwrap();
-    let (p2_title, p2_desc) = super::projects::get_title_and_desc(state.projects.clone(), "try").unwrap();
-    let (p3_title, p3_desc) = super::projects::get_title_and_desc(state.projects.clone(), "eve").unwrap();
+    let p1_slug = "ericnet";
+    let p2_slug = "try";
+    let p3_slug = "eve";
+
+    let (p1_title, p1_desc) = get_title_and_desc(state.projects.clone(), &p1_slug).unwrap();
+    let (p2_title, p2_desc) = get_title_and_desc(state.projects.clone(), &p2_slug).unwrap();
+    let (p3_title, p3_desc) = get_title_and_desc(state.projects.clone(), &p3_slug).unwrap();
 
 
     let content = html! {
@@ -47,7 +52,7 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
         }
         p class="separator" { strong { "Featured Projects" } };
         div class="featured-projects pure-g" {
-            div class="pure-u-1 pure-u-md-1-3" {
+            a href=(format!("/projects/{}", p1_slug)) class="pure-u-1 pure-u-md-1-3" {
                 div class="home-box" {
                     div class="box-title" {
                         h2 { (p1_title) }
@@ -57,7 +62,7 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
                     }
                 }
             }
-            div class="pure-u-1 pure-u-md-1-3" {
+            a href=(format!("/projects/{}", p1_slug)) class="pure-u-1 pure-u-md-1-3" {
                 div class="home-box" {
                     div class="box-title" {
                         h2 { (p2_title) }
@@ -67,7 +72,7 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
                     }
                 }
             }
-            div class="pure-u-1 pure-u-md-1-3" {
+            a href=(format!("/projects/{}", p1_slug)) class="pure-u-1 pure-u-md-1-3" {
                 div class="home-box" {
                     div class="box-title" {
                         h2 { (p3_title) }

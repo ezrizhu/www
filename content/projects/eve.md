@@ -1,6 +1,12 @@
 ---
 Title: EVE Suite
-Description: EVE Suite is a management toolkit for libvirt-based virtualization servers.
+Description: EVE Suite is a management toolkit for libvirt-based virtualization servers. EVE uses mTLS, making it also safe to work over any connection. EVE was made to replace Proxmox on my network.
 ---
 
-More words here.
+I am currently working on the EVE Suite to replace Proxmox on
+[EricNet](https://as206628.net), the EVE Suite is mainly made up of the
+following software.
+
+* [EVE, the main API](https://github.com/baseddevelopment/eve)
+* [Auto, the hypervisor agent](https://github.com/baseddevelopment/auto)
+* [Axiom, the web frontend](https://github.com/baseddevelopment/axiom)
