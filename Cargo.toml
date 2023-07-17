@@ -6,6 +6,7 @@ edition = "2021"
 [dependencies]
 axum = "0.6.18"
 comrak = "0.18.0"
+gray_matter = "0.2.6"
 kuchiki = "0.8.1"
 maud = { version = "0.25.0", features = ["axum"] }
 minifier = "0.2.2"

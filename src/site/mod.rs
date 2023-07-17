@@ -1,5 +1,6 @@
 use maud::{html, Markup};
 use super::SiteState;
+use super::projects;
 pub mod home;
 pub mod contact;
 pub mod news;

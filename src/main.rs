@@ -1,4 +1,3 @@
-//pub mod parse;
 use axum::{
     response::Html,
     routing::{get, get_service},
@@ -8,6 +7,7 @@ use tower_http::services::ServeDir;
 mod site;
 mod css;
 mod utils;
+mod projects;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
@@ -19,20 +19,24 @@ pub struct SiteState {
     home: String,
     five_news: String,
     contact: String,
-    news: String
+    news: String,
+    projects: Vec<projects::Project>,
 }
 
 #[tokio::main]
 async fn main() {
-    println!("Startup!");
+    println!("Loading state.");
 
-    let state = SiteState {
+    let mut state = SiteState {
         css: css::init(),
-        home: utils::path_to_html(&"content/home.md"),
         five_news: utils::init_news(),
         contact: utils::path_to_html(&"content/contact.md"),
-        news: utils::path_to_html(&"content/news.md")
+        news: utils::path_to_html(&"content/news.md"),
+        projects: projects::init(),
+        home: utils::path_to_html(&"content/home.md"),
     };
+
+    println!("Starting webserver!");
 
     let app = Router::new()
         .route("/health", get(health))

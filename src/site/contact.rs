@@ -3,7 +3,7 @@ use axum::extract::State;
 use super::base;
 
 pub async fn contact(State(state): State<super::SiteState>) -> Markup {
-    let description = "Contact: eric@ericz.me\nPhone (Recorded, Toll-free) +1 8772066280";
+    let description = "Email: eric@ericz.me";
     let contact = state.contact;
 
     let content = html! {

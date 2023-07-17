@@ -8,6 +8,11 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let bio = state.home;
     let news = state.five_news;
 
+    let (p1_title, p1_desc) = super::projects::get_title_and_desc(state.projects.clone(), "ericnet").unwrap();
+    let (p2_title, p2_desc) = super::projects::get_title_and_desc(state.projects.clone(), "try").unwrap();
+    let (p3_title, p3_desc) = super::projects::get_title_and_desc(state.projects.clone(), "eve").unwrap();
+
+
     let content = html! {
         div class="hero pure-g" {
             div class="pure-u-1 pure-u-md-1-3" {
@@ -45,30 +50,30 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
             div class="pure-u-1 pure-u-md-1-3" {
                 div class="home-box" {
                     div class="box-title" {
-                        h2 { "EricNet" }
+                        h2 { (p1_title) }
                     }
                     div class="box-desc" {
-                        p { "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }
+                        p { (p1_desc) }
                     }
                 }
             }
             div class="pure-u-1 pure-u-md-1-3" {
                 div class="home-box" {
                     div class="box-title" {
-                        h2 { "EVE Virtual Environment" }
+                        h2 { (p2_title) }
                     }
                     div class="box-desc" {
-                        p { "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }
+                        p { (p2_desc) }
                     }
                 }
             }
             div class="pure-u-1 pure-u-md-1-3" {
                 div class="home-box" {
                     div class="box-title" {
-                        h2 { "Try" }
+                        h2 { (p3_title) }
                     }
                     div class="box-desc" {
-                        p { "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }
+                        p { (p3_desc) }
                     }
                 }
             }
