@@ -22,19 +22,19 @@ a:hover {
     width: 80%;
 }
 
-@media(min-device-width:768px) {
+@media(min-width:768px) {
     body {
         font-size: 1rem;
     }
 }
 
-@media(min-device-width:1920px) {
+@media(min-width:1920px) {
     .main {
         width: 70%;
     }
 }
 
-@media(min-device-width:2560px) {
+@media(min-width:2560px) {
     .main {
         width: 50%;
     }
@@ -47,7 +47,7 @@ a:hover {
     padding-bottom: 2vw;
 }
 
-@media(min-device-width:768px) {
+@media(min-width:768px) {
     .home-menu img {
         max-width: 100%;
     }
@@ -79,7 +79,7 @@ a:hover {
     padding-right: 3vw;
 }
 
-@media(min-device-width:768px) {
+@media(min-width:768px) {
     .pure-menu-link {
         padding-right: 1vw;
     }

@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 
-@media(min-device-width:768px) {
+@media(min-width:768px) {
     .project-box {
         height: 80%;
     }

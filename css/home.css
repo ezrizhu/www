@@ -20,7 +20,7 @@
     font-size: 1.5rem;
 }
 
-@media(min-device-width:768px) {
+@media(min-width:768px) {
     .hero h1 {
         font-size: 2rem;
     }
@@ -58,7 +58,7 @@
     color: var(--nord4);
 }
 
-@media(min-device-width:768px) {
+@media(min-width:768px) {
     .recent-list {
         margin-right: 1rem;
         height: 80%;
@@ -79,7 +79,7 @@
     overflow: hidden;
 }
 
-@media(min-device-width:768px) {
+@media(min-width:768px) {
     .home-box {
         height: 80%;
     }
