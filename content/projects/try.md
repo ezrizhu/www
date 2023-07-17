@@ -1,5 +1,5 @@
 ---
-Title: Try (1)
+Title: Try(1)
 Description: Inspect a command's effects before modifying your live system. Try uses Linux's namespace (via unshare) and the overlayfs union filesystem.
 ---
 
