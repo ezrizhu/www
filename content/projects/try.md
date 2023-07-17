@@ -1,6 +1,6 @@
 ---
-Title: Try(1)
-Description: Inspect a command's effects before modifying your live system. Try uses Linux's namespace (via unshare) and the overlayfs union filesystem.
+Title: try(1)
+Description: Inspect a command's effects before modifying your live system. try uses Linux's namespace (via unshare) and the overlayfs union filesystem.
 Date: June 2023 - Present
 
 ---
