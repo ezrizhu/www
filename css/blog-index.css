@@ -1,22 +1,17 @@
-.project-box {
+.blog-box {
     border-radius: 1vh;
     background: var(--nord1);
     padding: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     overflow: hidden;
+
 }
 
-@media(min-device-width:768px) {
-    .project-box {
-        height: 80%;
-    }
-}
-
-.project-box h2 {
+.blog-box h2 {
     margin: 0;
 }
 
-.main a {
+.blog-box a {
     color: var(--nord4);
 }

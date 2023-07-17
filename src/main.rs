@@ -8,6 +8,8 @@ mod site;
 mod css;
 mod utils;
 mod projects;
+mod blog;
+mod post;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
@@ -20,7 +22,8 @@ pub struct SiteState {
     five_news: String,
     contact: String,
     news: String,
-    projects: Vec<projects::Project>,
+    projects: Vec<post::Post>,
+    blog: Vec<post::Post>,
 }
 
 #[tokio::main]
@@ -33,6 +36,7 @@ async fn main() {
         contact: utils::path_to_html(&"content/contact.md"),
         news: utils::path_to_html(&"content/news.md"),
         projects: projects::init(),
+        blog: blog::init(),
         home: utils::path_to_html(&"content/home.md"),
     };
 
@@ -49,8 +53,9 @@ async fn main() {
         .route("/projects", get(site::projects::project_index))
         .route("/projects/", get(site::projects::project_index))
         .route("/projects/:name", get(site::projects::project_handler))
-        .route("/blog", get(site::wip::wip))
-        .route("/blog/", get(site::wip::wip))
+        .route("/blog", get(site::blog::blog_index))
+        .route("/blog/", get(site::blog::blog_index))
+        .route("/blog/:name", get(site::blog::blog_handler))
         .route("/friends", get(site::wip::wip))
         .route("/friends/", get(site::wip::wip))
         .route("/affiliates", get(site::wip::wip))

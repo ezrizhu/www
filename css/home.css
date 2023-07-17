@@ -54,6 +54,10 @@
     padding-right: 1rem;
 }
 
+.recent-blog a {
+    color: var(--nord4);
+}
+
 @media(min-device-width:768px) {
     .recent-list {
         margin-right: 1rem;

@@ -4,8 +4,10 @@ pub mod home;
 pub mod contact;
 pub mod news;
 pub mod projects;
+pub mod blog;
 pub mod not_found;
 pub mod wip;
+mod post;
 
 pub fn base(title: &str, description: &str, extra_headers: Markup, content: Markup) -> Markup {
     let build_info = format!("Built on: {} • Ref: {} • Commit: {} • CT: {}",

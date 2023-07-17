@@ -5,9 +5,9 @@ use gray_matter::engine::YAML;
 use super::post::Post;
 
 pub fn init() -> Vec<Post> {
-    let mut projects = vec![];
+    let mut blog_list = vec![];
 
-    if let Ok(entries) = fs::read_dir("content/projects/") {
+    if let Ok(entries) = fs::read_dir("content/blog/") {
         for entry in entries {
             let path = entry.unwrap().path();
             if path.is_file() {
@@ -21,10 +21,10 @@ pub fn init() -> Vec<Post> {
                 let description = result.data.as_ref().unwrap()["Description"].as_string().unwrap();
                 let date = result.data.as_ref().unwrap()["Date"].as_string().unwrap();
                 let body = utils::md_to_html(&result.content);
-                let project = Post { slug, title, date, description, body };
-                projects.push(project);
+                let blog = Post { slug, title, date, description, body };
+                blog_list.push(blog);
             }
         }
     }
-    projects
+    blog_list
 }
