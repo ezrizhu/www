@@ -5,10 +5,16 @@ use std::fs;
 
 pub async fn home() -> Markup {
     let description = "Student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps";
+
     let bio_raw = fs::read_to_string("content/home.md").expect("Failed to read file");
     let bio = markdown_to_html(&bio_raw, &ComrakOptions::default());
     let bio = utils::add_target_blank_to_links(bio);
     let bio = bio.trim_end();
+
+    let news_raw = utils::read_first_five_news();
+    let news = markdown_to_html(&news_raw, &ComrakOptions::default());
+    let news = utils::add_target_blank_to_links(news);
+    let news = news.trim_end();
 
     let content = html! {
         div class="hero pure-g" {
@@ -26,13 +32,7 @@ pub async fn home() -> Markup {
             div class="pure-u-1 pure-u-md-1-2" {
                 p class="separator" { strong { "Recent News" } };
                 div class="recent-list" {
-                    ul {
-                        li { "Date: News" };
-                        li { "Date: News" };
-                        li { "Date: News" };
-                        li { "Date: News" };
-                        li { "Date: News" };
-                    }
+                    { (PreEscaped(news)) };
                 }
             }
             div class="pure-u-1 pure-u-md-1-2" {
@@ -84,7 +84,6 @@ pub async fn home() -> Markup {
     };
     let extra_headers = html! {
         link rel="stylesheet" href="assets/css/home.css";
-        link rel="stylesheet" href="assets/css/grids-responsive-min.css";
     };
     base("", description, extra_headers, content)
 }

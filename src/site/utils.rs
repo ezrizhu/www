@@ -1,4 +1,7 @@
 use kuchiki::traits::*;
+use std::fs::File;
+use std::io;
+use std::io::prelude::*;
 
 pub fn add_target_blank_to_links(html: String) -> String {
     // Parse the HTML document
@@ -20,4 +23,25 @@ pub fn add_target_blank_to_links(html: String) -> String {
         child.serialize(&mut output).unwrap();
     }
     String::from_utf8(output).unwrap()
+}
+
+pub fn read_first_five_news() -> String {
+    let file = File::open("content/news.md").expect("Failed to open news.md");
+    let reader = io::BufReader::new(file);
+
+    let mut count = 0;
+    let mut out_string = String::new();
+
+    for line in reader.lines() {
+        let line = line.unwrap();
+        if line.is_empty() {
+            count += 1;
+            if count == 5 {
+                break;
+            }
+        }
+        out_string.push_str(&line);
+        out_string.push_str("\n");
+    }
+    out_string
 }

@@ -1,0 +1,9 @@
+h1 {
+    padding-left: 2rem;
+}
+
+.news {
+    padding: 0.5rem;
+    background: var(--nord1);
+    border-radius: 1vh;
+}

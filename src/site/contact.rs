@@ -25,7 +25,6 @@ pub async fn contact() -> Markup {
     };
     let extra_headers = html! {
         link rel="stylesheet" href="assets/css/contact.css";
-        link rel="stylesheet" href="assets/css/grids-responsive-min.css";
     };
     base("", description, extra_headers, content)
 }

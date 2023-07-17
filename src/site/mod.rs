@@ -1,7 +1,8 @@
 use maud::{html, Markup};
+pub mod utils;
 pub mod home;
 pub mod contact;
-pub mod utils;
+pub mod news;
 
 pub fn base(title: &str, description: &str, extra_headers: Markup, content: Markup) -> Markup {
     let build_info = format!("Built on: {} • Ref: {} • Commit: {} • CT: {}",
@@ -16,9 +17,6 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
             head {
                 meta charset="utf-8";
                 meta name="viewport" content="width=device-width, initial-scale=1";
-                link rel="stylesheet" href="assets/css/nord.css";
-                link rel="stylesheet" href="assets/css/pure-min.css";
-                link rel="stylesheet" href="assets/css/main.css";
 
                 title {
                     @if title.is_empty() {
@@ -103,7 +101,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                         " • Source code "
                         a target="_blank" href="https://github.com/ericzty/www" { "available here" }
                         ", released under the "
-                        a target="_blank" href="https://github.com/ericzty/www/blob/main/COPYING" { "AGPLv3 license" }
+                        a target="_blank" href="https://github.com/ericzty/www/blob/main/COPYING" { "GNU AGPLv3 license" }
                         "." };
 
                         p { (build_info)};

@@ -12,7 +12,7 @@ Eastern Time Zone (GMT-5), with daylight savings time (GMT-4) from March to
 November.
 
 For a more asynchronous chat, I usually idle in Libera IRC under the nick
-`finnekit`. My Discord is `finnekit`. Discord will automatically
+`ericzty`. My Discord is `ericzty`. Discord will automatically
 reject requests if you're not in a mutual server with me, feel free to join the
 [Rust Programming Language Community
 Server](https://discord.gg/rust-lang-community) if you need a mutual.
@@ -28,11 +28,9 @@ Stevens Institute of Technology
 Hoboken NJ 07030 USA
 ```
 
-[LinkedIn](https://www.linkedin.com/in/tianyu-zhu-577356250) •
 [Github](https://github.com/ericzty) •
-[Twitter](https://twitter.com/ericzty) •
+[LinkedIn](https://linkedin.com/in/tianyu-zhu-577356250) •
 [Fedi](https://uwu.social/@eric) •
-[Bsky](https://bsky.app/ericzty) •
-[Telegram](https://t.me/finnekit) •
-[Steam](https://steamcommunity.com/id/finnekit) •
-[Insta](https://www.instagram.com/eric.zty/)
+[Bsky](https://bsky.app/profile/ericz.me) •
+[Twitter](https://twitter.com/ericzty) •
+[Email](mailto:eric@ericz.me)

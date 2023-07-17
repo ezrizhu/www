@@ -1,0 +1,99 @@
+body {
+    background-color: var(--nord0);
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: var(--nord4);
+    font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+a {
+    text-decoration: none;
+    color: var(--nord8);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+@media(min-device-width:1024px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media(min-device-width:1920px) {
+    .main {
+        width: 70%;
+    }
+}
+
+@media(min-device-width:2560px) {
+    .main {
+        width: 50%;
+    }
+}
+
+/* header */
+
+.home-menu img {
+    max-width: 50%;
+    padding-bottom: 2vw;
+}
+
+@media(min-device-width:1024px) {
+    .home-menu img {
+        max-width: 100%;
+    }
+}
+
+.home-menu {
+    padding: 2em;
+    float: left;
+}
+
+.home-menu ul {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
+}
+
+.pure-menu-link:hover {
+    background: unset;
+}
+
+.pure-menu-active > .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
+    background: unset;
+}
+
+.pure-menu-link {
+    color: var(--nord6) !important;
+    padding: 0;
+    padding-right: 5vw;
+}
+
+@media(min-device-width:1024px) {
+    .pure-menu-link {
+        padding-right: 1vw;
+    }
+}
+
+.pure-menu-selected > .pure-menu-link, .pure-menu-selected > .pure-menu-link:visited {
+    color: unset;
+}
+
+/* footer */
+.footer {
+    margin: 1rem auto;
+    padding-top: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--nord4);
+    text-align: center;
+}

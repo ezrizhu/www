@@ -45,11 +45,11 @@
 /* recent list */
 .recent-list {
     margin-right: 1rem;
-    padding: 0.1rem;
+    padding: 0.5rem;
     border-radius: 1vh;
     background: var(--nord1);
-    height: 10rem;
-    line-height: 1.5rem;
+    height: 20rem;
+    overflow: hidden;
 }
 
 /* featured projects */
