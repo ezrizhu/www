@@ -1,14 +1,10 @@
 use maud::{html, Markup, PreEscaped};
-use comrak::{markdown_to_html, ComrakOptions};
-use super::{base, utils};
-use std::fs;
+use axum::extract::State;
+use super::base;
 
-pub async fn contact() -> Markup {
+pub async fn contact(State(state): State<super::SiteState>) -> Markup {
     let description = "Contact: eric@ericz.me\nPhone (Recorded, Toll-free) +1 8772066280";
-    let contact_raw = fs::read_to_string("content/contact.md").expect("Failed to read file");
-    let contact = markdown_to_html(&contact_raw, &ComrakOptions::default());
-    let contact = utils::add_target_blank_to_links(contact);
-    let contact = contact.trim_end();
+    let contact = state.contact;
 
     let content = html! {
         div class="hero pure-g" {

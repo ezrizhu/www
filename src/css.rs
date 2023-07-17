@@ -56,7 +56,7 @@ pub fn make_css(want_list: Vec<&str>, css_files: &Vec<Css>) -> String {
     css
 }
 
-pub async fn get(Path(name): Path<String>, State(state): State<super::AppState>) -> (StatusCode, HeaderMap, String) {
+pub async fn get(Path(name): Path<String>, State(state): State<super::SiteState>) -> (StatusCode, HeaderMap, String) {
     let mut resp_status = StatusCode::OK;
     let mut resp_body = String::new();
     let mut resp_header = HeaderMap::new();

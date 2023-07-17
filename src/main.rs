@@ -7,22 +7,31 @@ use axum::{
 use tower_http::services::ServeDir;
 mod site;
 mod css;
+mod utils;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
 }
 
 #[derive(Clone)]
-pub struct AppState {
-    css: Vec<css::Css>
+pub struct SiteState {
+    css: Vec<css::Css>,
+    home: String,
+    five_news: String,
+    contact: String,
+    news: String
 }
 
 #[tokio::main]
 async fn main() {
     println!("Startup!");
 
-    let state = AppState {
-        css: css::init()
+    let state = SiteState {
+        css: css::init(),
+        home: utils::path_to_html(&"content/home.md"),
+        five_news: utils::init_news(),
+        contact: utils::path_to_html(&"content/contact.md"),
+        news: utils::path_to_html(&"content/news.md")
     };
 
     let app = Router::new()

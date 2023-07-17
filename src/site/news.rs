@@ -1,14 +1,10 @@
 use maud::{html, Markup, PreEscaped};
-use comrak::{markdown_to_html, ComrakOptions};
-use super::{base, utils};
-use std::fs;
+use axum::extract::State;
+use super::base;
 
-pub async fn news() -> Markup {
+pub async fn news(State(state): State<super::SiteState>) -> Markup {
     let description = "Recent news on Eric";
-    let news_raw = fs::read_to_string("content/news.md").expect("Failed to read file");
-    let news = markdown_to_html(&news_raw, &ComrakOptions::default());
-    let news = utils::add_target_blank_to_links(news);
-    let news = news.trim_end();
+    let news = state.news;
 
     let content = html! {
         div class="news pure-g" {

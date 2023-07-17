@@ -1,7 +1,25 @@
+use comrak::{markdown_to_html, ComrakOptions};
 use kuchiki::traits::*;
-use std::fs::File;
+use std::fs::{self,File};
 use std::io;
 use std::io::prelude::*;
+
+pub fn path_to_html(path: &str) -> String {
+    let md = fs::read_to_string(path).expect("Failed to read file");
+    md_to_html(&md)
+}
+
+pub fn init_news() -> String {
+    let news = read_first_five_news();
+    let news = md_to_html(&news);
+    news.trim_end().to_string()
+}
+
+pub fn md_to_html(md: &str) -> String {
+    let md = markdown_to_html(md, &ComrakOptions::default());
+    let md = add_target_blank_to_links(md);
+    md.trim_end().to_string()
+}
 
 pub fn add_target_blank_to_links(html: String) -> String {
     // Parse the HTML document

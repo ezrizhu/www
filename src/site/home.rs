@@ -1,20 +1,12 @@
 use maud::{html, Markup, PreEscaped};
-use comrak::{markdown_to_html, ComrakOptions};
-use super::{base, utils};
-use std::fs;
+use axum::extract::State;
+use super::base;
 
-pub async fn home() -> Markup {
+pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let description = "Student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps";
 
-    let bio_raw = fs::read_to_string("content/home.md").expect("Failed to read file");
-    let bio = markdown_to_html(&bio_raw, &ComrakOptions::default());
-    let bio = utils::add_target_blank_to_links(bio);
-    let bio = bio.trim_end();
-
-    let news_raw = utils::read_first_five_news();
-    let news = markdown_to_html(&news_raw, &ComrakOptions::default());
-    let news = utils::add_target_blank_to_links(news);
-    let news = news.trim_end();
+    let bio = state.home;
+    let news = state.five_news;
 
     let content = html! {
         div class="hero pure-g" {

@@ -22,7 +22,7 @@ a:hover {
     width: 80%;
 }
 
-@media(min-device-width:1024px) {
+@media(min-device-width:768px) {
     body {
         font-size: 1rem;
     }
@@ -47,7 +47,7 @@ a:hover {
     padding-bottom: 2vw;
 }
 
-@media(min-device-width:1024px) {
+@media(min-device-width:768px) {
     .home-menu img {
         max-width: 100%;
     }
@@ -79,7 +79,7 @@ a:hover {
     padding-right: 3vw;
 }
 
-@media(min-device-width:1024px) {
+@media(min-device-width:768px) {
     .pure-menu-link {
         padding-right: 1vw;
     }
@@ -92,7 +92,7 @@ a:hover {
 /* footer */
 .footer {
     margin: 1rem auto;
-    padding-top: 0.5rem;
+    padding: 1rem;
     font-size: 0.75rem;
     color: var(--nord4);
     text-align: center;
