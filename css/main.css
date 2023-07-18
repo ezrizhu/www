@@ -22,19 +22,25 @@ a:hover {
     width: 80%;
 }
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) {
     body {
         font-size: 1rem;
     }
 }
 
-@media(min-width:1920px) {
+@media screen and (min-width:1920px) {
     .main {
         width: 70%;
     }
 }
 
-@media(min-width:2560px) {
+@media screen and (min-width:2304px) {
+    .main {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:2560px) {
     .main {
         width: 50%;
     }
@@ -47,7 +53,7 @@ a:hover {
     padding-bottom: 2vw;
 }
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) {
     .home-menu img {
         max-width: 100%;
     }
@@ -79,7 +85,7 @@ a:hover {
     padding-right: 3vw;
 }
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) {
     .pure-menu-link {
         padding-right: 1vw;
     }
