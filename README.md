@@ -1,6 +1,6 @@
 # www
 
-This is the repo of my website.
+This is the repo for [my website](https://ericz.me).
 
 I took a lot of inspirations from [Xe's website](https://xeiaso.net/talks/how-my-website-works), I also wanted to learn rust and remake my website, so I decided to do this.
 
