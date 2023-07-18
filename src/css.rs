@@ -61,15 +61,17 @@ pub async fn get(Path(name): Path<String>, State(state): State<super::SiteState>
     let mut resp_body = String::new();
     let mut resp_header = HeaderMap::new();
     resp_header.insert("Content-Type", "text/css".parse().unwrap());
+    resp_header.insert("Cache-Control", "max-age=86400".parse().unwrap());
     match name.replace(".css", "").as_str() {
-        "home" => resp_body = make_css(vec!["nord", "pure-min", "grids-responsive-min", "main", "home"], &state.css),
-        "contact" => resp_body = make_css(vec!["nord", "pure-min", "grids-responsive-min", "main", "contact"], &state.css),
-        "news" => resp_body = make_css(vec!["nord", "pure-min", "grids-responsive-min", "main", "news"], &state.css),
-        "projects-index" => resp_body = make_css(vec!["nord", "pure-min", "grids-responsive-min", "main", "projects-index"], &state.css),
-        "blog-index" => resp_body = make_css(vec!["nord", "pure-min", "grids-responsive-min", "main", "blog-index"], &state.css),
-        "post" => resp_body = make_css(vec!["nord", "pure-min", "main"], &state.css),
-        "404" => resp_body = make_css(vec!["nord", "pure-min", "main", "404"], &state.css),
-        "wip" => resp_body = make_css(vec!["nord", "pure-min", "main", "wip"], &state.css),
+        "main" => resp_body = make_css(vec!["nord", "pure-min", "main"], &state.css),
+        "home" => resp_body = make_css(vec!["grids-responsive-min", "home"], &state.css),
+        "contact" => resp_body = make_css(vec!["grids-responsive-min", "contact"], &state.css),
+        "news" => resp_body = make_css(vec!["news"], &state.css),
+        "projects-index" => resp_body = make_css(vec!["grids-responsive-min", "projects-index"], &state.css),
+        "blog-index" => resp_body = make_css(vec!["blog-index"], &state.css),
+        "post" => resp_body = make_css(vec!["main"], &state.css),
+        "404" => resp_body = make_css(vec!["404"], &state.css),
+        "wip" => resp_body = make_css(vec!["wip"], &state.css),
         _ => resp_status = StatusCode::NOT_FOUND
     };
 

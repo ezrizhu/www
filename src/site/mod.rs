@@ -36,6 +36,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                 meta property="og:title" content="Tianyu (Eric) Zhu";
                 meta property="og:description" content=(description);
                 link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦊</text></svg>";
+                link rel="stylesheet" href="assets/css/main.css";
                 meta property="og:theme-color" content="#2e3440";
                 meta property="og:image" content="/assets/img/animoji.png";
                 meta name="theme-color" content="#2e3440";
