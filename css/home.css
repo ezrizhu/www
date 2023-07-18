@@ -74,13 +74,13 @@
     border-radius: 1vh;
     background: var(--nord1);
     padding: 1rem;
-    margin-right: 1rem;
     margin-bottom: 1rem;
     overflow: hidden;
 }
 
 @media screen and (min-width:768px) {
     .home-box {
+        margin-right: 1rem;
         height: 80%;
     }
 }
