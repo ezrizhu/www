@@ -30,17 +30,11 @@ a:hover {
 
 @media screen and (min-width:1920px) {
     .main {
-        width: 70%;
-    }
-}
-
-@media screen and (min-width:2304px) {
-    .main {
         width: 60%;
     }
 }
 
-@media screen and (min-width:2560px) {
+@media screen and (min-width:2304px) {
     .main {
         width: 50%;
     }
