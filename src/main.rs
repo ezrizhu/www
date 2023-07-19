@@ -3,7 +3,7 @@ use axum::{
     routing::{get, get_service},
     Router
 };
-use tower_http::services::ServeDir;
+use tower_http::services::{ServeDir,ServeFile};
 mod site;
 mod css;
 mod utils;
@@ -44,6 +44,7 @@ async fn main() {
 
     let app = Router::new()
         .route("/health", get(health))
+        .route("/robots.txt", get_service(ServeFile::new("./assets/robots.txt")))
         .route("/assets/css/:name", get(css::get))
         .nest_service("/assets/img", get_service(ServeDir::new("./assets/img")))
         .nest_service("/files", get_service(ServeDir::new("./files")))
