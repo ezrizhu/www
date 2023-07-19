@@ -6,6 +6,7 @@ pub async fn blog_index(State(state): State<super::SiteState>) -> Markup {
     let blog = state.blog;
     let content = html! {
         h1 { "Blog" };
+        p { "I have a " a href="/blog.xml" { "rss feed" } " and an " a href="/blog.atom" { "atom feed" } ", if you have a reader that supports them." }
         @for blog in blog {
             div class="blog-box" {
                 a href=(format!("/blog/{}", blog.slug)) { 
