@@ -79,10 +79,6 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
             XmlEvent::characters(&link).into(),
             XmlEvent::end_element().into(),
 
-            XmlEvent::start_element("link").into(),
-            XmlEvent::characters(&link).into(),
-            XmlEvent::end_element().into(),
-
             XmlEvent::start_element("published").into(),
             XmlEvent::characters(&date).into(),
             XmlEvent::end_element().into(),
