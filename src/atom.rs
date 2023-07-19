@@ -56,7 +56,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         XmlEvent::start_element("generator").into(),
         XmlEvent::characters("https://github.com/ericzty/www").into(),
         XmlEvent::end_element().into(),
-                ];
+        ];
 
     for feed in feeds {
         writer.write(feed).unwrap();
@@ -69,7 +69,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         let content = post.body;
 
         let feeds: Vec<XmlEvent> = vec![
-            XmlEvent::start_element("item").into(),
+            XmlEvent::start_element("entry").into(),
 
             XmlEvent::start_element("title").into(),
             XmlEvent::characters(&title).into(),
