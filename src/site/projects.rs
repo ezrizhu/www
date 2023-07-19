@@ -12,7 +12,7 @@ pub async fn project_handler(Path(name): Path<String>, State(state): State<super
     if let Some(project) = get_all(state.projects, &name) {
         (StatusCode::OK, post(&project.title, &project.date, &project.description, &project.body))
     } else {
-        (StatusCode::NOT_FOUND, not_found().await)
+        not_found().await
     }
 }
 

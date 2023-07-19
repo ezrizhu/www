@@ -75,8 +75,7 @@ a:hover {
 
 .pure-menu-link {
     color: var(--nord6) !important;
-    padding: 0;
-    padding-right: 3vw;
+    padding: 3vw 5vw 0 0;
 }
 
 @media screen and (min-width:768px) {

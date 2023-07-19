@@ -12,7 +12,7 @@ pub async fn blog_handler(Path(name): Path<String>, State(state): State<super::S
     if let Some(blog) = get_all(state.blog, &name) {
         (StatusCode::OK, post(&blog.title, &blog.date, &blog.description, &blog.body))
     } else {
-        (StatusCode::NOT_FOUND, not_found().await)
+        not_found().await
     }
 }
 

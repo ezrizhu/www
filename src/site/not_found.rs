@@ -1,7 +1,8 @@
 use super::base;
 use maud::{html, Markup};
+use axum::http::StatusCode;
 
-pub async fn not_found() -> Markup {
+pub async fn not_found() -> (StatusCode, Markup) {
     let description = "404: Not Found :-(";
     let content = html! {
         h1 { (description) }
@@ -12,5 +13,5 @@ pub async fn not_found() -> Markup {
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/404.css";
     };
-    base("404 - Not Found", description, extra_headers, content)
+    (StatusCode::NOT_FOUND, base("404 - Not Found", description, extra_headers, content))
 }
