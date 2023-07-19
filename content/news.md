@@ -24,4 +24,4 @@
   website and work on internal tooling.
 
 * Sep 2022: I started my first undergraduate year at [Stevens Institute of
-  Technology](https://stevens.edu)
+  Technology](https://stevens.edu).

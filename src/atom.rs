@@ -113,3 +113,4 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         .header("Content-Type", "application/xml")
         .body(body::boxed(body::Full::from(buf))).unwrap()
 }
+
