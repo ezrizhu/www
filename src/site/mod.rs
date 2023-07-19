@@ -7,7 +7,7 @@ pub mod projects;
 pub mod blog;
 pub mod not_found;
 pub mod wip;
-mod post;
+pub mod post;
 
 pub fn base(title: &str, description: &str, extra_headers: Markup, content: Markup) -> Markup {
     let build_info = format!("Built on: {} • Ref: {} • Commit: {} • CT: {}",
@@ -76,21 +76,6 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                         li class="pure-menu-item" {
                             a class="pure-menu-link" href="/files/Tianyu_Zhu_Resume.pdf" {
                                 "Resume"
-                            }
-                        }
-                        li class="pure-menu-item" {
-                            a class="pure-menu-link" href="/cv" {
-                                "CV"
-                            }
-                        }
-                        li class="pure-menu-item" {
-                            a class="pure-menu-link" href="/friends" {
-                                "Friends"
-                            }
-                        }
-                        li class="pure-menu-item" {
-                            a class="pure-menu-link" href="/affiliates" {
-                                "Affiliates"
                             }
                         }
                     }

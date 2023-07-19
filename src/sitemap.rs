@@ -7,11 +7,11 @@ use axum::{
 use anyhow::Result;
 
 pub fn init(state: super::SiteState) -> Result<Vec<u8>> {
-    let mut sm: Vec<u8> = vec![];
+    let mut sm: Vec<u8> = Vec::new();
     let smw = sitemap::writer::SiteMapWriter::new(&mut sm);
     let mut urlwriter = smw.start_urlset()?;
     urlwriter.url("https://ericz.me")?;
-    let static_pages = vec!["contact", "news", "projects", "blog", "friends", "affiliates", "resume", "cv"];
+    let static_pages = vec!["contact", "news", "projects", "blog"];
     for page in static_pages {
         urlwriter.url(format!("https://ericz.me/{}", page))?;
     }

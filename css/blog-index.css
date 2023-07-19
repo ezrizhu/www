@@ -2,10 +2,8 @@
     border-radius: 1vh;
     background: var(--nord1);
     padding: 1rem;
-    margin-right: 1rem;
     margin-bottom: 1rem;
     overflow: hidden;
-
 }
 
 .blog-box h2 {

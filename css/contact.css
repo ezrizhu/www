@@ -7,8 +7,6 @@ h1 {
     height: auto;
 }
 
-.contacts {
-    position: relative;
-    right: 0;
-    margin-left: auto;
+.contact {
+    margin-left: 1vw;
 }

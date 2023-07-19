@@ -1,20 +1,6 @@
 use maud::{html, Markup};
-use super::not_found::not_found;
-use crate::post::get_all;
 use super::base;
-use super::post::post;
-use axum::{
-    extract::{Path,State},
-    http::StatusCode
-};
-
-pub async fn project_handler(Path(name): Path<String>, State(state): State<super::SiteState>) -> (StatusCode, Markup) {
-    if let Some(project) = get_all(state.projects, &name) {
-        (StatusCode::OK, post(&project.title, &project.date, &project.description, &project.body))
-    } else {
-        not_found().await
-    }
-}
+use axum::extract::State;
 
 pub async fn project_index(State(state): State<super::SiteState>) -> Markup {
     let projects = state.projects;
@@ -26,7 +12,6 @@ pub async fn project_index(State(state): State<super::SiteState>) -> Markup {
                     div class="project-box" {
                         a href=(format!("/projects/{}", project.slug)) { 
                             h2 { (project.title) }
-                            h3 { (project.date) }
                             p { (project.description) }
                         }
                     }

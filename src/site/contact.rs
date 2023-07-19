@@ -12,8 +12,8 @@ pub async fn contact(State(state): State<super::SiteState>) -> Markup {
                 img src="/assets/img/eric2.webp" alt="An image of Eric Zhu sitting on a table." class="pure-img headshot";
                 p class="pronouns" { "(he/him)" };
             }
-            div class="pure-u-1 pure-u-md-2-3 contact" {
-                div class="" {
+            div class="pure-u-1 pure-u-md-2-3" {
+                div class="contact" {
                     { (PreEscaped(contact)) };
                 }
             }

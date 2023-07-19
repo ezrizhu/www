@@ -1,7 +1,7 @@
 use super::base;
 use maud::{html, Markup};
 
-pub async fn wip() -> Markup {
+pub async fn _wip() -> Markup {
     let description = "Work in progress, please check back later.";
     let content = html! {
         h1 { (description) }

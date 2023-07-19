@@ -1,7 +1,7 @@
 use maud::{html, Markup, PreEscaped};
 use axum::extract::State;
 use super::base;
-use crate::post::{get_title_and_desc,get_date_and_title};
+use crate::post;
 
 pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let description = "Student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps";
@@ -9,24 +9,9 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let bio = state.home;
     let news = state.five_news;
 
-    let p1_slug = "ericnet";
-    let p2_slug = "try";
-    let p3_slug = "eve";
-
-    let (p1_title, p1_desc) = get_title_and_desc(state.projects.clone(), &p1_slug).unwrap();
-    let (p2_title, p2_desc) = get_title_and_desc(state.projects.clone(), &p2_slug).unwrap();
-    let (p3_title, p3_desc) = get_title_and_desc(state.projects.clone(), &p3_slug).unwrap();
-
-    let b1_slug = "hello-world";
-    //let b2_slug = "";
-    //let b3_slug = "";
-    //let b4_slug = "";
-    //let b5_slug = "";
-    let (b1_date, b1_title) = get_date_and_title(state.blog.clone(), &b1_slug).unwrap();
-    //let (b2_date, b2_title) = get_date_and_title(state.blog.clone(), &b2_slug).unwrap();
-    //let (b3_date, b3_title) = get_date_and_title(state.blog.clone(), &b3_slug).unwrap();
-    //let (b4_date, b4_title) = get_date_and_title(state.blog.clone(), &b4_slug).unwrap();
-    //let (b5_date, b5_title) = get_date_and_title(state.blog.clone(), &b5_slug).unwrap();
+    let projects = vec!["ericnet", "try", "eve"];
+    // inc this once I add more blogs, max: 5
+    let blogs = state.blog[0..1].to_vec();
 
     let content = html! {
         div class="hero pure-g" {
@@ -51,46 +36,28 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
                 p class="separator" { strong { "Recent Blogs" } };
                 div class="recent-list" {
                     ul {
-                        li { p { (b1_date) " - " a href=(format!("/blog/{}", b1_slug))  { (b1_title) } } };
-                        //li { (b2_date) (b2_title) };
-                        //li { (b3_date) (b3_title) };
-                        //li { (b4_date) (b4_title) };
-                        //li { (b5_date) (b5_title) };
+                        @for blog in blogs {
+                            @let date_str = blog.date.format("%B %d, %Y").to_string();
+                            li { p { (date_str) " - " a href=(format!("/blog/{}", blog.slug))  { (blog.title) } } };
+                        }
                     }
                 }
             }
         }
         p class="separator" { strong { "Featured Projects" } };
         div class="featured-projects pure-g" {
-            a href=(format!("/projects/{}", p1_slug)) class="pure-u-1 pure-u-md-1-3" {
+            @for project in projects {
+                @let project = post::get(state.projects.clone(), project).unwrap();
+            a href=(format!("/projects/{}", project.slug)) class="pure-u-1 pure-u-md-1-3" {
                 div class="home-box" {
                     div class="box-title" {
-                        h2 { (p1_title) }
+                        h2 { (project.title) }
                     }
                     div class="box-desc" {
-                        p { (p1_desc) }
+                        p { (project.description) }
                     }
                 }
             }
-            a href=(format!("/projects/{}", p1_slug)) class="pure-u-1 pure-u-md-1-3" {
-                div class="home-box" {
-                    div class="box-title" {
-                        h2 { (p2_title) }
-                    }
-                    div class="box-desc" {
-                        p { (p2_desc) }
-                    }
-                }
-            }
-            a href=(format!("/projects/{}", p1_slug)) class="pure-u-1 pure-u-md-1-3" {
-                div class="home-box" {
-                    div class="box-title" {
-                        h2 { (p3_title) }
-                    }
-                    div class="box-desc" {
-                        p { (p3_desc) }
-                    }
-                }
             }
         }
     };

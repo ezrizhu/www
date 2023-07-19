@@ -26,6 +26,9 @@ a:hover {
     body {
         font-size: 1rem;
     }
+    .main {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width:1920px) {
@@ -75,12 +78,12 @@ a:hover {
 
 .pure-menu-link {
     color: var(--nord6) !important;
-    padding: 3vw 5vw 0 0;
+    padding: 3vw;
 }
 
 @media screen and (min-width:768px) {
     .pure-menu-link {
-        padding-right: 1vw;
+        padding: 0 1vw 0 0;
     }
 }
 
