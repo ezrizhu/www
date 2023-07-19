@@ -8,7 +8,6 @@ use chrono::prelude::*;
 pub struct Post {
     pub slug: String,
     pub title: String,
-    pub date_int: u32,
     pub date: DateTime<FixedOffset>,
     pub description: String,
     pub body: String,
@@ -35,8 +34,6 @@ pub fn init(dir: &str) -> Vec<Post> {
                 // E.g., 20230601-hello_world.md -> date_str: 20230601, slug: hello-world
                 let filename_parts = filename.split("-").collect::<Vec<&str>>();
                 assert_eq!(filename_parts.len(), 2);
-                // We use the date_int to sort the posts.
-                let date_int = filename_parts[0].parse::<u32>().unwrap();
                 let date_str = filename_parts[0].parse::<String>().unwrap();
                 // The date_str will be displayed on the homepage, blogindex, and blog pages.
                 // First we parse our text into NaiveDate
@@ -57,13 +54,13 @@ pub fn init(dir: &str) -> Vec<Post> {
                 let result = matter.parse(&raw);
                 let title = result.data.as_ref().unwrap()["Title"].as_string().unwrap();
                 let description = result.data.as_ref().unwrap()["Description"].as_string().unwrap();
-                // the markdown without the frontmatter, in html
+                // the markdown without the frontmatter, parsed to html
                 let body = utils::md_to_html(&result.content);
-                let post = Post { slug, title, date_int, date, description, body };
+                let post = Post { slug, title, date, description, body };
                 posts_list.push(post);
             }
         }
     }
-    posts_list.sort_by(|a, b| b.date_int.cmp(&a.date_int));
+    posts_list.sort_by(|a, b| b.date.cmp(&a.date));
     posts_list
 }
