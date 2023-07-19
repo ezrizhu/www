@@ -11,7 +11,7 @@ ENV CT=${CT}
 
 ADD . .
 
-RUN apk add --no-cache musl-dev openssl-dev
+RUN apk add --no-cache musl-dev
 RUN cargo build --release
 
 CMD ["./target/release/www"]

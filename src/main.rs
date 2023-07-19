@@ -11,7 +11,6 @@ mod projects;
 mod blog;
 mod post;
 mod sitemap;
-mod google;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
@@ -45,9 +44,6 @@ async fn main() {
     };
 
     state.sitemap = sitemap::init(state.clone()).expect("Failed to init sitemap");
-
-    println!("Pinging Google");
-    google::ping().await.expect("Failed to ping Google");
 
     println!("Starting webserver!");
 
