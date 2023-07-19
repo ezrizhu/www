@@ -46,6 +46,7 @@ async fn main() {
 
     state.sitemap = sitemap::init(state.clone()).expect("Failed to init sitemap");
 
+    println!("Pinging Google");
     google::ping().await.expect("Failed to ping Google");
 
     println!("Starting webserver!");
