@@ -1,2 +1,3 @@
 User-Agent: *
+Sitemap: https://ericz.me/sitemap.xml
 Disallow: /health

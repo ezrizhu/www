@@ -10,6 +10,8 @@ mod utils;
 mod projects;
 mod blog;
 mod post;
+mod sitemap;
+mod google;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
@@ -24,21 +26,27 @@ pub struct SiteState {
     news: String,
     projects: Vec<post::Post>,
     blog: Vec<post::Post>,
+    sitemap: Vec<u8>,
 }
 
 #[tokio::main]
 async fn main() {
     println!("Loading state.");
 
-    let state = SiteState {
+    let mut state = SiteState {
         css: css::init(),
         five_news: utils::init_news(),
         contact: utils::path_to_html(&"content/contact.md"),
         news: utils::path_to_html(&"content/news.md"),
+        home: utils::path_to_html(&"content/home.md"),
         projects: projects::init(),
         blog: blog::init(),
-        home: utils::path_to_html(&"content/home.md"),
+        sitemap: vec![],
     };
+
+    state.sitemap = sitemap::init(state.clone()).expect("Failed to init sitemap");
+
+    google::ping().await.expect("Failed to ping Google");
 
     println!("Starting webserver!");
 
@@ -47,7 +55,7 @@ async fn main() {
         .route("/robots.txt", get_service(ServeFile::new("./assets/robots.txt")))
         .route("/assets/css/:name", get(css::get))
         .nest_service("/assets/img", get_service(ServeDir::new("./assets/img")))
-        .nest_service("/files", get_service(ServeDir::new("./files")))
+        .nest_service("/files", get_service(ServeDir::new("./assets/files")))
         .route("/", get(site::home::home))
         .route("/contact", get(site::contact::contact))
         .route("/news", get(site::news::news))
@@ -58,14 +66,12 @@ async fn main() {
         .route("/blog/", get(site::blog::blog_index))
         .route("/blog/:name", get(site::blog::blog_handler))
         .route("/friends", get(site::wip::wip))
-        .route("/friends/", get(site::wip::wip))
         .route("/affiliates", get(site::wip::wip))
-        .route("/affiliates/", get(site::wip::wip))
         .route("/resume", get(site::wip::wip))
         .route("/cv", get(site::wip::wip))
+        .route("/sitemap.xml", get(sitemap::get))
         .fallback(site::not_found::not_found)
         .with_state(state);
-    
 
     axum::Server::bind(&"0.0.0.0:3000".parse().unwrap())
         .serve(app.into_make_service())
