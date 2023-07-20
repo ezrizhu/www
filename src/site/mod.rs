@@ -17,6 +17,12 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                              std::env::var("COMMIT").unwrap_or_else(|_| String::from("Unknown")),
                              std::env::var("CT").unwrap_or_else(|_| String::from("Unknown")),
                              );
+    let title: String = if title.is_empty() {
+        "Tianyu (Eric) Zhu".to_string()
+    } else {
+        title.to_string() + " - Tianyu (Eric) Zhu"
+    };
+
     html! {
         (maud::DOCTYPE)
         html lang="en" {
@@ -24,28 +30,25 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                 meta charset="utf-8";
                 meta name="viewport" content="width=device-width, initial-scale=1";
 
-                title {
-                    @if title.is_empty() {
-                        "Tianyu (Eric) Zhu"
-                    } @else {
-                        (title) " - Tianyu (Eric) Zhu"
-                    }
-                }
+                title { (title) };
                 meta name="description" content=(description);
                 meta name="author" content="Tianyu (Eric) Zhu";
-                meta property="og:type" content="website";
-                meta property="og:title" content="Tianyu (Eric) Zhu";
-                meta property="og:description" content=(description);
 
                 link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png";
                 link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png";
                 link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png";
                 link rel="manifest" href="/assets/favicon/site.webmanifest";
 
-                link rel="stylesheet" href="/assets/css/main.css";
+                meta name="theme-color" content="#2e3440";
+
+                meta property="og:type" content="website";
+                meta property="og:title" content=(title);
+                meta property="og:description" content=(description);
                 meta property="og:theme-color" content="#2e3440";
                 meta property="og:image" content="/assets/img/animoji.png";
-                meta name="theme-color" content="#2e3440";
+                meta property="og:site_name" content="Eric's Blog";
+
+                link rel="stylesheet" href="/assets/css/main.css";
                 (extra_headers)
             }
             body {
