@@ -79,6 +79,14 @@
     overflow: hidden;
 }
 
+.home-box a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.home-box h2:hover {
+    text-decoration: underline;
+}
+
 @media screen and (min-width:768px) {
     .home-box {
         margin-right: 1rem;
