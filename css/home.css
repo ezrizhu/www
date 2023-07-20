@@ -25,6 +25,9 @@
     .hero p {
         font-size: 1.3rem;
     }
+    .pronouns {
+        margin-bottom: 0;
+    }
 }
 
 .hero strong {
@@ -37,7 +40,6 @@
 
 .separator {
     color: var(--nord7);
-    margin-top: 0;
     margin-bottom: 0.5rem;
 }
 

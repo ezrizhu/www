@@ -21,7 +21,7 @@ Phone (Recorded, Toll-free): +1 8772066280
 
 Fax: +1 9292070306
 
-Mailing address
+Mailing address:
 ```
 Student Tianyu Zhu
 Stevens Institute of Technology

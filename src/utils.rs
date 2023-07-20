@@ -16,9 +16,11 @@ pub fn init_news() -> String {
 }
 
 pub fn md_to_html(md: &str) -> String {
-    let md = markdown_to_html(md, &ComrakOptions::default());
+    let mut options = ComrakOptions::default();
+    options.parse.smart = true;
+    let md = markdown_to_html(&md, &options);
     let md = add_target_blank_to_links(md);
-    md.trim_end().to_string()
+    md.trim().to_string()
 }
 
 pub fn add_target_blank_to_links(html: String) -> String {

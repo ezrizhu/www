@@ -26,9 +26,15 @@ pub async fn project_handler(Path(name): Path<String>, State(state): State<super
 fn post(post: Post, show_date: bool) -> Markup {
     let content = html! {
         h1 { (post.title) };
-        @if show_date {
-            @let date_str = post.date.format("%B %d, %Y").to_string();
-            h3 { (date_str) };
+        div class="byline" {
+            p { "by "
+                a href="/" target="_blank" { "Eric" }
+            @if show_date {
+                @let date_str = post.date.format("%B %d, %Y").to_string();
+                @let date_rfc3339 = post.date.to_rfc3339();
+                ", on " time datetime=(date_rfc3339) { (date_str) }
+            }
+            }
         }
         p { (PreEscaped(post.body)) };
     };

@@ -35,7 +35,12 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                 meta property="og:type" content="website";
                 meta property="og:title" content="Tianyu (Eric) Zhu";
                 meta property="og:description" content=(description);
-                link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦊</text></svg>";
+
+                link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png";
+                link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png";
+                link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png";
+                link rel="manifest" href="/assets/favicon/site.webmanifest";
+
                 link rel="stylesheet" href="/assets/css/main.css";
                 meta property="og:theme-color" content="#2e3440";
                 meta property="og:image" content="/assets/img/animoji.png";
@@ -84,20 +89,21 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                     (content)
                 }
                 div class="footer" {
-                    p { 
-                        p { "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present." };
-
+                    p {
+                        "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present."
+                        br;
                         "Copyright 2018-2023 • All text here are released under "
                         a target="_blank" href="https://creativecommons.org/licenses/by/4.0/" { "(CC BY 4.0)" }
                         " • Source code "
                         a target="_blank" href="https://github.com/ericzty/www" { "available here" }
                         ", released under the "
                         a target="_blank" href="https://github.com/ericzty/www/blob/main/COPYING" { "GNU AGPLv3 license" }
-                        "." };
-
-                        p { (build_info)};
-                    }
+                        "." 
+                        br;
+                        (build_info);
+                    };
                 }
             }
         }
     }
+}
