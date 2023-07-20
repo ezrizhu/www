@@ -48,12 +48,14 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
         div class="featured-projects pure-g" {
             @for project in projects {
                 @let project = post::get(state.projects.clone(), project).unwrap();
-            a href=(format!("/projects/{}", project.slug)) class="pure-u-1 pure-u-md-1-3" {
+                div class="pure-u-1 pure-u-md-1-3" {
                 div class="home-box" {
-                    h2 class="box-title" {
-                        (project.title)
+                    a href=(format!("/projects/{}", project.slug)) {
+                        h2 {
+                            (project.title)
+                        }
                     }
-                    p class="box-desc" {
+                    p {
                         (project.description)
                     }
                 }

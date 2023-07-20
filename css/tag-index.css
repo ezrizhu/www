@@ -1,0 +1,10 @@
+h1 {
+    padding-left: 2rem;
+}
+
+.tags {
+    padding: 0.5rem;
+    background: var(--nord1);
+    border-radius: 1vh;
+}
+

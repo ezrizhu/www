@@ -7,12 +7,10 @@ pub async fn news(State(state): State<super::SiteState>) -> Markup {
     let news = state.news;
 
     let content = html! {
-        div class="news pure-g" {
-            div class="pure-u-1" {
-                div class="" {
-                    h1 { "News" };
-                    { (PreEscaped(news)) };
-                }
+        div class="news" {
+            div class="" {
+                h1 { "News" };
+                { (PreEscaped(news)) };
             }
         }
     };

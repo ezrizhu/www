@@ -69,6 +69,7 @@ pub async fn get(Path(name): Path<String>, State(state): State<super::SiteState>
         "news" => resp_body = make_css(vec!["news"], &state.css),
         "projects-index" => resp_body = make_css(vec!["grids-responsive-min", "projects-index"], &state.css),
         "blog-index" => resp_body = make_css(vec!["blog-index"], &state.css),
+        "tag-index" => resp_body = make_css(vec!["tag-index"], &state.css),
         "post" => resp_body = make_css(vec!["post"], &state.css),
         "404" => resp_body = make_css(vec!["404"], &state.css),
         "wip" => resp_body = make_css(vec!["wip"], &state.css),

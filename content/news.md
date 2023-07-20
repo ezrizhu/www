@@ -10,7 +10,7 @@
 
 * May 2023: I attended [NJPLS](https://www.njpls.org/) at UPenn! 
 
-* May 2023: I joined [Blueprint@Stevens](https://sitblueprint.com/) in the 
+* May 2023: I joined [Blueprint@Stevens](https://sitblueprint.com/) on the 
   infrastructure team.
 
 * Apr 2023: I started my research assistantship with [Professor
