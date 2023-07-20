@@ -45,7 +45,6 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                 meta property="og:title" content=(title);
                 meta property="og:description" content=(description);
                 meta property="og:theme-color" content="#2e3440";
-                meta property="og:image" content="/assets/img/animoji.png";
                 meta property="og:site_name" content="Eric's Blog";
 
                 link rel="stylesheet" href="/assets/css/main.css";
