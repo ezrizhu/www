@@ -12,8 +12,8 @@ pub async fn project_index(State(state): State<super::SiteState>) -> Markup {
                     div class="project-box" {
                         a href=(format!("/projects/{}", project.slug)) { 
                             h2 { (project.title) }
-                            p { (project.description) }
                         }
+                        p { (project.description) }
                     }
                 }
             }
