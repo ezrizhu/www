@@ -58,5 +58,6 @@ jobs:
   google:
     needs: deploy
     runs-on: ubuntu-latest
+    steps:
     - name: Upload sitemap
       run: curl "www.google.com/webmasters/tools/ping?sitemap=https://ericz.me/sitemap.xml"
