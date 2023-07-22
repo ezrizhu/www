@@ -1,4 +1,4 @@
-FROM rust:1.70
+FROM rust:1.70-alpine
 
 ARG REF=""
 ARG COMMIT=""
@@ -11,6 +11,7 @@ ENV CT=${CT}
 
 ADD . .
 
+RUN apk add --no-cache musl-dev pkgconfig openssl-dev
 RUN cargo build --release
 
 CMD ["./target/release/www"]

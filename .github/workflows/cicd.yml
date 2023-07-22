@@ -54,3 +54,9 @@ jobs:
       run: 'curl -H "X-Server-Select: www1" https://ericz.dev | grep ${{ github.sha }}'
     - name: Ensure that default is updated
       run: 'curl https://ericz.dev | grep ${{ github.sha }}'
+
+  google:
+    needs: deploy
+    runs-on: ubuntu-latest
+    - name: Upload sitemap
+      run: curl "www.google.com/webmasters/tools/ping?sitemap=https://ericz.me/sitemap.xml"
