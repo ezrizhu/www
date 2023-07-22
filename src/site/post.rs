@@ -25,6 +25,7 @@ pub async fn project_handler(Path(name): Path<String>, State(state): State<SiteS
 }
 
 fn post(post: Post, state: SiteState, show_date: bool) -> Markup {
+    let tags = post.tags.iter().map(|x| x.to_string()).collect::<Vec<_>>();
     let content = html! {
         h1 { (post.title) };
         div class="byline" {
@@ -35,9 +36,11 @@ fn post(post: Post, state: SiteState, show_date: bool) -> Markup {
                 @let date_rfc3339 = post.date.to_rfc3339();
                 ", on " time datetime=(date_rfc3339) { (date_str) }
             }
-            @let tags_str = post.tags.iter().map(|x| x.to_string()).collect::<Vec<_>>().join(", ");
             br;
-            "tags: " (tags_str)
+            "tags: "
+            @for tag in tags {
+                a href=(format!("/blog/tags/{}", tag)) { (tag) " " }
+            }
             }
         }
         p { (PreEscaped(post.body)) };
