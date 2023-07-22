@@ -3,7 +3,7 @@ use super::base;
 use axum::extract::State;
 
 pub async fn blog_index(State(state): State<super::SiteState>) -> Markup {
-    let blog = state.blog;
+    let blog = state.blog.clone();
     let content = html! {
         h1 { "Blog" };
         p { "I have a " a href="/blog.xml" { "rss feed" } " and an " a href="/blog.atom" { "atom feed" } ", if you have a reader that supports them." }
@@ -24,5 +24,5 @@ pub async fn blog_index(State(state): State<super::SiteState>) -> Markup {
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/blog-index.css";
     };
-    base("Blog", "My blog.", extra_headers, content)
+    base("Blog", "My blog.", extra_headers, content, Some(state))
 }

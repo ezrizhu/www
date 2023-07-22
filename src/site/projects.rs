@@ -3,7 +3,7 @@ use super::base;
 use axum::extract::State;
 
 pub async fn project_index(State(state): State<super::SiteState>) -> Markup {
-    let projects = state.projects;
+    let projects = state.projects.clone();
     let content = html! {
         h1 { "Projects" };
         div class="pure-g" {
@@ -22,5 +22,5 @@ pub async fn project_index(State(state): State<super::SiteState>) -> Markup {
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/projects-index.css";
     };
-    base("Projects", "A list of projects I've worked on", extra_headers, content)
+    base("Projects", "A list of projects I've worked on", extra_headers, content, Some(state))
 }

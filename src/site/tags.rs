@@ -10,7 +10,7 @@ use axum::{
 
 pub async fn tags_index(State(state): State<super::SiteState>) -> Markup {
 
-    let tags: HashSet<String> = state.blog.iter().flat_map(|post| post.tags.iter().map(|tag| tag.to_string())).collect();
+    let tags: HashSet<String> = state.blog.clone().iter().flat_map(|post| post.tags.iter().map(|tag| tag.to_string())).collect();
     let mut tags = Vec::from_iter(tags);
     tags.sort();
 
@@ -29,12 +29,13 @@ pub async fn tags_index(State(state): State<super::SiteState>) -> Markup {
         link rel="stylesheet" href="/assets/css/tag-index.css";
     };
 
-    base("Tags", "List of tags in my blog.", extra_headers, content)
+    base("Tags", "List of tags in my blog.", extra_headers, content, Some(state))
 }
 
 pub async fn tags_get(Path(tag): Path<String>, State(state): State<super::SiteState>) -> (StatusCode, Markup) {
 
-    let posts: Vec<&Post> = state.blog.iter().filter(|post| post.tags.contains(&tag)).collect();
+    let blog = state.blog.clone();
+    let posts: Vec<&Post> = blog.iter().filter(|post| post.tags.contains(&tag)).collect();
 
     if posts.len() == 0 {
         return not_found().await
@@ -60,5 +61,5 @@ pub async fn tags_get(Path(tag): Path<String>, State(state): State<super::SiteSt
         link rel="stylesheet" href="/assets/css/blog-index.css";
     };
 
-    (StatusCode::OK, base(&tag, &format!("Posts tagged with {}.", tag), extra_headers, content))
+    (StatusCode::OK, base(&tag, &format!("Posts tagged with {}.", tag), extra_headers, content, Some(state)))
 }

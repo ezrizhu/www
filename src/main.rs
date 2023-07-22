@@ -11,6 +11,7 @@ mod post;
 mod sitemap;
 mod rss;
 mod atom;
+mod webring;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
@@ -26,6 +27,7 @@ pub struct SiteState {
     projects: Vec<post::Post>,
     blog: Vec<post::Post>,
     sitemap: Vec<u8>,
+    webring: Vec<webring::Node>,
 }
 
 
@@ -42,6 +44,7 @@ async fn main() {
         projects: post::init(&"content/projects"),
         blog: post::init(&"content/blog"),
         sitemap: vec![],
+        webring: webring::fetch().await.unwrap(),
     };
 
     state.sitemap = sitemap::init(state.clone()).expect("Failed to init sitemap");

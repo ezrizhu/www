@@ -4,7 +4,7 @@ use super::base;
 
 pub async fn contact(State(state): State<super::SiteState>) -> Markup {
     let description = "Email: eric@ericz.me";
-    let contact = state.contact;
+    let contact = state.contact.clone();
 
     let content = html! {
         div class="hero pure-g" {
@@ -22,5 +22,5 @@ pub async fn contact(State(state): State<super::SiteState>) -> Markup {
     let extra_headers = html! {
         link rel="stylesheet" href="assets/css/contact.css";
     };
-    base("", description, extra_headers, content)
+    base("", description, extra_headers, content, Some(state))
 }

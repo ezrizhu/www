@@ -4,7 +4,7 @@ use super::base;
 
 pub async fn news(State(state): State<super::SiteState>) -> Markup {
     let description = "Recent news on Eric";
-    let news = state.news;
+    let news = state.news.clone();
 
     let content = html! {
         div class="news" {
@@ -17,5 +17,5 @@ pub async fn news(State(state): State<super::SiteState>) -> Markup {
     let extra_headers = html! {
         link rel="stylesheet" href="assets/css/news.css";
     };
-    base("", description, extra_headers, content)
+    base("", description, extra_headers, content, Some(state))
 }

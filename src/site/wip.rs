@@ -1,7 +1,8 @@
 use super::base;
+use crate::SiteState;
 use maud::{html, Markup};
 
-pub async fn _wip() -> Markup {
+pub async fn _wip(state: SiteState) -> Markup {
     let description = "Work in progress, please check back later.";
     let content = html! {
         h1 { (description) }
@@ -11,5 +12,5 @@ pub async fn _wip() -> Markup {
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/wip.css";
     };
-    base("Work in progress", description, extra_headers, content)
+    base("Work in progress", description, extra_headers, content, Some(state))
 }

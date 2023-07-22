@@ -6,8 +6,8 @@ use crate::post;
 pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let description = "Student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps";
 
-    let bio = state.home;
-    let news = state.five_news;
+    let bio = state.home.clone();
+    let news = state.five_news.clone();
 
     let projects = vec!["ericnet", "try", "eve"];
     // inc this once I add more blogs, max: 5
@@ -66,5 +66,5 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let extra_headers = html! {
         link rel="stylesheet" href="assets/css/home.css";
     };
-    base("", description, extra_headers, content)
+    base("", description, extra_headers, content, Some(state.clone()))
 }

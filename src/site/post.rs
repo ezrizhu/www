@@ -1,29 +1,30 @@
 use maud::{html, Markup, PreEscaped};
 use super::not_found::not_found;
 use crate::post::{get, Post};
+use crate::SiteState;
 use axum::{
     extract::{Path,State},
     http::StatusCode
 };
 use super::base;
 
-pub async fn blog_handler(Path(name): Path<String>, State(state): State<super::SiteState>) -> (StatusCode, Markup) {
-    if let Some(blog) = get(state.blog, &name) {
-        (StatusCode::OK, post(blog, true))
+pub async fn blog_handler(Path(name): Path<String>, State(state): State<SiteState>) -> (StatusCode, Markup) {
+    if let Some(blog) = get(state.blog.clone(), &name) {
+        (StatusCode::OK, post(blog, state, true))
     } else {
         return not_found().await
     }
 }
 
-pub async fn project_handler(Path(name): Path<String>, State(state): State<super::SiteState>) -> (StatusCode, Markup) {
-    if let Some(project) = get(state.projects, &name) {
-        (StatusCode::OK, post(project, false))
+pub async fn project_handler(Path(name): Path<String>, State(state): State<SiteState>) -> (StatusCode, Markup) {
+    if let Some(project) = get(state.projects.clone(), &name) {
+        (StatusCode::OK, post(project, state, false))
     } else {
         not_found().await
     }
 }
 
-fn post(post: Post, show_date: bool) -> Markup {
+fn post(post: Post, state: SiteState, show_date: bool) -> Markup {
     let content = html! {
         h1 { (post.title) };
         div class="byline" {
@@ -44,5 +45,5 @@ fn post(post: Post, show_date: bool) -> Markup {
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/post.css";
     };
-    base(&post.title, &post.description, extra_headers, content)
+    base(&post.title, &post.description, extra_headers, content, Some(state))
 }
