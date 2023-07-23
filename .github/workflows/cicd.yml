@@ -45,13 +45,13 @@ jobs:
     - name: Deployment Grace Period
       run: sleep 5
     - name: Ensure that www0 is updated
-      run: 'curl -H "X-Server-Select: www0" https://ericz.dev | grep ${{ github.sha }}'
+      run: 'curl -H "X-Server-Select: www0" https://ericz.me | grep ${{ github.sha }}'
     - name: Trigger www1 to update
       run: ${{ secrets.WTWWW1 }}
     - name: Deployment Grace Period
       run: sleep 5
     - name: Ensure that www1 is updated
-      run: 'curl -H "X-Server-Select: www1" https://ericz.dev | grep ${{ github.sha }}'
+      run: 'curl -H "X-Server-Select: www1" https://ericz.me | grep ${{ github.sha }}'
     - name: Ensure that default is updated
       run: 'curl https://ericz.dev | grep ${{ github.sha }}'
 
