@@ -24,23 +24,23 @@ pub async fn project_handler(Path(name): Path<String>, State(state): State<SiteS
     }
 }
 
-fn post(post: Post, state: SiteState, show_date: bool) -> Markup {
+fn post(post: Post, state: SiteState, is_blog: bool) -> Markup {
     let tags = post.tags.iter().map(|x| x.to_string()).collect::<Vec<_>>();
     let content = html! {
         h1 { (post.title) };
         div class="byline" {
             p { "by "
                 a href="/" target="_blank" { "Eric" }
-            @if show_date {
-                @let date_str = post.date.format("%B %d, %Y").to_string();
-                @let date_rfc3339 = post.date.to_rfc3339();
-                ", on " time datetime=(date_rfc3339) { (date_str) }
-            }
-            br;
-            "tags: "
-            @for tag in tags {
-                a href=(format!("/blog/tags/{}", tag)) { (tag) " " }
-            }
+                @if is_blog {
+                    @let date_str = post.date.format("%B %d, %Y").to_string();
+                    @let date_rfc3339 = post.date.to_rfc3339();
+                    ", on " time datetime=(date_rfc3339) { (date_str) }
+                br;
+                "tags: "
+                    @for tag in tags {
+                        a href=(format!("/blog/tags/{}", tag)) { (tag) " " }
+                    }
+                }
             }
         }
         p { (PreEscaped(post.body)) };
