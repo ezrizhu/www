@@ -53,7 +53,7 @@ jobs:
     - name: Ensure that www1 is updated
       run: 'curl -H "X-Server-Select: www1" https://ericz.me | grep ${{ github.sha }}'
     - name: Ensure that default is updated
-      run: 'curl https://ericz.dev | grep ${{ github.sha }}'
+      run: 'curl https://ericz.me | grep ${{ github.sha }}'
 
   google:
     needs: deploy
