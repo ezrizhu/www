@@ -112,7 +112,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                  a target="_blank" href=(ring_random.url) { "Random" } " • "
                                  a target="_blank" href=(ring_right.url) { (ring_right.name) } " ->"
                                  br;
-                                "This website is part of the Stevens Students Webring."
+                                "This website is part of the Stevens Community Webring."
                                  br;
                                  br;
                             }
