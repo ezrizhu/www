@@ -123,17 +123,21 @@ If you don’t want to work from your Linux environment on your Android tablet, 
 if you are working off of an iPad, you probably need another server to work
 from. Luckily companies are handing out servers like it’s nothing.
 
-* DigitalOcean was my first server provider. They have always been extremely
-  reliable and user friendly. They offer $200 for a whole year with the Github
-  Student Developer Pack!
-* Vultr is a DigitalOcean competitor that currently offers $250 for a few
-  months. I currently use them to power parts of my network via their BGP
-  features.
-* AWS, Google, Oracle all offer low-spec free tier servers.
+* [DigitalOcean](https://www.digitalocean.com/) was my first server provider.
+  They have always been extremely reliable and user friendly. They offer $200
+  credit for a whole year with the [Github Student Developer
+  Pack](https://education.github.com/pack)!
+* [Vultr](https://www.vultr.com/) is a DigitalOcean alternative that currently
+  offers $250 credit for a few months. I currently use them to power parts of my
+  network via their BGP features.
+* [AWS](https://aws.amazon.com/), [GCP](https://cloud.google.com/),
+  [Oracle](https://www.oracle.com/cloud/) all offer low-spec free tier servers.
 * Tons of other server providers offer decent compute servers at competitive
-  prices, like Hetzner Cloud and Scaleway.
+  prices, like [Hetzner Cloud](https://www.hetzner.com) and
+  [Scaleway](https://www.scaleway.com/en/).
 
-If you need to do any hardware emulation, QEMU is great for that purpose.
+If you need to do any hardware emulation, [QEMU](https://www.qemu.org/) is great
+for that purpose.
 
 During last year, I helped another classmate setup this environment on his iPad
 alongside a server from my network. He was able to also learn Linux at the same
