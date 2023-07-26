@@ -82,7 +82,7 @@ a:hover {
 
 .pure-menu-link {
     color: var(--nord6) !important;
-    padding: 3vw;
+    padding: 3vw 5vw 3vw 0;
 }
 
 @media screen and (min-width:768px) {
