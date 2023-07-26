@@ -1,3 +1,11 @@
 .main img {
     width: 100%;
 }
+
+pre {
+    background: var(--nord1);
+    padding: 1rem;
+    border-radius: 1%;
+    border: solid var(--nord2);
+    border-width: thin;
+}
