@@ -66,7 +66,7 @@ Quick reminder for those that are not super familiar:
   I find the keyboard-only nature of my workflow also makes me a more efficient
   programmer as neovim provides very powerful keyboard shortcuts for navigating
   a file, or making bulk changes.
-* RDP and VLC are protocols to access a computer’s graphical interface, think of
+* RDP and VNC are protocols to access a computer’s graphical interface, think of
   it as SSH but for GUIs. Although I don’t use them much, they’re especially
   useful for people that need to use graphical applications for their work on
   the development machine.
