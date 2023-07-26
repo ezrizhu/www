@@ -1,16 +1,16 @@
 * Jun 2023:
   [try(1)](https://github.com/binpash/try) makes it to the top of
   [lobste.rs](https://lobste.rs/s/j6x3fl/binpash_try) and
-  [hackernews](https://news.ycombinator.com/item?id=36461102), and surpasses 
+  [hackernews](https://news.ycombinator.com/item?id=36461102), and surpasses
   4000 stars on Github.
 
 * Jun 2023: I was able to go to Brown University to work on
-  [try](https://github.com/binpash/try) with the rest of the team thanks to 
+  [try](https://github.com/binpash/try) with the rest of the team thanks to
   [Professor Vasilakis](https://nikos.vasilak.is/)!
 
-* May 2023: I attended [NJPLS](https://www.njpls.org/) at UPenn! 
+* May 2023: I attended [NJPLS](https://www.njpls.org/) at UPenn!
 
-* May 2023: I joined [Blueprint@Stevens](https://sitblueprint.com/) on the 
+* May 2023: I joined [Blueprint@Stevens](https://sitblueprint.com/) on the
   infrastructure team.
 
 * Apr 2023: I started my research assistantship with [Professor

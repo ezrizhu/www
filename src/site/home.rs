@@ -11,7 +11,7 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
 
     let projects = vec!["ericnet", "try", "eve"];
     // inc this once I add more blogs, max: 5
-    let blogs = state.blog[0..2].to_vec();
+    let blogs = state.blog[0..3].to_vec();
 
     let content = html! {
         div class="hero pure-g" {

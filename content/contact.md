@@ -22,7 +22,8 @@ Phone (Recorded, Toll-free): +1 8772066280
 Fax: +1 9292070306
 
 Mailing address:
-```
+
+```plain
 Student Tianyu Zhu
 Stevens Institute of Technology
 1 Castle Point Terrace
