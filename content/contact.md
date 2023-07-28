@@ -7,9 +7,9 @@ inbox](https://lists.sr.ht/~finnekit/public-inbox).
 If you wish to send encrypted email to me, I have a PGP key
 [0xC15ECEC52397343B](/files/publickey.asc).
 
-I currently live in the New York Metropolitan Area, so my timezone is the U.S.
-Eastern Time Zone (GMT-5), with daylight savings time (GMT-4) from March to
-November.
+I currently live in the New York Metropolitan Area (Hoboken and Queens), so my
+timezone is the U.S. Eastern Time Zone (GMT-5), with daylight savings time
+(GMT-4) from March to November.
 
 For a more asynchronous chat, I usually idle in Libera IRC under the nick
 `ericzty`. My Discord is `ericzty`. Discord will automatically
