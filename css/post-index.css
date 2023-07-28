@@ -6,7 +6,11 @@ ul {
     padding-left: 1rem;
 }
 
-.news {
+li {
+    margin-bottom: 0.5rem;
+}
+
+.box {
     padding: 1rem;
     background: var(--nord1);
     border-radius: 1vh;

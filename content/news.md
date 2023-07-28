@@ -1,3 +1,6 @@
+* July 2023: I will be joining [Blueprint@Stevens](https://sitblueprint.com/)'s
+  executive board as VP of Technology starting fall of 2023.
+
 * Jun 2023:
   [try(1)](https://github.com/binpash/try) makes it to the top of
   [lobste.rs](https://lobste.rs/s/j6x3fl/binpash_try) and

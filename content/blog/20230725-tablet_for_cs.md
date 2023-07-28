@@ -1,6 +1,6 @@
 ---
 Title: You Only Need a Tablet for Computer Science
-Description: How do I complete my computer science coursework with just an iPad? Anyone - and yes, anyone - with a modern-day tablet can do the same.
+Description: How did I complete a year of computer science coursework with just an iPad?
 Tags: 
   - ipad
   - workflow

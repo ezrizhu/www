@@ -9,8 +9,8 @@ shell](https://sigops.org/s/conferences/hotos/2023/papers/liargkovas.pdf).
 
 In my free time, I enjoy playing a variety of video games, [watching
 anime](https://myanimelist.net/anime/47917/Bocchi_the_Rock), reading, writing my
-blog, and exploring the city. Recently I have been playing
-[Valorant](https://playvalorant.com), [The Legend of Zelda: Tears of the
+blog, and exploring the city. Recently I have been playing [The Legend of Zelda:
+Tears of the
 Kingdom](https://www.nintendo.com/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/),
 [Black Mesa](https://store.steampowered.com/app/362890/Black_Mesa/), and
 [Counter Strike: Global

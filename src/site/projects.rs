@@ -5,22 +5,26 @@ use axum::extract::State;
 pub async fn project_index(State(state): State<super::SiteState>) -> Markup {
     let projects = state.projects.clone();
     let content = html! {
-        h1 { "Projects" };
-        div class="pure-g" {
-            @for project in projects {
-                div class="pure-u-1 pure-u-md-1-3" {
-                    div class="project-box" {
-                        a href=(format!("/projects/{}", project.slug)) { 
-                            h2 { (project.title) }
+        div class="box" {
+            h1 { "Projects" };
+            p class="desc" { "You can also view the list of projects I have by their tags " a href="/projects/tags" { "here" } "." }
+            ul {
+                @for project in projects {
+                    li {
+                        p {
+                            a href=(format!("/projects/{}", project.slug)) { 
+                                { (project.title) }
+                            }
+                            " - "
+                            (project.description)
                         }
-                        p { (project.description) }
                     }
                 }
             }
         }
     };
     let extra_headers = html! {
-        link rel="stylesheet" href="/assets/css/projects-index.css";
+        link rel="stylesheet" href="/assets/css/post-index.css";
     };
     base("Projects", "A list of projects I've worked on", extra_headers, content, Some(state))
 }
