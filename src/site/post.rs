@@ -29,21 +29,22 @@ fn post(post: Post, state: SiteState, is_blog: bool) -> Markup {
     let content = html! {
         h1 { (post.title) };
         div class="byline" {
-            p { "by "
-                a href="/" target="_blank" { "Eric" }
+            p {
                 @if is_blog {
                     @let date_str = post.date.format("%B %d, %Y").to_string();
                     @let date_rfc3339 = post.date.to_rfc3339();
-                    ", on " time datetime=(date_rfc3339) { (date_str) }
+                    "on " time datetime=(date_rfc3339) { (date_str) }
+                    br;
                 }
-                br;
                 "tags: "
-                    @for tag in tags {
-                        a href=(format!("/blog/tags/{}", tag)) { (tag) " " }
-                    }
+                @for tag in tags {
+                    a href=(format!("/blog/tags/{}", tag)) { (tag) } " "
+                }
             }
         }
         p { (PreEscaped(post.body)) };
+        hr;
+        p { "If you have any questions, want to change my mind, or literally anything else, please " a href="mailto:eric@ericz.me" {"reach out"} "!" };
     };
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/post.css";

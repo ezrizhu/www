@@ -317,6 +317,3 @@ Start and Enable that wireguard tunnel via `systemctl enable --now wg-quick@wg0`
 
 **And there you have it, your device connected to the internet from your own
 network and your own address. Congrats!**
-
-If you have any issue setting it up, or any questions, feel free to [reach
-out](https://ericz.me/contact)!

@@ -4,6 +4,7 @@
     height: auto;
 }
 
+
 .pronouns {
     margin-top: 0.5rem;
 }
@@ -45,7 +46,7 @@
 
 /* recent list */
 .recent-list {
-    padding: 0.5rem 0.3rem 1rem 0.3rem;
+    padding: 0.5rem 0.3rem 1rem 1rem;
     border-radius: 1vh;
     background: var(--nord1);
     overflow: hidden;

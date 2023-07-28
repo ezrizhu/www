@@ -21,6 +21,7 @@ async fn health() -> Html<String> {
 pub struct SiteState {
     css: Vec<css::Css>,
     home: String,
+    now: String,
     five_news: String,
     contact: String,
     news: String,
@@ -41,6 +42,7 @@ async fn main() {
         contact: utils::path_to_html(&"content/contact.md"),
         news: utils::path_to_html(&"content/news.md"),
         home: utils::path_to_html(&"content/home.md"),
+        now: utils::path_to_html(&"content/now.md"),
         projects: post::init(&"content/projects"),
         blog: post::init(&"content/blog"),
         sitemap: vec![],
@@ -61,6 +63,7 @@ async fn main() {
         .route("/", get(site::home::home))
         .route("/contact", get(site::contact::contact))
         .route("/news", get(site::news::news))
+        .route("/now", get(site::now::now))
         .route("/projects", get(site::projects::project_index))
         .route("/projects/", get(site::projects::project_index))
         .route("/projects/:name", get(site::post::project_handler))

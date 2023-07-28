@@ -10,6 +10,7 @@ pub mod not_found;
 pub mod wip;
 pub mod post;
 pub mod tags;
+pub mod now;
 
 pub fn base(title: &str, description: &str, extra_headers: Markup, content: Markup, state: Option<SiteState>) -> Markup {
     let build_info = format!("Built on: {} • Ref: {} • Commit: {} • CT: {}",
@@ -78,6 +79,11 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 }
                             }
                             li class="pure-menu-item" {
+                                a class="pure-menu-link" href="/now" {
+                                    "Now"
+                                }
+                            }
+                            li class="pure-menu-item" {
                                 a class="pure-menu-link" href="/news" {
                                     "News"
                                 }
@@ -93,13 +99,13 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 }
                             }
                             li class="pure-menu-item" {
-                                a class="pure-menu-link" href="/contact" {
-                                    "Contact"
+                                a class="pure-menu-link" href="/files/Tianyu_Zhu_Resume.pdf" {
+                                    "Resume"
                                 }
                             }
                             li class="pure-menu-item" {
-                                a class="pure-menu-link" href="/files/Tianyu_Zhu_Resume.pdf" {
-                                    "Resume"
+                                a class="pure-menu-link" href="/contact" {
+                                    "Contact"
                                 }
                             }
                         }
@@ -115,7 +121,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                  a target="_blank" href=(ring_random.url) { "Random" } " • "
                                  a target="_blank" href=(ring_right.url) { (ring_right.name) } " ->"
                                  br;
-                                "This website is part of the Stevens Community Webring."
+                                "This website is part of the "
+                                a target="_blank" href="https://github.com/Stevens-26/webring/" { "Stevens Community Webring" }
+                                "."
                                  br;
                                  br;
                             }

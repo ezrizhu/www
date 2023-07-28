@@ -1,15 +1,14 @@
 # Contact
 
-The best way to reach me is via email at [eric@ericz.me](mailto:eric@ericz.me)
-or [tzhu22@stevens.edu](mailto:tzhu22@stevens.edu). I also have a [public
-inbox](https://lists.sr.ht/~finnekit/public-inbox).
+I would love to connect with more people and read what they have to say. Please
+feel free to contact me if you want me to read your blog, share your ideas, or
+ask me about something. If you think I am wrong about something, please let me
+know!
 
+The best way to reach me is via email at [eric@ericz.me](mailto:eric@ericz.me).
+I am also in the Apple Ecosystem, and can be reached via the same email.\
 If you wish to send encrypted email to me, I have a PGP key
 [0xC15ECEC52397343B](/files/publickey.asc).
-
-I currently live in the New York Metropolitan Area (Hoboken and Queens), so my
-timezone is the U.S. Eastern Time Zone (GMT-5), with daylight savings time
-(GMT-4) from March to November.
 
 For a more asynchronous chat, I usually idle in Libera IRC under the nick
 `ericzty`. My Discord is `ericzty`. Discord will automatically
@@ -17,8 +16,11 @@ reject requests if you're not in a mutual server with me, feel free to join the
 [Rust Programming Language Community
 Server](https://discord.gg/rust-lang-community) if you need a mutual.
 
-Phone (Recorded, Toll-free): +1 8772066280
+I currently live in the New York Metropolitan Area (Hoboken and Queens), so my
+timezone is the U.S. Eastern Time Zone (GMT-5), with daylight savings time
+(GMT-4) from March to November.
 
+Phone (Recorded, Toll-free): +1 8772066280\
 Fax: +1 9292070306
 
 Mailing address:

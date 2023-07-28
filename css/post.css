@@ -5,7 +5,16 @@
 pre {
     background: var(--nord1);
     padding: 1rem;
+    white-space: pre-wrap;
     border-radius: 1%;
     border: solid var(--nord2);
     border-width: thin;
+}
+
+.main {
+    max-width: 85ch;
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 2.5rem;
 }
