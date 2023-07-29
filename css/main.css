@@ -39,28 +39,32 @@ ul {
     padding-left: 1rem;
 }
 
-.main {
+body {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
 }
 
 @media screen and (min-width:768px) {
-    .main {
+    body {
         width: 70%;
     }
 }
 
 @media screen and (min-width:1920px) {
-    .main {
+    body {
         width: 60%;
     }
 }
 
 @media screen and (min-width:2304px) {
-    .main {
+    body {
         width: 50%;
     }
+}
+
+.main {
+    margin: auto;
 }
 
 /* header */
@@ -77,8 +81,17 @@ ul {
 }
 
 .home-menu {
-    padding: 2em;
-    float: left;
+    margin-top: 1rem;
+}
+
+.pure-menu-list {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:768px) {
+    .pure-menu-list {
+        margin-top: 1rem;
+    }
 }
 
 .home-menu ul {

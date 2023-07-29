@@ -30,6 +30,7 @@ fn post(post: Post, state: SiteState, is_blog: bool) -> Markup {
         h1 { (post.title) };
         div class="byline" {
             p {
+                "by " a href="https://ericz.me" target="_blank" { "Eric " }
                 @if is_blog {
                     @let date_str = post.date.format("%B %d, %Y").to_string();
                     @let date_rfc3339 = post.date.to_rfc3339();

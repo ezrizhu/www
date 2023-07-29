@@ -28,7 +28,6 @@ useful.
   paragraph spaces have also been increased for clarity.
 * Link added to the webring so people can learn about it.
 * Tag spacing in blog posts has also been improved to make them easier to click.
-* Removed my name on the "by line" since it's redundant.
 
 ## Future Plans
 
