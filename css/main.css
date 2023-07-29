@@ -132,3 +132,7 @@ body {
     color: var(--nord4);
     text-align: center;
 }
+
+.footer p {
+    line-height: 1rem;
+}
