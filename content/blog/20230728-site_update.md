@@ -1,5 +1,5 @@
 ---
-Title: Website Update
+Title: Website Updates
 Description: An update on my website, what has changed, what's new, and future plans.
 Tags: 
   - meta
