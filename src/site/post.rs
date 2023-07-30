@@ -35,8 +35,8 @@ fn post(post: Post, state: SiteState, is_blog: bool) -> Markup {
                     @let date_str = post.date.format("%B %d, %Y").to_string();
                     @let date_rfc3339 = post.date.to_rfc3339();
                     " on " time datetime=(date_rfc3339) { (date_str) }
-                    br;
                 }
+                br;
                 "tags: "
                 @for tag in tags {
                     a href=(format!("/blog/tags/{}", tag)) { (tag) } " "
