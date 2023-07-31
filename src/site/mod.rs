@@ -141,6 +141,12 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                             (build_info);
                         };
                     }
+                    div class="h-card" {
+                        link class="u-email" rel="me" href="mailto:eric@ericz.me";
+                        span class="p-name" { "Tianyu (Eric) Zhu" };
+                        img class="u-photo" src="https://ericz.me/assets/img/eric1.webp" alt="my face";
+                        a class="u-url" href="https://ericz.me" { "https://ericz.me" };
+                    }
                 }
             }
     }

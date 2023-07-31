@@ -126,7 +126,6 @@ body {
 
 /* footer */
 .footer {
-    margin: 1rem auto;
     padding: 1rem;
     font-size: 0.75rem;
     color: var(--nord4);
@@ -135,4 +134,8 @@ body {
 
 .footer p {
     line-height: 1rem;
+}
+
+.h-card {
+    display: none;
 }
