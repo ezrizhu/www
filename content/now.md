@@ -14,6 +14,7 @@
   [Stevens](https://www.stevens.edu/school-engineering-science/departments/computer-science)
   (3 credits for this summer)
 * VP of Tech at [Blueprint@Stevens](https://sitblueprint.com/)
+* Webmaster at [Castle Point Anime Convention](https://www.castlepointanime.com)
 * Secretary of the Stevens Linux User Group
 
 ## What I'm reading
