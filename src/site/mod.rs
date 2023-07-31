@@ -141,11 +141,11 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                             (build_info);
                         };
                     }
-                    div class="h-card" {
+                    div class="h-card" style="display: none" {
                         link class="u-email" rel="me" href="mailto:eric@ericz.me";
-                        span class="p-name" { "Tianyu (Eric) Zhu" };
                         img class="u-photo" src="https://ericz.me/assets/img/eric1.webp" alt="my face";
-                        a class="u-url" href="https://ericz.me" { "https://ericz.me" };
+                        a class="u-url u-uid p-name" href="https://ericz.me" { "Tianyu (Eric) Zhu" };
+                        p class="p-note" { "I’m a student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps" };
                     }
                 }
             }
