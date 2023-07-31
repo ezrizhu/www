@@ -10,7 +10,7 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let news = state.five_news.clone();
 
     let projects = vec!["ericnet", "try", "eve"];
-    let blogs = state.blog[0..7].to_vec();
+    let blogs = state.blog[0..8].to_vec();
 
     let content = html! {
         div class="hero pure-g" {
