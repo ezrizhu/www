@@ -64,6 +64,7 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
     };
     let extra_headers = html! {
         link rel="stylesheet" href="assets/css/home.css";
+        link rel="me" href="mailto:eric@ericz.me";
     };
     base("", description, extra_headers, content, Some(state.clone()))
 }
