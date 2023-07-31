@@ -9,7 +9,7 @@
 
 ## My current roles
 
-* Research assistant with [the PaSh group](https://binpa.sh/)
+* Research assistant with the [PaSh group](https://binpa.sh/)
 * Part-time Computer Science Undergrad at
   [Stevens](https://www.stevens.edu/school-engineering-science/departments/computer-science)
   (3 credits for this summer)
