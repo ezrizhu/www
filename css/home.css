@@ -67,6 +67,12 @@
     }
 }
 
+@media screen and (min-width:1024px) {
+    .recent-list {
+        height: 80%;
+    }
+}
+
 /* featured projects */
 .featured-projects a {
     color: var(--nord4);
