@@ -1,4 +1,4 @@
-# Hey, I'm a student interested in software **development**, computer **networking**, managing **infrastructure** at **scale**, **cybersecurity**, and **DevOps**
+# Hey, I'm a student interested in software **development**, computer **networking**, managing **infrastructure** at **scale**, **cybersecurity**, and **DevOps**.
 
 I am a rising sophomore at [Stevens Institute of
 Technology](https://www.stevens.edu/school-engineering-science/departments/computer-science)
