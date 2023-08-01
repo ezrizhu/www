@@ -1,5 +1,5 @@
 ---
-Title: Why I still Use Github
+Title: Why I Still Use Github
 Description: With the usage of Github being controversial now, why am I still using it?
 Tags: 
   - programming
