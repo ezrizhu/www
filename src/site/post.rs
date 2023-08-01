@@ -58,6 +58,7 @@ fn post(post: Post, state: SiteState, is_blog: bool) -> Markup {
     };
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/post.css";
+        link rel="webmention" href="https://ericz.me/webmention/accept";
     };
     base(&post.title, &post.description, extra_headers, content, Some(state))
 }
