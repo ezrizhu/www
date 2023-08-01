@@ -64,6 +64,7 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
     };
     let extra_headers = html! {
         link rel="stylesheet" href="assets/css/home.css";
+        link rel="authorization_endpoint" href="https://indieauth.com/auth";
     };
     base("", description, extra_headers, content, Some(state.clone()))
 }
