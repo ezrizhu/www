@@ -27,23 +27,27 @@ pub async fn project_handler(Path(name): Path<String>, State(state): State<SiteS
 fn post(post: Post, state: SiteState, is_blog: bool) -> Markup {
     let tags = post.tags.iter().map(|x| x.to_string()).collect::<Vec<_>>();
     let content = html! {
-        h1 { (post.title) };
-        div class="byline" {
-            p {
-                "by " a href="https://ericz.me" target="_blank" { "Eric" }
-                @if is_blog {
-                    @let date_str = post.date.format("%B %d, %Y").to_string();
-                    @let date_rfc3339 = post.date.to_rfc3339();
-                    " on " time datetime=(date_rfc3339) { (date_str) }
-                }
-                br;
-                "tags: "
-                @for tag in tags {
-                    a href=(format!("/blog/tags/{}", tag)) { (tag) } " "
+        article class="h-entry" {
+            h1 class="p-name" { (post.title) };
+            div class="byline" {
+                p {
+                    "by " a class="p-author h-card" href="https://ericz.me" target="_blank" { "Eric" }
+                    @if is_blog {
+                        @let date_str = post.date.format("%B %d, %Y").to_string();
+                        @let date_rfc3339 = post.date.to_rfc3339();
+                        " on " time class="dt-published" datetime=(date_rfc3339) { (date_str) }
+                    }
+                    br;
+                    "tags: "
+                        @for tag in tags {
+                            a class="p-category" href=(format!("/blog/tags/{}", tag)) { (tag) } " "
+                        }
                 }
             }
+            div class="e-content" {
+                p { (PreEscaped(post.body)) };
+            }
         }
-        p { (PreEscaped(post.body)) };
         hr;
         p { "If you have any questions, want to change my mind, or literally anything else, please " a href="mailto:eric@ericz.me" {"reach out"} "!" };
     };
