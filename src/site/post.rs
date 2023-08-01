@@ -26,6 +26,10 @@ pub async fn project_handler(Path(name): Path<String>, State(state): State<SiteS
 
 fn post(post: Post, state: SiteState, is_blog: bool) -> Markup {
     let tags = post.tags.iter().map(|x| x.to_string()).collect::<Vec<_>>();
+    let mut url = format!("https://ericz.me/blog/{}", post.slug);
+    if !is_blog {
+        url = format!("https://ericz.me/projects/{}", post.slug);
+    }
     let content = html! {
         article class="h-entry" {
             h1 class="p-name" { (post.title) };
@@ -47,6 +51,7 @@ fn post(post: Post, state: SiteState, is_blog: bool) -> Markup {
             div class="e-content" {
                 p { (PreEscaped(post.body)) };
             }
+            a style="display: none;" class="u-url" href=(url) { "Permalink" }
         }
         hr;
         p { "If you have any questions, want to change my mind, or literally anything else, please " a href="mailto:eric@ericz.me" {"reach out"} "!" };
