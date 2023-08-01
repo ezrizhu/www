@@ -126,6 +126,12 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 "."
                                  br;
                                  br;
+                                 a target="_blank" href="https://xn--sr8hvo.ws/previous"{"<--"}
+                                 " • This website is also part of the "
+                                 a target="_blank" href="https://xn--sr8hvo.ws" { "IndieWeb Webring 🕸💍"} " • "
+                                 a target="_blank" href="https://xn--sr8hvo.ws/next" { "-->" }
+                                 br;
+                                 br;
                             }
 
                             "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present."
