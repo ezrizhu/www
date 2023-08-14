@@ -28,3 +28,10 @@ found [here](https://github.com/ericzty/dismention)
 
 This website is my home, so I thought it'd be nice if it is somewhat connected with
 the rest of the IndieWeb blogging scene.
+
+---
+
+This post was [webmentioned](https://en.wikipedia.org/wiki/Webmention) once.
+Thank you!
+
+* [snarfed.org](https://snarfed.org/2023-08-11_hello-indieweb-tianyu-eric-zhu)
