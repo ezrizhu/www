@@ -1,6 +1,6 @@
 ---
 Title: August Server Upgrades (5 Hours of Dread)
-Description: My website now supports some IndieWeb protocols!
+Description: How a two hour Linux server upgrade turned into five hours.
 Tags: 
   - linux
 
@@ -20,6 +20,9 @@ vulnerable to all the vulnerabilities out there to Linux and Proxmox. That’s
 where I have decided to upgrade all my hypervisors and other machines that runs
 Linux. I also had to renumber my servers to a new IP range, so I decided to use
 this opportunity to renumber as-well.
+
+![Screenshot of Proxmox showing 1k+ days of uptime on my
+servers](/assets/img/blog/20230814-uptime.png)
 
 And here is where the dreaded night of upgrading and renumbering Proxmox came
 in. I posted a maintenance window of two hours, and first started upgrading my
