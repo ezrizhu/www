@@ -1,6 +1,8 @@
+use std::fs;
 use axum::{
     response::Html,
     routing::{get, get_service},
+    http::HeaderMap,
     Router
 };
 use tower_http::services::{ServeDir,ServeFile};
@@ -15,6 +17,18 @@ mod webring;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
+}
+
+async fn empty() -> Html<String> {
+    Html(String::new())
+}
+
+async fn pubkey() -> (HeaderMap, String) {
+    let mut resp_header = HeaderMap::new();
+    resp_header.insert("Content-Type", "application/octet-stream".parse().unwrap());
+    resp_header.insert("Access-Control-Allow-Origin", "*".parse().unwrap());
+    let keyraw = fs::read_to_string("assets/files/publickey.asc").unwrap();
+    (resp_header, keyraw)
 }
 
 #[derive(Clone)]
@@ -79,6 +93,8 @@ async fn main() {
         .route("/sitemap.xml", get(sitemap::get))
         .route("/blog.xml", get(rss::get))
         .route("/blog.atom", get(atom::get))
+        .route("/.well-known/openpgpkey/hu/policy", get(empty))
+        .route("/.well-known/openpgpkey/hu/15asjmkpucio5m8a7xznzcxqsqigumxt", get(pubkey))
         .fallback(site::not_found::not_found)
         .with_state(state);
 
