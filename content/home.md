@@ -1,6 +1,6 @@
 # Hey, I'm a student interested in software **development**, computer **networking**, managing **infrastructure** at **scale**, **cybersecurity**, and **DevOps**.
 
-I am a rising sophomore at [Stevens Institute of
+I am a sophomore at [Stevens Institute of
 Technology](https://www.stevens.edu/school-engineering-science/departments/computer-science)
 pursuing a Bachelor of Science degree in Computer Science. I'm currently working
 with [Michael Greenberg](https://greenberg.science/) and the rest of the [PaSH
