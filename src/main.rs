@@ -66,7 +66,7 @@ async fn main() {
         .route("/contact", get(site::contact::contact))
         .route("/news", get(site::news::news))
         .route("/news.atom", get(feed::news_atom::get))
-        .route("/news.rss", get(feed::news_rss::get))
+        .route("/news.xml", get(feed::news_rss::get))
         .route("/now", get(site::now::now))
         .route("/projects", get(site::projects::project_index))
         .route("/projects/", get(site::projects::project_index))

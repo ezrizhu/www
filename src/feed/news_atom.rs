@@ -64,14 +64,18 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         writer.write(feed).unwrap();
     }
 
-    for mut news in news_vec {
+    let mut count = 0;
+    let news_len = news_vec.len();
+    for mut news in news_vec.clone() {
         // remove beginning bullet and space
         news.remove(0);
         news.remove(0);
 
         let (date_str, title) = news.split_once(": ").unwrap();
         let content = title.clone();
-        let link = "https://ericz.me/news";
+        // link (id), has to be unique
+        let link = format!("{}#{}", "https://ericz.me/news", (news_len - count).to_string());
+        count+=1;
 
         let date = NaiveDate::parse_from_str(&format!("{} {}", date_str, "01"), "%b %Y %d").unwrap().and_hms_opt(0, 0, 0).unwrap();
         let date = DateTime::<Utc>::from_utc(date, Utc).to_rfc3339();
