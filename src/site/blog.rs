@@ -31,6 +31,8 @@ pub async fn blog_index(State(state): State<super::SiteState>) -> Markup {
     };
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/post-index.css";
+        link rel="alternate" title="Eric's Blog" type="application/rss+xml" href="https://ericz.me/blog.xml";
+        link rel="alternate" title="Eric's Blog" type="application/atom+xml" href="https://ericz.me/blog.atom";
     };
     base("Blog", "My blog.", extra_headers, content, Some(state))
 }

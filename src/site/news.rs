@@ -10,12 +10,17 @@ pub async fn news(State(state): State<super::SiteState>) -> Markup {
         div class="news" {
             div class="" {
                 h1 { "News" };
+                p class="desc" {
+                    "I have a " a href="/news.xml" { "rss feed" } " and an " a href="/news.atom" { "atom feed" } ", if you have a reader that supports them."
+                }
                 { (PreEscaped(news)) };
             }
         }
     };
     let extra_headers = html! {
         link rel="stylesheet" href="assets/css/news.css";
+        link rel="alternate" title="Eric's news" type="application/rss+xml" href="https://ericz.me/news.xml";
+        link rel="alternate" title="Eric's news" type="application/atom+xml" href="https://ericz.me/news.atom";
     };
     base("", description, extra_headers, content, Some(state))
 }

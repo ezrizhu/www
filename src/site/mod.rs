@@ -61,9 +61,6 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                     meta property="og:theme-color" content="#2e3440";
                     meta property="og:site_name" content="Eric's Blog";
 
-                    link rel="alternate" title="Eric's Blog" type="application/rss+xml" href="https://ericz.me/blog.xml";
-                    link rel="alternate" title="Eric's Blog" type="application/atom+xml" href="https://ericz.me/blog.atom";
-
                     link rel="stylesheet" href="/assets/css/main.css";
                     (extra_headers)
                 }

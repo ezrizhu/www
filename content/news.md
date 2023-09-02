@@ -1,6 +1,6 @@
 * Sep 2023: I started my second undergraduate year for computer science!
 
-* July 2023: I will be joining [Blueprint@Stevens](https://sitblueprint.com/)'s
+* Jul 2023: I will be joining [Blueprint@Stevens](https://sitblueprint.com/)'s
   executive board as VP of Technology starting fall of 2023.
 
 * Jun 2023:

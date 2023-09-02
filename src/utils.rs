@@ -65,3 +65,25 @@ pub fn read_first_five_news() -> String {
     }
     out_string
 }
+
+pub fn read_news_to_vec() -> Vec<String> {
+    let file = File::open("content/news.md").expect("Failed to open news.md");
+    let reader = io::BufReader::new(file);
+
+    let mut out = Vec::new();
+    let mut buf = String::new();
+
+    for line in reader.lines() {
+        let line = line.unwrap();
+        if line.is_empty() {
+            // Trim whitespace
+            let trim: Vec<_> = buf.split_whitespace().collect();
+            out.push(trim.join(" "));
+
+            buf = String::new();
+        } else {
+            buf.push_str(&line);
+        }
+    }
+    out
+}
