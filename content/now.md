@@ -1,56 +1,41 @@
-# Now (August 2023 Edition)
+# Now (September 2023 Edition)
 
-I just moved into my new apartment in Hoboken, so I will be a bit slow on things
-until I finish settling down.
+The second year of college just started! This month I hope to write a few blogs
+and fix my sleep schedule.
 
 ## My current focuses
 
-* Read, and write more for this blog.
+* Study ahead, and do well in school
 * Research work with PaSh.
-* Finish up my astronomy class work.
-* Enjoy the rest of the summer before the semester begins.
+* Read, and write more for this blog.
 
 ## My current roles
 
 * Research assistant with the [PaSh group](https://binpa.sh/)
-* Part-time Computer Science Undergrad at
+* Full-time Computer Science Undergrad at
   [Stevens](https://www.stevens.edu/school-engineering-science/departments/computer-science)
-  (3 credits for this summer)
 * VP of Tech at [Blueprint@Stevens](https://sitblueprint.com/)
 * Webmaster at [Castle Point Anime Convention](https://www.castlepointanime.com)
 * Secretary of the Stevens Linux User Group
 
 ## What I'm reading
 
-I am still slowly reading The Mythical Man-Month.
+I am actively reading The Mythical Man-Month.
 
 ## What I'm playing
 
-I have been getting back at playing [Tom Clancy's Rainbow Six:
-Siege](https://www.ubisoft.com/en-us/game/rainbow-six/siege) and [Counter
-Strike: Global
-Offensive](https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/).
+I have just gotten access to CS2, and I am still playing Rainbow Six: Siege with
+friends.
 
-Recently I have also been playing on my classmate's
-[Valorant](https://playvalorant.com/) premier team.
-
-When I'm alone, I play [The Legend of Zelda: Tears of the
-Kingdom](https://www.nintendo.com/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/),
-[Black Mesa](https://store.steampowered.com/app/362890/Black_Mesa/), and some
-other games on my steam deck. Right now on the deck I'm playing [Coffee
-Talk](https://store.steampowered.com/app/914800/Coffee_Talk/).
-
-## What I'm listening to
-
-* PostMatch by Kill Miami
-* Ocean noises from my HomePod
+When I'm alone, I play
+[Stray](https://store.steampowered.com/app/1332010/Stray/) on my steam deck.
 
 ## What I'm watching
 
-S.W.A.T. the TV show, and I hope to get back to watching anime soon.
+Nothing yet.
 
 ---
 
-Updated Aug 11, 2023
+Updated Sep 2, 2023
 
 Part of the [/now page](https://nownownow.com/about) movement.
