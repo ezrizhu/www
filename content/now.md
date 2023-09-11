@@ -17,6 +17,7 @@ and fix my sleep schedule.
 * VP of Tech at [Blueprint@Stevens](https://sitblueprint.com/)
 * Webmaster at [Castle Point Anime Convention](https://www.castlepointanime.com)
 * Secretary of the Stevens Linux User Group
+* Volunteer at [NYCMesh](https://www.nycmesh.net/)
 
 ## What I'm reading
 
