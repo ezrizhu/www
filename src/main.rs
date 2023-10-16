@@ -74,6 +74,7 @@ async fn main() {
         .route("/projects/tags", get(site::tags::projects_tags_index))
         .route("/projects/tags/", get(site::tags::projects_tags_index))
         .route("/projects/tags/:tag", get(site::tags::projects_tags_get))
+        .route("/talks", get(site::wip::wip))
         .route("/blog", get(site::blog::blog_index))
         .route("/blog/", get(site::blog::blog_index))
         .route("/blog/:name", get(site::post::blog_handler))

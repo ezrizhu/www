@@ -1,8 +1,10 @@
 use super::base;
-use crate::SiteState;
 use maud::{html, Markup};
+use axum::debug_handler;
+use axum::extract::State;
 
-pub async fn _wip(state: SiteState) -> Markup {
+#[debug_handler]
+pub async fn wip(State(state): State<super::SiteState>) -> Markup {
     let description = "Work in progress, please check back later.";
     let content = html! {
         h1 { (description) }
