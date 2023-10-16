@@ -112,6 +112,10 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                             }
                         }
                     }
+                    div class="banner" {
+                        "I'm open to employment for summer of 2024 internships! Please contact me via the "
+                        a href="/contact" { "contacts page." }
+                    }
                     div class="main" {
                         (content)
                     }

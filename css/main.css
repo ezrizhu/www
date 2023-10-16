@@ -71,7 +71,7 @@ body {
 
 .home-menu img {
     max-width: 50%;
-    padding-bottom: 2vw;
+    padding-bottom: 1vw;
 }
 
 @media screen and (min-width:768px) {
@@ -122,6 +122,14 @@ body {
 
 .pure-menu-selected > .pure-menu-link, .pure-menu-selected > .pure-menu-link:visited {
     color: unset;
+}
+
+/* banner */
+.banner {
+    color: var(--nord15);
+    text-align: center;
+    font-style: italic;
+    margin: 0 0 1vw 0;
 }
 
 /* footer */
