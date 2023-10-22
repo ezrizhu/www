@@ -1,3 +1,6 @@
+* Oct 2023: I attended and gave a talk at the third [PaSh
+  workshop](https://binpa.sh) at Brown.
+
 * Sep 2023: I started my second undergraduate year for computer science!
 
 * Jul 2023: I will be joining [Blueprint@Stevens](https://sitblueprint.com/)'s
