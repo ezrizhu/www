@@ -64,7 +64,13 @@ body {
 }
 
 .main {
-    margin: auto;
+    margin: 1vw;
+}
+
+@media screen and (min-width:768px) {
+    .main {
+        margin: auto;
+    }
 }
 
 /* header */
