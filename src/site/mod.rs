@@ -6,6 +6,7 @@ pub mod contact;
 pub mod news;
 pub mod projects;
 pub mod blog;
+pub mod talks;
 pub mod not_found;
 pub mod wip;
 pub mod post;

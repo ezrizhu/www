@@ -2,7 +2,7 @@ use super::base;
 use maud::{html, Markup};
 use axum::extract::State;
 
-pub async fn wip(State(state): State<super::SiteState>) -> Markup {
+pub async fn _wip(State(state): State<super::SiteState>) -> Markup {
     let description = "Work in progress, please check back later.";
     let content = html! {
         h1 { (description) }

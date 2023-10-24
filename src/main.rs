@@ -17,6 +17,12 @@ async fn health() -> Html<String> {
     Html(String::from("OK"))
 }
 
+enum PageType {
+    Blog,
+    Project,
+    Talk
+}
+
 #[derive(Clone)]
 pub struct SiteState {
     css: Vec<css::Css>,
@@ -28,6 +34,7 @@ pub struct SiteState {
     news: String,
     projects: Vec<post::Post>,
     blog: Vec<post::Post>,
+    talks: Vec<post::Post>,
     sitemap: Vec<u8>,
     webring: Vec<webring::Node>,
 }
@@ -47,6 +54,7 @@ async fn main() {
         now: utils::path_to_html(&"content/now.md"),
         projects: post::init(&"content/projects"),
         blog: post::init(&"content/blog"),
+        talks: post::init(&"content/talks"),
         sitemap: vec![],
         webring: webring::fetch().await.unwrap(),
     };
@@ -74,7 +82,11 @@ async fn main() {
         .route("/projects/tags", get(site::tags::projects_tags_index))
         .route("/projects/tags/", get(site::tags::projects_tags_index))
         .route("/projects/tags/:tag", get(site::tags::projects_tags_get))
-        .route("/talks", get(site::wip::wip))
+        .route("/talks", get(site::talks::talk_index))
+        .route("/talks/:name", get(site::post::talk_handler))
+        .route("/talks/tags", get(site::tags::talks_tags_index))
+        .route("/talks/tags/", get(site::tags::talks_tags_index))
+        .route("/talks/tags/:tag", get(site::tags::talks_tags_get))
         .route("/blog", get(site::blog::blog_index))
         .route("/blog/", get(site::blog::blog_index))
         .route("/blog/:name", get(site::post::blog_handler))
