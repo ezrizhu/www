@@ -42,7 +42,7 @@ do that with a token that’s issued to the user at login. And the user presents
 that in the HTTP header, using Bearer Authentication. However, since VNC is
 proxied via websocket, it does not have support for header field.
 
-So we have added a way for the middleware to extract and authenticate the user’s
+So we have added a way for the middleware to extract and authenticate the users
 token.
 
 ```go
