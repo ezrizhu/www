@@ -1,4 +1,4 @@
-# Now (September 2023 Edition)
+# Now (October 2023 Edition)
 
 Second month of the semester, been super busy. But I'm managing.
 
