@@ -11,7 +11,7 @@ pub fn init(state: super::SiteState) -> Result<Vec<u8>> {
     let smw = sitemap::writer::SiteMapWriter::new(&mut sm);
     let mut urlwriter = smw.start_urlset()?;
     urlwriter.url("https://ericz.me")?;
-    let static_pages = vec!["contact", "news", "projects", "blog", "now", "projects/tags", "blog/tags"];
+    let static_pages = vec!["contact", "news", "projects", "blog", "now", "projects/tags", "blog/tags", "talks", "talks/tags"];
     for page in static_pages {
         urlwriter.url(format!("https://ericz.me/{}", page))?;
     }
@@ -20,6 +20,9 @@ pub fn init(state: super::SiteState) -> Result<Vec<u8>> {
     }
     for blog in state.blog {
         urlwriter.url(format!("https://ericz.me/blog/{}", blog.slug))?;
+    }
+    for talk in state.talks {
+        urlwriter.url(format!("https://ericz.me/talks/{}", talk.slug))?;
     }
     urlwriter.end()?;
     Ok(sm)
