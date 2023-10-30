@@ -27,7 +27,11 @@ Second month of the semester, been super busy. But I'm managing.
 
 ## What I'm reading
 
-I am actively reading The Mythical Man-Month.
+I am actively reading [Blue Fox: Arm Assembly Internals and Reverse
+Engineering](https://www.wiley.com/en-us/Blue+Fox:+Arm+Assembly+Internals+and+Reverse+Engineering-p-9781119745303).
+
+I recently finished [The Mythical Man-Month: Essays on Software
+Engineering](https://en.wikipedia.org/wiki/The_Mythical_Man-Month).
 
 ## What I'm playing
 
@@ -39,6 +43,6 @@ Gabriel Dropout.
 
 ---
 
-Updated Oct 16, 2023
+Updated Oct 30, 2023
 
 Part of the [/now page](https://nownownow.com/about) movement.
