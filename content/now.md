@@ -1,6 +1,6 @@
-# Now (October 2023 Edition)
+# Now (November 2023 Edition)
 
-Second month of the semester, been super busy. But I'm managing.
+Oversubscribed :)
 
 ## My current focuses
 
@@ -20,15 +20,19 @@ Second month of the semester, been super busy. But I'm managing.
   techops, wiki, site, and devops team along with my other VP of Tech. I also
   assist with the project teams.
 * Webmaster at [Castle Point Anime
-  Convention](https://www.castlepointanime.com).
+  Convention](https://www.castlepointanime.com)
   Currently I'm working on websocket and PWA integration for the website
 * Secretary of the Stevens Linux User Group
 * Volunteer at [NYCMesh](https://www.nycmesh.net/)
+* Volunteer systems administrator at the [Free Software
+  Foundation](https://www.fsf.org)
 
 ## What I'm reading
 
 I am actively reading [Blue Fox: Arm Assembly Internals and Reverse
 Engineering](https://www.wiley.com/en-us/Blue+Fox:+Arm+Assembly+Internals+and+Reverse+Engineering-p-9781119745303).
+
+I'm also reading Can The Monster Speak?
 
 I recently finished [The Mythical Man-Month: Essays on Software
 Engineering](https://en.wikipedia.org/wiki/The_Mythical_Man-Month).
@@ -40,9 +44,10 @@ Modded Minecraft Survival.
 ## What I'm watching
 
 Gabriel Dropout.
+SWAT on Netflix, I also want to finish watching money heist.
 
 ---
 
-Updated Oct 30, 2023
+Updated Nov 1, 2023
 
 Part of the [/now page](https://nownownow.com/about) movement.
