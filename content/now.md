@@ -6,7 +6,7 @@ Oversubscribed :)
 
 * School
 * Research work with PaSh.
-* Read, and write more for this blog.
+* Learning Nix, will write what I find on this blog.
 
 ## My current roles
 
@@ -21,7 +21,8 @@ Oversubscribed :)
   assist with the project teams.
 * Webmaster at [Castle Point Anime
   Convention](https://www.castlepointanime.com)
-  Currently I'm working on websocket and PWA integration for the website
+  Currently I'm working on websocket and PWA integration for the website, CI/CD,
+  and integration tests for our application.
 * Secretary of the Stevens Linux User Group
 * Volunteer at [NYCMesh](https://www.nycmesh.net/)
 * Volunteer systems administrator at the [Free Software
