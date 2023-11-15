@@ -33,10 +33,8 @@ Oversubscribed :)
 I am actively reading [Blue Fox: Arm Assembly Internals and Reverse
 Engineering](https://www.wiley.com/en-us/Blue+Fox:+Arm+Assembly+Internals+and+Reverse+Engineering-p-9781119745303).
 
-I'm also reading Can The Monster Speak?
-
 I recently finished [The Mythical Man-Month: Essays on Software
-Engineering](https://en.wikipedia.org/wiki/The_Mythical_Man-Month).
+Engineering](https://en.wikipedia.org/wiki/The_Mythical_Man-Month), and Can the Monster Speak?: Report to an Academy of Psychoanalysts.
 
 ## What I'm playing
 
@@ -45,10 +43,10 @@ Modded Minecraft Survival.
 ## What I'm watching
 
 Gabriel Dropout.
-SWAT on Netflix, I also want to finish watching money heist.
+Money Heist
 
 ---
 
-Updated Nov 1, 2023
+Updated Nov 15, 2023
 
 Part of the [/now page](https://nownownow.com/about) movement.
