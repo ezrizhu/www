@@ -12,6 +12,7 @@ mod sitemap;
 mod feed;
 mod webring;
 mod pgp;
+mod ssh;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
@@ -98,6 +99,7 @@ async fn main() {
         .route("/blog.atom", get(feed::blog_atom::get))
         .route("/.well-known/openpgpkey/hu/policy", get(pgp::policy))
         .route("/.well-known/openpgpkey/hu/15asjmkpucio5m8a7xznzcxqsqigumxt", get(pgp::pubkey))
+        .route("/ssh", get(ssh::sshpub))
         .fallback(site::not_found::not_found)
         .with_state(state);
 
