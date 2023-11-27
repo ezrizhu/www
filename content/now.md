@@ -19,8 +19,7 @@ Oversubscribed :)
 * VP of Tech at [Blueprint@Stevens](https://sitblueprint.com/). I am leading the
   techops, wiki, site, and devops team along with my other VP of Tech. I also
   assist with the project teams.
-* Webmaster at [Castle Point Anime
-  Convention](https://www.castlepointanime.com)
+* Webdev at [Castle Point Anime Convention](https://www.castlepointanime.com)
   Currently I'm working on websocket and PWA integration for the website, CI/CD,
   and integration tests for our application.
 * Secretary of the Stevens Linux User Group
@@ -30,20 +29,23 @@ Oversubscribed :)
 
 ## What I'm reading
 
-I am actively reading [Blue Fox: Arm Assembly Internals and Reverse
+* I am slowly reading [Blue Fox: Arm Assembly Internals and Reverse
 Engineering](https://www.wiley.com/en-us/Blue+Fox:+Arm+Assembly+Internals+and+Reverse+Engineering-p-9781119745303).
 
-I recently finished [The Mythical Man-Month: Essays on Software
-Engineering](https://en.wikipedia.org/wiki/The_Mythical_Man-Month), and Can the Monster Speak?: Report to an Academy of Psychoanalysts.
+* I recently finished [The Mythical Man-Month: Essays on Software
+Engineering](https://en.wikipedia.org/wiki/The_Mythical_Man-Month), and Can the
+Monster Speak?: Report to an Academy of Psychoanalysts.
 
 ## What I'm playing
 
-Modded Minecraft Survival.
+* Valorant
+* CS2
+* I don't like scary games, so no lethal company :(
 
 ## What I'm watching
 
-Gabriel Dropout.
-Money Heist
+* Gabriel Dropout
+* Money Heist
 
 ---
 

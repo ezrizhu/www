@@ -97,12 +97,12 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 }
                             }
                             /*
-                            li class="pure-menu-item" {
-                                a class="pure-menu-link" href="/talks" {
-                                    "Talks"
-                                }
-                            }
-                            */
+                               li class="pure-menu-item" {
+                               a class="pure-menu-link" href="/talks" {
+                               "Talks"
+                               }
+                               }
+                               */
                             li class="pure-menu-item" {
                                 a class="pure-menu-link" href="/files/Tianyu_Zhu_Resume.pdf" {
                                     "Resume"
@@ -115,36 +115,28 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                             }
                         }
                     }
-                    /*
                     div class="banner" {
                         "I'm open to employment for summer of 2024 internships! Please contact me via the "
-                        a href="/contact" { "contacts page." }
+                            a href="/contact" { "contacts page." }
                     }
-                    */
                     div class="main" {
                         (content)
                     }
                     div class="footer" {
-                        p {
-
-                            @if webring_enabled {
-                                 "<- " a target="_blank" href=(ring_left.url) { (ring_left.name) } " • "
-                                 a target="_blank" href=(ring_random.url) { "Random" } " • "
-                                 a target="_blank" href=(ring_right.url) { (ring_right.name) } " ->"
-                                 br;
+                        @if webring_enabled {
+                            p {
+                                "<- " a target="_blank" href=(ring_left.url) { (ring_left.name) } " • "
+                                    a target="_blank" href=(ring_random.url) { "Random" } " • "
+                                    a target="_blank" href=(ring_right.url) { (ring_right.name) } " ->"
+                                    br;
                                 "This website is part of the "
-                                a target="_blank" href="https://github.com/Stevens-26/webring/" { "Stevens Community Webring" }
+                                    a target="_blank" href="https://github.com/Stevens-26/webring/" { "Stevens Community Webring" }
                                 "."
-                                 br;
-                                 br;
-                                 a target="_blank" href="https://xn--sr8hvo.ws/previous"{"<--"}
-                                 " • This website is also part of the "
-                                 a target="_blank" href="https://xn--sr8hvo.ws" { "IndieWeb Webring 🕸💍"} " • "
-                                 a target="_blank" href="https://xn--sr8hvo.ws/next" { "-->" }
-                                 br;
-                                 br;
+                                    br;
                             }
+                        }
 
+                        p {
                             "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present."
                                 br;
                             "Copyright 2018-2023 • All text here are released under "
@@ -156,13 +148,32 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                             "." 
                                 br;
                             (build_info);
-                        };
-                    }
-                    div class="h-card" style="display: none" {
-                        link class="u-email" rel="me" href="mailto:eric@ericz.me";
-                        img class="u-photo" src="https://ericz.me/assets/img/eric1.webp" alt="my face";
-                        a class="u-url u-uid p-name" href="https://ericz.me" { "Tianyu (Eric) Zhu" };
-                        p class="p-note" { "I’m a student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps" };
+                        }
+
+                        div class="badges" {
+                            details {
+                                summary { "Show Badges" }
+                                img src="/assets/img/badges/debian.gif" alt="Powered by Debian";
+                                img src="/assets/img/badges/xenia-now.gif" alt="xenia-now";
+                                img src="/assets/img/badges/vimlove.gif" alt="vim";
+                                img src="/assets/img/badges/furries.png" alt="furries";
+                                img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
+                                img src="/assets/img/badges/aperture_labs.jpg" alt="aperture_labs";
+                                img src="/assets/img/badges/nb_noproblem.jpg" alt="nonbinary_noproblem";
+                                img src="/assets/img/badges/flag-pan.png" alt="flag-pan";
+                                img src="/assets/img/badges/sun.gif" alt="sun microsystems";
+                                img src="/assets/img/badges/vcss-blue.gif" alt="vcss-blue";
+                                img src="/assets/img/badges/valid-atom.png" alt="valid atom";
+                                img src="/assets/img/badges/valid-rss-rogers.png" alt="valid rss";
+                            }
+                        }
+
+                        div class="h-card" style="display: none" {
+                            a class="u-email" href="mailto:eric@ericz.me" {};
+                            img class="u-photo" src="https://ericz.me/assets/img/eric1.webp" alt="my face";
+                            a class="u-url u-uid p-name" href="https://ericz.me" { "Tianyu (Eric) Zhu" };
+                            p class="p-note" { "I’m a student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps" };
+                        }
                     }
                 }
             }

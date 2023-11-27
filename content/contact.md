@@ -5,8 +5,7 @@ feel free to contact me if you want me to read your blog, share your ideas, or
 ask me about something. If you think I am wrong about something, please let me
 know!
 
-The best way to reach me is via email at [eric@ericz.me](mailto:eric@ericz.me).
-I am also in the Apple Ecosystem, and can be reached via the same email.\
+The best way to reach me is via email at [eric@ericz.me](mailto:eric@ericz.me).\
 If you wish to send encrypted email to me, I have a PGP key
 [0xC15ECEC52397343B](/files/publickey.asc).
 
