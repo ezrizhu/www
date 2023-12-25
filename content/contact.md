@@ -7,7 +7,7 @@ know!
 
 The best way to reach me is via email at [me@ezrizhu.com](mailto:me@ezrizhu.com).\
 If you wish to send encrypted email to me, I have a PGP key
-[0xC15ECEC52397343B](/files/publickey.asc).
+[coming soon](/files/publickey.asc_404).
 
 For a more asynchronous chat, I usually idle in Libera IRC under the nick
 `ezrizhu`. My Discord is `ezrizhu`. Discord will automatically
