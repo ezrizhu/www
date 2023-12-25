@@ -7,7 +7,7 @@ pub async fn not_found() -> (StatusCode, Markup) {
     let content = html! {
         h1 { (description) }
         p { "The page you're looking for does not exist. If this was unexpected, please shoot me an email or create an issue on "
-        a target="_blank" href="https://github.com/ericzty/www" { "Github" }
+        a target="_blank" href="https://github.com/ezrizhu/www" { "Github" }
         "."}
     };
     let extra_headers = html! {

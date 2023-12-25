@@ -22,9 +22,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                              );
 
     let title: String = if title.is_empty() {
-        "Tianyu (Eric) Zhu".to_string()
+        "Tianyu (Ezri) Zhu".to_string()
     } else {
-        title.to_string() + " - Tianyu (Eric) Zhu"
+        title.to_string() + " - Tianyu (Ezri) Zhu"
     };
 
     let mut webring_enabled = false;
@@ -47,7 +47,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
 
                     title { (title) };
                     meta name="description" content=(description);
-                    meta name="author" content="Tianyu (Eric) Zhu";
+                    meta name="author" content="Tianyu (Ezri) Zhu";
 
                     link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png";
                     link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png";
@@ -60,7 +60,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                     meta property="og:title" content=(title);
                     meta property="og:description" content=(description);
                     meta property="og:theme-color" content="#2e3440";
-                    meta property="og:site_name" content="Eric's Blog";
+                    meta property="og:site_name" content="Ezri's Blog";
 
                     link rel="stylesheet" href="/assets/css/main.css";
                     (extra_headers)
@@ -68,7 +68,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                 body {
                     div class="home-menu pure-menu pure-menu-horizontal" {
                         a href="/" {
-                            img class="logo" src="/assets/img/logo.svg" alt="Tianyu (Eric) Zhu";
+                            img class="logo" src="/assets/img/logo.svg" alt="Tianyu (Ezri) Zhu";
                         }
                         ul class="pure-menu-list" {
                             li class="pure-menu-item" {
@@ -119,6 +119,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                         "I'm open to employment for summer of 2024 internships! Please contact me via the "
                             a href="/contact" { "contacts page." }
                     }
+                    div class="banner" {
+                        "Happy new year! I now go by Ezri, my new email address is me@ezrizhu.com."
+                    }
                     div class="main" {
                         (content)
                     }
@@ -142,9 +145,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                             "Copyright 2018-2023 • All text here are released under "
                                 a target="_blank" href="https://creativecommons.org/licenses/by/4.0/" { "(CC BY 4.0)" }
                             " • Source code "
-                                a target="_blank" href="https://github.com/ericzty/www" { "available here" }
+                                a target="_blank" href="https://github.com/ezrizhu/www" { "available here" }
                             ", released under the "
-                                a target="_blank" href="https://github.com/ericzty/www/blob/main/COPYING" { "GNU AGPLv3 license" }
+                                a target="_blank" href="https://github.com/ezrizhu/www/blob/main/COPYING" { "GNU AGPLv3 license" }
                             "." 
                                 br;
                             (build_info);
@@ -169,9 +172,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                         }
 
                         div class="h-card" style="display: none" {
-                            a class="u-email" href="mailto:eric@ericz.me" {};
-                            img class="u-photo" src="https://ericz.me/assets/img/eric1.webp" alt="my face";
-                            a class="u-url u-uid p-name" href="https://ericz.me" { "Tianyu (Eric) Zhu" };
+                            a class="u-email" href="mailto:me@ezrizhu.com" {};
+                            img class="u-photo" src="https://ezhizhu.com/assets/img/ezri1.webp" alt="my face";
+                            a class="u-url u-uid p-name" href="https://ezrizhu.com" { "Tianyu (Ezri) Zhu" };
                             p class="p-note" { "I’m a student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps" };
                         }
                     }

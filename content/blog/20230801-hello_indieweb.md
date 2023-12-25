@@ -24,7 +24,7 @@ authentication method.
 
 For webmention, I wrote a simple [GoLang](https://go.dev/) API that accepts
 webmention query and sends them to me as a discord webhook. The source can be
-found [here](https://github.com/ericzty/dismention)
+found [here](https://github.com/ezrizhu/dismention)
 
 This website is my home, so I thought it'd be nice if it is somewhat connected with
 the rest of the IndieWeb blogging scene.

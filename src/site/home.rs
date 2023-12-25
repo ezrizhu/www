@@ -9,13 +9,13 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let bio = state.home.clone();
     let news = state.five_news.clone();
 
-    let projects = vec!["ericnet", "try", "eve"];
+    let projects = vec!["ezricloud", "try", "eve"];
     let blogs = state.blog[0..7].to_vec();
 
     let content = html! {
         div class="hero pure-g" {
             div class="pure-u-1 pure-u-md-1-3" {
-                img src="/assets/img/eric1.webp" alt="An image of Eric Zhu wearing a cow hat." class="pure-img headshot";
+                img src="/assets/img/ezri1.webp" alt="An image of Ezri Zhu wearing a cow hat." class="pure-img headshot";
                 p class="pronouns" { "(they/any)" };
             }
             div class="pure-u-1 pure-u-md-2-3" {
@@ -65,11 +65,11 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let extra_headers = html! {
         link rel="stylesheet" href="assets/css/home.css";
         link rel="authorization_endpoint" href="https://indieauth.com/auth";
-        link rel="me" href="mailto:eric@ericz.me";
-        link rel="alternate" title="Eric's Blog" type="application/rss+xml" href="https://ericz.me/blog.xml";
-        link rel="alternate" title="Eric's Blog" type="application/atom+xml" href="https://ericz.me/blog.atom";
-        link rel="alternate" title="Eric's news" type="application/rss+xml" href="https://ericz.me/news.xml";
-        link rel="alternate" title="Eric's news" type="application/atom+xml" href="https://ericz.me/news.atom";
+        link rel="me" href="mailto:me@ezrizhu.com";
+        link rel="alternate" title="Ezri's Blog" type="application/rss+xml" href="https://ezrizhu.com/blog.xml";
+        link rel="alternate" title="Ezri's Blog" type="application/atom+xml" href="https://ezrizhu.com/blog.atom";
+        link rel="alternate" title="Ezri's news" type="application/rss+xml" href="https://ezrizhu.com/news.xml";
+        link rel="alternate" title="Ezri's news" type="application/atom+xml" href="https://ezrizhu.com/news.atom";
     };
     base("", description, extra_headers, content, Some(state.clone()))
 }

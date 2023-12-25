@@ -5,12 +5,12 @@ feel free to contact me if you want me to read your blog, share your ideas, or
 ask me about something. If you think I am wrong about something, please let me
 know!
 
-The best way to reach me is via email at [eric@ericz.me](mailto:eric@ericz.me).\
+The best way to reach me is via email at [me@ezrizhu.com](mailto:me@ezrizhu.com).\
 If you wish to send encrypted email to me, I have a PGP key
 [0xC15ECEC52397343B](/files/publickey.asc).
 
 For a more asynchronous chat, I usually idle in Libera IRC under the nick
-`ericzty`. My Discord is `ericzty`. Discord will automatically
+`ezrizhu`. My Discord is `ezrizhu`. Discord will automatically
 reject requests if you're not in a mutual server with me, feel free to join the
 [Rust Programming Language Community
 Server](https://discord.gg/rust-lang-community) if you need a mutual.
@@ -25,15 +25,15 @@ Fax: +1 9292070306
 Mailing address:
 
 ```plain
-Student Tianyu Zhu
+Student Ezri Zhu
 Stevens Institute of Technology
 1 Castle Point Terrace
 Hoboken NJ 07030 USA
 ```
 
-[Github](https://github.com/ericzty) •
-[LinkedIn](https://linkedin.com/in/tianyu-zhu-577356250) •
-[Fedi](https://uwu.social/@eric) •
-[Bsky](https://bsky.app/profile/ericz.me) •
-[Twitter](https://twitter.com/ericzty) •
-[Email](mailto:eric@ericz.me)
+[Github](https://github.com/ezrizhu) •
+[LinkedIn](https://linkedin.com/in/ezrizhu) •
+[Fedi](https://sleepless.cafe/ezri) •
+[Bsky](https://bsky.app/profile/ezrizhu.com) •
+[Twitter](https://twitter.com/ezrizhu) •
+[Email](mailto:me@ezrizhu.com)

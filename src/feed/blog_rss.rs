@@ -23,15 +23,15 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         XmlEvent::start_element("channel").into(),
 
         XmlEvent::start_element("title").into(),
-        XmlEvent::characters("Eric's blog").into(),
+        XmlEvent::characters("Ezri's blog").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("link").into(),
-        XmlEvent::characters("https://ericz.me/blog").into(),
+        XmlEvent::characters("https://ezrizhu.com/blog").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("description").into(),
-        XmlEvent::characters("Eric's thoughts on things.").into(),
+        XmlEvent::characters("Ezri's thoughts on things.").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("language").into(),
@@ -43,7 +43,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("generator").into(),
-        XmlEvent::characters("https://github.com/ericzty/www").into(),
+        XmlEvent::characters("https://github.com/ezrizhu/www").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("ttl").into(),
@@ -57,7 +57,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
 
     for post in state.blog {
         let title = post.title;
-        let link = format!("https://ericz.me/blog/{}", post.slug);
+        let link = format!("https://ezrizhu.com/blog/{}", post.slug);
         let date = post.date.to_rfc2822();
         let content = post.body;
 

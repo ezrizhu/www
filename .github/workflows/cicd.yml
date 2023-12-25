@@ -33,8 +33,8 @@ jobs:
       with:
         push: true
         tags: |
-          ghcr.io/ericzty/www:${{ github.sha }}
-          ghcr.io/ericzty/www:latest
+          ghcr.io/ezrizhu/www:${{ github.sha }}
+          ghcr.io/ezrizhu/www:latest
         build-args: |
           COMMIT=${{ github.sha }}
           REF=${{ github.ref }}
@@ -49,19 +49,19 @@ jobs:
     - name: Deployment Grace Period
       run: sleep 5
     - name: Ensure that www0 is updated
-      run: 'curl -H "X-Server-Select: www0" https://ericz.me | grep ${{ github.sha }}'
+      run: 'curl -H "X-Server-Select: www0" https://ezrizhu.com | grep ${{ github.sha }}'
     - name: Trigger www1 to update
       run: ${{ secrets.WTWWW1 }}
     - name: Deployment Grace Period
       run: sleep 5
     - name: Ensure that www1 is updated
-      run: 'curl -H "X-Server-Select: www1" https://ericz.me | grep ${{ github.sha }}'
+      run: 'curl -H "X-Server-Select: www1" https://ezrizhu.com | grep ${{ github.sha }}'
     - name: Ensure that default is updated
-      run: 'curl https://ericz.me | grep ${{ github.sha }}'
+      run: 'curl https://ezrizhu.com | grep ${{ github.sha }}'
 
   google:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
     - name: Upload sitemap
-      run: curl "www.google.com/webmasters/tools/ping?sitemap=https://ericz.me/sitemap.xml"
+      run: curl "www.google.com/webmasters/tools/ping?sitemap=https://ezrizhu.com/sitemap.xml"

@@ -183,7 +183,7 @@ connect to two of the transit providers below.
 
 * [Freetransit](https://freetransit.ch/)  
 * [BGP Tunnel](https://bgptunnel.com/)
-* [EricNet](https://as206628.net)  
+* [EzriCloud](https://as206628.net)  
 
 ### Setting Up BIRD on Your Server
 

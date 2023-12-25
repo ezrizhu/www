@@ -18,7 +18,7 @@ pub async fn fetch() -> Result<Vec<Node>> {
 }
 
 pub fn get_neighbors(ring: Vec<Node>) -> (Node, Node) {
-    let index = ring.iter().position(|x| x.id == "eric").unwrap();
+    let index = ring.iter().position(|x| x.id == "ezri").unwrap();
     let prev = ring.get((index + ring.len() - 1) % ring.len()).unwrap();
     let next = ring.get((index + 1) % ring.len()).unwrap();
     (prev.clone(), next.clone())
@@ -27,7 +27,7 @@ pub fn get_neighbors(ring: Vec<Node>) -> (Node, Node) {
 pub fn get_random(ring: Vec<Node>) -> Node {
     let (left, right) = get_neighbors(ring.clone());
     let ring: Vec<Node> = ring.clone().iter()
-        .filter(|&node| node.id != "eric")
+        .filter(|&node| node.id != "ezri")
         .filter(|&node| node.id != left.id)
         .filter(|&node| node.id != right.id)
         .cloned().collect();

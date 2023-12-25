@@ -23,11 +23,11 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         XmlEvent::start_element("feed").attr("xmlns", "http://www.w3.org/2005/Atom").into(),
 
         XmlEvent::start_element("title").into(),
-        XmlEvent::characters("Eric's blog").into(),
+        XmlEvent::characters("Ezri's blog").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("id").into(),
-        XmlEvent::characters("https://ericz.me/blog.atom").into(),
+        XmlEvent::characters("https://ezrizhu.com/blog.atom").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("updated").into(),
@@ -36,25 +36,25 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
 
         XmlEvent::start_element("author").into(),
         XmlEvent::start_element("name").into(),
-        XmlEvent::characters("Tianyu (Eric) Zhu").into(),
+        XmlEvent::characters("Tianyu (Ezri) Zhu").into(),
         XmlEvent::end_element().into(),
         XmlEvent::start_element("email").into(),
-        XmlEvent::characters("eric@ericz.me").into(),
+        XmlEvent::characters("me@ezrizhu.com").into(),
         XmlEvent::end_element().into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("link")
-            .attr("href", "https://ericz.me/blog.atom")
+            .attr("href", "https://ezrizhu.com/blog.atom")
             .attr("rel", "self").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("link")
-            .attr("href", "https://ericz.me/blog")
+            .attr("href", "https://ezrizhu.com/blog")
             .attr("rel", "alternate").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("generator").into(),
-        XmlEvent::characters("https://github.com/ericzty/www").into(),
+        XmlEvent::characters("https://github.com/ezrizhu/www").into(),
         XmlEvent::end_element().into(),
         ];
 
@@ -64,7 +64,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
 
     for post in state.blog {
         let title = post.title;
-        let link = format!("https://ericz.me/blog/{}", post.slug);
+        let link = format!("https://ezrizhu.com/blog/{}", post.slug);
         let date = post.date.to_rfc3339();
         let content = post.body;
 

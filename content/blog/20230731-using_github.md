@@ -20,7 +20,7 @@ programming activities to stand out, making myself a more attractive applicant.
 With Github being the most popular git hosting platform out there, I think
 recruiters will look at my Github and see what I have been up to, along with
 other metrics that they can see from my [Github
-profile](https://github.com/ericzty).
+profile](https://github.com/ezrizhu).
 
 Github has nice features like the activity graph that shows people how much I
 contribute to projects on github, and the organizations I am associated with.

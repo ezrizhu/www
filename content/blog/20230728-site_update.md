@@ -36,6 +36,6 @@ useful.
   section.
 * Server side syntax highlighting for code blocks.
 * And the other future plans from the bottom of [my last post about this
-  website](https://ericz.me/blog/this-blog).
+  website](https://ezrizhu.com/blog/this-blog).
 * Blog roll.
 * Resume as html, with pdf link contained within

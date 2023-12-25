@@ -18,7 +18,7 @@ But since I have made the switch, the latency to my servers has been
 dramatically higher, and it didn't make a lot of sense.
 
 ```text
-eric in ide0 in ~ took 11s
+ezri in ide0 in ~ took 11s
 λ ping 1.1
 PING 1.1 (1.0.0.1) 56(84) bytes of data.
 64 bytes from 1.0.0.1: icmp_seq=1 ttl=56 time=22.5 ms

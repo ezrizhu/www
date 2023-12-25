@@ -29,4 +29,4 @@ If you are afraid that no one will read it, **I’ll read it**.
 I can also read simplified Chinese, and would love to connect with more people
 back in China.
 
-So please, [send them over](mailto:eric@ericz.me).
+So please, [send them over](mailto:me@ezrizhu.com).

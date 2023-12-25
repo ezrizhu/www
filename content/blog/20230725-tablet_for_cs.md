@@ -16,7 +16,7 @@ that uses the iPad for computer science.
 
 I have an ordinary iPad Air (Fifth Gen), it runs stock iPadOS, and has the M1
 chip with cellular data. I also have the Magic Keyboard and an Apple Pencil with
-it. I run [EricNet](https://as206628.net), an infrastructure and networking
+it. I run [EzriCloud](https://as206628.net), an infrastructure and networking
 project consisting of a few colocated servers in California and New York City,
 running on my own ISP. In my cluster of hypervisors, the most important machine
 is my workstation virtual machine (VM). The workstation VM is a simple Debian

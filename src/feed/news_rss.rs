@@ -25,15 +25,15 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         XmlEvent::start_element("channel").into(),
 
         XmlEvent::start_element("title").into(),
-        XmlEvent::characters("Eric's news").into(),
+        XmlEvent::characters("Ezri's news").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("link").into(),
-        XmlEvent::characters("https://ericz.me/news").into(),
+        XmlEvent::characters("https://ezrizhu.com/news").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("description").into(),
-        XmlEvent::characters("Eric's news.").into(),
+        XmlEvent::characters("Ezri's news.").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("language").into(),
@@ -45,7 +45,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("generator").into(),
-        XmlEvent::characters("https://github.com/ericzty/www").into(),
+        XmlEvent::characters("https://github.com/ezrizhu/www").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("ttl").into(),
@@ -67,7 +67,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         let (date_str, title) = news.split_once(": ").unwrap();
         let content = title.clone();
         // link (id) has to be unique
-        let link = format!("{}#{}", "https://ericz.me/news", (news_len - count).to_string());
+        let link = format!("{}#{}", "https://ezrizhu.com/news", (news_len - count).to_string());
         count+=1;
 
         let date = NaiveDate::parse_from_str(&format!("{} {}", date_str, "01"), "%b %Y %d").unwrap().and_hms_opt(0, 0, 0).unwrap();

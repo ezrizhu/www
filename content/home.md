@@ -13,7 +13,7 @@ reading, writing my blog, and exploring the city. You can find what my current
 focuses are, what I'm reading, watching, and what I have been playing on my [now
 page](/now).
 
-[Github](https://github.com/ericzty) •
-[LinkedIn](https://linkedin.com/in/tianyu-zhu-577356250) •
-[Fedi](https://uwu.social/@eric) • [Bsky](https://bsky.app/profile/ericz.me) •
-[Twitter](https://twitter.com/ericzty) • [Email](mailto:eric@ericz.me)
+[Github](https://github.com/ezrizhu) •
+[LinkedIn](https://linkedin.com/in/ezrizhu) •
+[Fedi](https://sleepless.cafe/ezri) • [Bsky](https://bsky.app/profile/ezrizhu.com) •
+[Twitter](https://twitter.com/ezrizhu) • [Email](mailto:me@ezrizhu.com)

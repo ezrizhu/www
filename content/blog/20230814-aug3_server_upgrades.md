@@ -9,12 +9,12 @@ Tags:
 I run a small sized server infrastructure consisting of mainly three hypervisors
 in California, and one hypervisor in NYC. Those servers are all owned and
 maintained by me, with the occasional help of the helpful datacenter staff. You
-can read more about EricNet [here](https://ericz.me/projects/ericnet)
+can read more about EzriCloud [here](https://ezrizhu.com/projects/ezricloud)
 
 My servers were awfully out of date, being two major versions behind on Proxmox,
 and Debian. I have been ignoring the EOL warning as I thought I would have
 finished writing my Proxmox Replacement [Eve
-Suite](https://ericz.me/projects/eve) soon. But I have came to the realization
+Suite](https://ezrizhu.com/projects/eve) soon. But I have came to the realization
 that it will still take me a while, and that it’s not super safe being
 vulnerable to all the vulnerabilities out there to Linux and Proxmox. That’s
 where I have decided to upgrade all my hypervisors and other machines that runs
@@ -121,7 +121,7 @@ The time is now 4:52 am, almost three hours past the expected end of the
 maintenance window. I head to sleep as I need to pack up to prepare to move to
 my new apartment tomorrow. Hopefully this is the last time I upgrade Proxmox,
 this experience was a great motivation to me to finish writing [Eve
-Suite](https://ericz.me/projects/eve).
+Suite](https://ezrizhu.com/projects/eve).
 
 ![screenshot of me notifying my users the status of this server
 upgrade](/assets/img/blog/20230814-screenshot.png)

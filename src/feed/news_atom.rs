@@ -25,11 +25,11 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         XmlEvent::start_element("feed").attr("xmlns", "http://www.w3.org/2005/Atom").into(),
 
         XmlEvent::start_element("title").into(),
-        XmlEvent::characters("Eric's news").into(),
+        XmlEvent::characters("Ezri's news").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("id").into(),
-        XmlEvent::characters("https://ericz.me/news.atom").into(),
+        XmlEvent::characters("https://ezrizhu.com/news.atom").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("updated").into(),
@@ -38,25 +38,25 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
 
         XmlEvent::start_element("author").into(),
         XmlEvent::start_element("name").into(),
-        XmlEvent::characters("Tianyu (Eric) Zhu").into(),
+        XmlEvent::characters("Tianyu (Ezri) Zhu").into(),
         XmlEvent::end_element().into(),
         XmlEvent::start_element("email").into(),
-        XmlEvent::characters("eric@ericz.me").into(),
+        XmlEvent::characters("me@ezrizhu.com").into(),
         XmlEvent::end_element().into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("link")
-            .attr("href", "https://ericz.me/news.atom")
+            .attr("href", "https://ezrizhu.com/news.atom")
             .attr("rel", "self").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("link")
-            .attr("href", "https://ericz.me/news")
+            .attr("href", "https://ezrizhu.com/news")
             .attr("rel", "alternate").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("generator").into(),
-        XmlEvent::characters("https://github.com/ericzty/www").into(),
+        XmlEvent::characters("https://github.com/ezrizhu/www").into(),
         XmlEvent::end_element().into(),
         ];
 
@@ -74,7 +74,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         let (date_str, title) = news.split_once(": ").unwrap();
         let content = title.clone();
         // link (id), has to be unique
-        let link = format!("{}#{}", "https://ericz.me/news", (news_len - count).to_string());
+        let link = format!("{}#{}", "https://ezrizhu.com/news", (news_len - count).to_string());
         count+=1;
 
         let date = NaiveDate::parse_from_str(&format!("{} {}", date_str, "01"), "%b %Y %d").unwrap().and_hms_opt(0, 0, 0).unwrap();

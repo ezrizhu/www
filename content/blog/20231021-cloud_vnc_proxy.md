@@ -9,7 +9,7 @@ Tags:
 
 I’m currently working on eve, a management toolkit for libvirt-based
 virtualization servers. Think of it as openstack, but for small scale cloud
-deployments. I am building it primarily for deployments like EricNet, small
+deployments. I am building it primarily for deployments like EzriCloud, small
 scale, multi-siloed, and with user support. It features a management pane, and
 it talks to hypervisor agents to interact with libvirt and other systems on each
 hypervisor, like firewalling, backups, etc…

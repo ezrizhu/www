@@ -46,7 +46,7 @@ fn post(post: Post, state: SiteState, page_type: PageType) -> Markup {
             h1 class="p-name" { (post.title) };
             div class="byline" {
                 p {
-                    "by " a class="p-author h-card" href="https://ericz.me" target="_blank" { "Eric" }
+                    "by " a class="p-author h-card" href="https://ezrizhu.com" target="_blank" { "Ezri" }
                     @if matches!(page_type, PageType::Blog) {
                         @let date_str = post.date.format("%B %d, %Y").to_string();
                         @let date_rfc3339 = post.date.to_rfc3339();
@@ -62,14 +62,14 @@ fn post(post: Post, state: SiteState, page_type: PageType) -> Markup {
             div class="e-content" {
                 p { (PreEscaped(post.body)) };
             }
-            a style="display: none;" class="u-url" href=(format!("https://ericz.me/{}/{}", page_name, post.slug)) { "Permalink" }
+            a style="display: none;" class="u-url" href=(format!("https://ezrizhu.com/{}/{}", page_name, post.slug)) { "Permalink" }
         }
         hr;
-        p { "If you have any questions, want to change my mind, or literally anything else, please " a href="mailto:eric@ericz.me" {"reach out"} "!" };
+        p { "If you have any questions, want to change my mind, or literally anything else, please " a href="mailto:me@ezrizhu.com" {"reach out"} "!" };
     };
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/post.css";
-        link rel="webmention" href="https://ericz.me/webmention/accept";
+        link rel="webmention" href="https://ezrizhu.com/webmention/accept";
     };
     base(&post.title, &post.description, extra_headers, content, Some(state))
 }
