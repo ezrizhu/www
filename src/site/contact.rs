@@ -10,7 +10,7 @@ pub async fn contact(State(state): State<super::SiteState>) -> Markup {
         { (PreEscaped(contact)) };
     };
     let extra_headers = html! {
-        link rel="stylesheet" href="assets/css/post.css";
+        link rel="stylesheet" href="/assets/css/post.css";
     };
     base("", description, extra_headers, content, Some(state))
 }

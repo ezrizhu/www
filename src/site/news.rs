@@ -18,7 +18,7 @@ pub async fn news(State(state): State<super::SiteState>) -> Markup {
         }
     };
     let extra_headers = html! {
-        link rel="stylesheet" href="assets/css/news.css";
+        link rel="stylesheet" href="/assets/css/news.css";
         link rel="alternate" title="Ezri's news" type="application/rss+xml" href="https://ezrizhu.com/news.xml";
         link rel="alternate" title="Ezri's news" type="application/atom+xml" href="https://ezrizhu.com/news.atom";
     };

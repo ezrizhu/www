@@ -63,7 +63,7 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
         }
     };
     let extra_headers = html! {
-        link rel="stylesheet" href="assets/css/home.css";
+        link rel="stylesheet" href="/assets/css/home.css";
         link rel="authorization_endpoint" href="https://indieauth.com/auth";
         link rel="me" href="mailto:me@ezrizhu.com";
         link rel="alternate" title="Ezri's Blog" type="application/rss+xml" href="https://ezrizhu.com/blog.xml";
