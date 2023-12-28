@@ -91,7 +91,7 @@ body {
 }
 
 .pure-menu-list {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width:768px) {
@@ -135,7 +135,18 @@ body {
     color: var(--nord15);
     text-align: center;
     font-style: italic;
-    margin: 0 0 1vw 0;
+    margin: 0 0 0.5vw 0;
+}
+
+/* hero */
+.hero img {
+    margin-top: 2vw;
+}
+
+@media screen and (min-width:768px) {
+    .hero img {
+        margin-top: 0;
+    }
 }
 
 /* footer */

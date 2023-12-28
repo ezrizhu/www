@@ -65,6 +65,7 @@ pub async fn get(Path(name): Path<String>, State(state): State<super::SiteState>
     match name.replace(".css", "").as_str() {
         "main" => resp_body = make_css(vec!["nord", "pure-min", "main"], &state.css),
         "home" => resp_body = make_css(vec!["grids-responsive-min", "home"], &state.css),
+        // contact is currently not being used
         "contact" => resp_body = make_css(vec!["grids-responsive-min", "contact"], &state.css),
         "news" => resp_body = make_css(vec!["news"], &state.css),
         "post-index" => resp_body = make_css(vec!["post-index"], &state.css),
