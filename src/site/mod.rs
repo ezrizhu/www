@@ -159,12 +159,13 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 img src="/assets/img/badges/debian.gif" alt="Powered by Debian";
                                 img src="/assets/img/badges/xenia-now.gif" alt="xenia-now";
                                 img src="/assets/img/badges/vimlove.gif" alt="vim";
-                                img src="/assets/img/badges/furries.png" alt="furries";
+                                //img src="/assets/img/badges/furries.png" alt="furries";
                                 img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
                                 img src="/assets/img/badges/aperture_labs.jpg" alt="aperture_labs";
                                 img src="/assets/img/badges/nb_noproblem.jpg" alt="nonbinary_noproblem";
                                 img src="/assets/img/badges/flag-pan.png" alt="flag-pan";
                                 img src="/assets/img/badges/sun.gif" alt="sun microsystems";
+                                img src="/assets/img/badges/ezricloud.png" alt="EzriCloud";
                                 img src="/assets/img/badges/vcss-blue.gif" alt="vcss-blue";
                                 img src="/assets/img/badges/valid-atom.png" alt="valid atom";
                                 img src="/assets/img/badges/valid-rss-rogers.png" alt="valid rss";
