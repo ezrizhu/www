@@ -173,7 +173,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
 
                         div class="h-card" style="display: none" {
                             a class="u-email" href="mailto:me@ezrizhu.com" {};
-                            img class="u-photo" src="https://ezhizhu.com/assets/img/ezri1.webp" alt="my face";
+                            img class="u-photo" src="https://ezrizhu.com/assets/img/ezri1.webp" alt="my face";
                             a class="u-url u-uid p-name" href="https://ezrizhu.com" { "Tianyu (Ezri) Zhu" };
                             p class="p-note" { "I’m a student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps" };
                         }
