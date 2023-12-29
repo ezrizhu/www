@@ -15,6 +15,10 @@ pre {
     max-width: 85ch;
 }
 
+code {
+    word-wrap: break-word;
+}
+
 h1, h2, h3, h4, h5, h6{
     line-height: 2.5rem;
 }
