@@ -104,7 +104,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                }
                                */
                             li class="pure-menu-item" {
-                                a class="pure-menu-link" href="/files/Tianyu_Zhu_Resume.pdf" {
+                                a class="pure-menu-link" href="/files/Tianyu_Ezri_Zhu_Resume.pdf" {
                                     "Resume"
                                 }
                             }
