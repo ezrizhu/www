@@ -15,6 +15,8 @@ reject requests if you're not in a mutual server with me, feel free to join the
 [Rust Programming Language Community
 Server](https://discord.gg/rust-lang-community) if you need a mutual.
 
+I am also available on Matrix under `@ezri:envs.net`.
+
 I currently live in the New York Metropolitan Area (Hoboken and Queens), so my
 timezone is the U.S. Eastern Time Zone (GMT-5), with daylight savings time
 (GMT-4) from March to November.
@@ -36,4 +38,5 @@ Hoboken NJ 07030 USA
 [Fedi](https://sleepless.cafe/ezri) •
 [Bsky](https://bsky.app/profile/ezrizhu.com) •
 [Twitter](https://twitter.com/ezrizhu) •
-[Email](mailto:me@ezrizhu.com)
+[Email](mailto:me@ezrizhu.com) •
+[Matrix](https://matrix.to/#/@ezri:envs.net)
