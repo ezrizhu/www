@@ -1,0 +1,3 @@
+Contact: https://ezrizhu.com/contact
+Expires: 2025-01-01T05:00:00.000Z
+Canonical: https://ezrizhu.com/security.txt
