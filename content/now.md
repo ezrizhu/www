@@ -1,6 +1,6 @@
-# Now (December 2023 Edition)
+# Now (January 2024 Edition)
 
-Oversubscribed, mental health edition.
+Happy new year! Enjoying my time before the semester starts.
 
 ## My current focuses
 
@@ -14,16 +14,22 @@ Oversubscribed, mental health edition.
   benchmarking and [try](https://github.com/binpash/try).
 * Full-time Computer Science Undergrad at
   [Stevens](https://www.stevens.edu/school-engineering-science/departments/computer-science).
-    I'm currently taking Algorithms, Computer Architecture and Organization,
-    Probability and Statistics, and Computers and Society.
+  I'm currently taking the following courses.
+    - Systems Programming, Princ. of Programming Languages
+    - Operating Systems
+    - Intermediate Statistics
+    - Biology and Biotechnology
+    - Biology and Biotechnology Laboratory
+    - Independent Study into the portability of Linux programs
 * VP of Tech at [Blueprint@Stevens](https://sitblueprint.com/). I am leading the
   techops, wiki, site, and devops team along with my other VP of Tech. I also
   assist with the project teams.
 * Webdev at [Castle Point Anime Convention](https://www.castlepointanime.com)
   Currently I'm working on websocket and PWA integration for the website, CI/CD,
   and integration tests for our application.
-* Secretary of the Stevens Linux User Group, deploying our public unix server
-  and other public hosted services for students.
+* Secretary of the Stevens Linux User Group, deploying our public UNIX server
+  and other public hosted services for students with the help of the university
+  IT department.
 * Volunteer at [NYCMesh](https://www.nycmesh.net/).
 * Volunteer systems administrator at the [Free Software
   Foundation](https://www.fsf.org).
@@ -32,6 +38,9 @@ Oversubscribed, mental health edition.
 
 * I am slowly reading [Blue Fox: Arm Assembly Internals and Reverse
 Engineering](https://www.wiley.com/en-us/Blue+Fox:+Arm+Assembly+Internals+and+Reverse+Engineering-p-9781119745303).
+
+* For independent study, I am also reading Autotools: A Practioner's Guide to
+  GNU Autoconf, Automake, and Libtool.
 
 * I recently finished [The Mythical Man-Month: Essays on Software
 Engineering](https://en.wikipedia.org/wiki/The_Mythical_Man-Month), and Can the
@@ -50,6 +59,6 @@ Monster Speak?: Report to an Academy of Psychoanalysts.
 
 ---
 
-Updated Dec 11, 2023
+Updated Jan 1, 2024
 
 Part of the [/now page](https://nownownow.com/about) movement.
