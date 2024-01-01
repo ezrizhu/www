@@ -12,6 +12,7 @@ pub async fn not_found() -> (StatusCode, Markup) {
     };
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/404.css";
+        link rel="canonical" href="https://ezrizhu.com/404";
     };
     (StatusCode::NOT_FOUND, base("404 - Not Found", description, extra_headers, content, None))
 }

@@ -21,6 +21,7 @@ pub async fn news(State(state): State<super::SiteState>) -> Markup {
         link rel="stylesheet" href="/assets/css/news.css";
         link rel="alternate" title="Ezri's news" type="application/rss+xml" href="https://ezrizhu.com/news.xml";
         link rel="alternate" title="Ezri's news" type="application/atom+xml" href="https://ezrizhu.com/news.atom";
+        link rel="canonical" href="https://ezrizhu.com/news";
     };
     base("", description, extra_headers, content, Some(state))
 }

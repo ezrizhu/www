@@ -70,6 +70,7 @@ fn post(post: Post, state: SiteState, page_type: PageType) -> Markup {
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/post.css";
         link rel="webmention" href="https://ezrizhu.com/webmention/accept";
+        link rel="canonical" href=(format!("https://ezrizhu.com/{}/{}", page_name, post.slug));
     };
     base(&post.title, &post.description, extra_headers, content, Some(state))
 }

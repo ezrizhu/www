@@ -25,6 +25,7 @@ pub async fn talk_index(State(state): State<super::SiteState>) -> Markup {
     };
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/post-index.css";
+        link rel="canonical" href="https://ezrizhu.com/talks";
     };
     base("Talks", "A list of talks I have given.", extra_headers, content, Some(state))
 }

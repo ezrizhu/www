@@ -33,6 +33,7 @@ pub async fn blog_index(State(state): State<super::SiteState>) -> Markup {
         link rel="stylesheet" href="/assets/css/post-index.css";
         link rel="alternate" title="Ezri's Blog" type="application/rss+xml" href="https://ezrizhu.com/blog.xml";
         link rel="alternate" title="Ezri's Blog" type="application/atom+xml" href="https://ezrizhu.com/blog.atom";
+        link rel="canonical" href="https://ezrizhu.com/blog";
     };
     base("Blog", "My blog.", extra_headers, content, Some(state))
 }

@@ -66,6 +66,7 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
         link rel="stylesheet" href="/assets/css/home.css";
         link rel="authorization_endpoint" href="https://indieauth.com/auth";
         link rel="me" href="mailto:me@ezrizhu.com";
+        link rel="canonical" href="https://ezrizhu.com/";
         link rel="alternate" title="Ezri's Blog" type="application/rss+xml" href="https://ezrizhu.com/blog.xml";
         link rel="alternate" title="Ezri's Blog" type="application/atom+xml" href="https://ezrizhu.com/blog.atom";
         link rel="alternate" title="Ezri's news" type="application/rss+xml" href="https://ezrizhu.com/news.xml";
