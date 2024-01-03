@@ -166,6 +166,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 img src="/assets/img/badges/flag-pan.png" alt="flag-pan";
                                 img src="/assets/img/badges/sun.gif" alt="sun microsystems";
                                 img src="/assets/img/badges/ezricloud.png" alt="EzriCloud";
+                                img src="/assets/img/badges/ezri.png" alt="Ezri";
                                 img src="/assets/img/badges/vcss-blue.gif" alt="vcss-blue";
                                 img src="/assets/img/badges/valid-atom.png" alt="valid atom";
                                 img src="/assets/img/badges/valid-rss-rogers.png" alt="valid rss";
