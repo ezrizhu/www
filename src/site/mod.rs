@@ -156,20 +156,41 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                         div class="badges" {
                             details {
                                 summary { "Show Badges" }
-                                img src="/assets/img/badges/debian.gif" alt="Powered by Debian";
-                                img src="/assets/img/badges/xenia-now.gif" alt="xenia-now";
-                                img src="/assets/img/badges/vimlove.gif" alt="vim";
-                                //img src="/assets/img/badges/furries.png" alt="furries";
-                                img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
-                                img src="/assets/img/badges/aperture_labs.jpg" alt="aperture_labs";
-                                img src="/assets/img/badges/nb_noproblem.jpg" alt="nonbinary_noproblem";
-                                img src="/assets/img/badges/flag-pan.png" alt="flag-pan";
-                                img src="/assets/img/badges/sun.gif" alt="sun microsystems";
+                                a target="_blank" href="https://ezri.pet" {
+                                    img src="/assets/img/badges/ezri.png" alt="Ezri";
+                                }
                                 img src="/assets/img/badges/ezricloud.png" alt="EzriCloud";
-                                img src="/assets/img/badges/ezri.png" alt="Ezri";
-                                img src="/assets/img/badges/vcss-blue.gif" alt="vcss-blue";
-                                img src="/assets/img/badges/valid-atom.png" alt="valid atom";
-                                img src="/assets/img/badges/valid-rss-rogers.png" alt="valid rss";
+                                a target="_blank" href="https://www.debian.org/" {
+                                    img src="/assets/img/badges/debian.gif" alt="Powered by Debian";
+                                }
+                                a target="_blank" href="https://kernel.org/" {
+                                    img src="/assets/img/badges/xenia-now.gif" alt="xenia-now";
+                                }
+                                a target="_blank" href="https://neovim.io/" {
+                                    img src="/assets/img/badges/vimlove.gif" alt="vim";
+                                }
+                                a target="_blank" href="https://tilde.town/~ezri" {
+                                    img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
+                                }
+                                a target="_blank" href="https://store.steampowered.com/app/400/Portal/" {
+                                    img src="/assets/img/badges/aperture_labs.jpg" alt="aperture_labs";
+                                }
+                                a target="_blank" href="https://en.pronouns.page/terminology#nonbinary" {
+                                    img src="/assets/img/badges/nb_noproblem.jpg" alt="nonbinary_noproblem";
+                                }
+                                a target="_blank" href="https://en.pronouns.page/terminology#pansexual" {
+                                    img src="/assets/img/badges/flag-pan.png" alt="flag-pan";
+                                }
+                                img src="/assets/img/badges/sun.gif" alt="sun microsystems";
+                                a target="_blank" href="https://jigsaw.w3.org/css-validator/" {
+                                    img src="/assets/img/badges/vcss-blue.gif" alt="vcss-blue";
+                                }
+                                a target="_blank" href="https://validator.w3.org/feed/" {
+                                    img src="/assets/img/badges/valid-atom.png" alt="valid atom";
+                                }
+                                a target="_blank" href="https://validator.w3.org/feed/" {
+                                    img src="/assets/img/badges/valid-rss-rogers.png" alt="valid rss";
+                                }
                             }
                         }
 
