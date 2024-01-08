@@ -159,7 +159,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 a target="_blank" href="https://ezri.pet" {
                                     img src="/assets/img/badges/ezri.png" alt="Ezri";
                                 }
-                                img src="/assets/img/badges/ezricloud.png" alt="EzriCloud";
+                                a target="_blank" href="https://as206628.net" {
+                                    img src="/assets/img/badges/ezricloud.png" alt="EzriCloud";
+                                }
                                 a target="_blank" href="https://www.debian.org/" {
                                     img src="/assets/img/badges/debian.gif" alt="Powered by Debian";
                                 }
