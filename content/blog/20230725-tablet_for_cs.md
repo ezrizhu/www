@@ -154,12 +154,12 @@ file](/assets/img/blog/20230725-steamdeck.jpg)
 
 *This article was edited by [Jack Dorland](https://jackdor.land/). Thank you!*
 
-Update (Aug 2023): I have been get into public unix systems (pubnix), they're
-public unix (usually linux or BSD) servers, that allows people to get a user
-account and do stuff on it. Most of them have developer toolchains on it that
-allows people to program and run their code. If you don't want to get your own
-server to do development work on, or if you want to just try things out, they
-are a great choice!
+Update (Aug 2023): I have been getting into public unix systems (pubnix),
+they're public unix (usually Linux or BSD) servers, that allow people to get a
+user account and do stuff on it. Most have developer toolchains on it that allow
+people to program and run their code. If you don't want to get your own server
+to do development work on, or if you want to just try things out, they are a
+great choice!
 
 Pubnixes also offer other command-line based utilities, like irc clients, email
 clients, and some other retro internet tools. You can find a list of pubnixes
