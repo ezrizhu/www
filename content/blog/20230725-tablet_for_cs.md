@@ -167,3 +167,9 @@ below.
 
 * [Tildeverse](https://tildeverse.org)
 * [SDF Public Access Unix System](https://sdf.org)
+
+Update (Jan 2024): After posting on
+[lobste.rs](https://lobste.rs/s/s5q1vb/you_might_only_need_tablet_server_for)
+someone wrote a [blog post on doing it with just a microcontroller via
+telnet!](https://snats.xyz/pages/articles/all_you_need_is_a_microcontroller.html).
+It was a really good read, I highly recommend it if you found this interesting!
