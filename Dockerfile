@@ -30,6 +30,7 @@ COPY --from=builder /target/release/www /usr/local/bin/www
 
 COPY ./assets /usr/local/bin/assets
 COPY ./content /usr/local/bin/content
+COPY ./css /usr/local/bin/css
 
 # Set the command to run the binary
 WORKDIR /usr/local/bin
