@@ -16,7 +16,7 @@ at the tasksel stage where they were instructed to install Gnome.
 This was weird; the tasks step should usually not fail. I tried reproducing the
 issue on my VM, but it was installed successfully.
 
-One common demonstrator within the failed installations was all using the UTM
+One common denominator within the failed installations was all using the UTM
 virtualization software on an M2 Mac machine.
 
 I asked my friend to install a bare-bone Debian machine with nothing selected at
