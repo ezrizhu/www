@@ -99,7 +99,7 @@ async fn main() {
         .route("/blog.xml", get(feed::blog_rss::get))
         .route("/blog.atom", get(feed::blog_atom::get))
         .route("/.well-known/openpgpkey/hu/policy", get(pgp::policy))
-        .route("/.well-known/openpgpkey/hu/15asjmkpucio5m8a7xznzcxqsqigumxt", get(pgp::pubkey))
+        .route("/.well-known/openpgpkey/hu/s8y7oh5xrdpu9psba3i5ntk64ohouhga", get(pgp::pubkey))
         .route("/.well-known/security.txt", get(security::securitytxt))
         .route("/ssh", get(ssh::sshpub))
         .fallback(site::not_found::not_found)

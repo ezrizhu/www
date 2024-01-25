@@ -7,7 +7,7 @@ know!
 
 The best way to reach me is via email at [me@ezrizhu.com](mailto:me@ezrizhu.com).\
 If you wish to send encrypted email to me, I have a PGP key
-[coming soon](/files/publickey.asc_404).
+[0x34E9F186](/files/publickey.asc).
 
 You may also encrypt your communication to me via
 [age](https://age-encryption.org) using my [ssh keys](https://ezrizhu.com/ssh).
