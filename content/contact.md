@@ -7,9 +7,17 @@ know!
 
 The best way to reach me is via email at [me@ezrizhu.com](mailto:me@ezrizhu.com).\
 If you wish to send encrypted email to me, I have a PGP key
-[0xFA287E7234E9F186](/files/publickey.asc).
+[0xFA287E7234E9F186](/files/publickey.asc) (wkd is also setup on this domain).
 
-You may also encrypt your communication to me via
+Backup email if above doesn't work:
+
+* [ezri@tuta.com](mailto:ezri@tuta.com)
+* [ezrizhu@icloud.com](mailto:ezrizhu@icloud.com)
+* [ezrizhu@gmail.com](mailto:ezrizhu@gmail.com)
+
+University email can be provided on request.
+
+You may also encrypt your communications to me via
 [age](https://age-encryption.org) using my [ssh keys](https://ezrizhu.com/ssh).
 
 ---
@@ -19,7 +27,7 @@ For a more asynchronous chat, below are ways you can find me.
 IRC: `ezri` on [libera](https://libera.chat/) and [hackint](https://www.hackint.org/)\
 Matrix: `@ezri:envs.net`\
 Telegram: `finnekit`\
-Discord: `ezrizhu`
+Discord: `finnekit`
 
 Discord will automatically reject requests if you're not in a mutual server with
 me, feel free to join the [Rust Programming Language Community
