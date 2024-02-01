@@ -1,12 +1,12 @@
-# Now (January 2024 Edition)
+# Now (February 2024 Edition)
 
-Happy new year! Enjoying my time before the semester starts.
+Surviving school!
 
 ## My current focuses
 
 * School
 * Research work with PaSh
-* Top secret project
+* Deploying and learn k8s on my network
 
 ## My current roles
 
@@ -19,7 +19,6 @@ Happy new year! Enjoying my time before the semester starts.
     - Operating Systems
     - Intermediate Statistics
     - Biology and Biotechnology
-    - Biology and Biotechnology Laboratory
     - Independent Study into the portability of Linux programs
 * VP of Tech at [Blueprint@Stevens](https://sitblueprint.com/). I am leading the
   techops, wiki, site, and devops team along with my other VP of Tech. I also
@@ -31,16 +30,14 @@ Happy new year! Enjoying my time before the semester starts.
   and other public hosted services for students with the help of the university
   IT department.
 * Volunteer at [NYCMesh](https://www.nycmesh.net/).
-* Volunteer systems administrator at the [Free Software
-  Foundation](https://www.fsf.org).
 
 ## What I'm reading
 
-* I am slowly reading [Blue Fox: Arm Assembly Internals and Reverse
-Engineering](https://www.wiley.com/en-us/Blue+Fox:+Arm+Assembly+Internals+and+Reverse+Engineering-p-9781119745303).
-
 * For independent study, I am also reading Autotools: A Practioner's Guide to
   GNU Autoconf, Automake, and Libtool.
+
+* I am (very) slowly reading [Blue Fox: Arm Assembly Internals and Reverse
+Engineering](https://www.wiley.com/en-us/Blue+Fox:+Arm+Assembly+Internals+and+Reverse+Engineering-p-9781119745303).
 
 * I recently finished [The Mythical Man-Month: Essays on Software
 Engineering](https://en.wikipedia.org/wiki/The_Mythical_Man-Month), and Can the
@@ -49,8 +46,10 @@ Monster Speak?: Report to an Academy of Psychoanalysts.
 ## What I'm playing
 
 * LETHAL COMPANYYY
-* Valorant
 * CS2
+* Valorant
+
+(been super busy these days to even touch them)
 
 ## What I'm watching
 
@@ -59,6 +58,6 @@ Monster Speak?: Report to an Academy of Psychoanalysts.
 
 ---
 
-Updated Jan 1, 2024
+Updated Feb 1, 2024
 
 Part of the [/now page](https://nownownow.com/about) movement.
