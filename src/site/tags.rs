@@ -29,6 +29,7 @@ fn tags_index(State(state): State<super::SiteState>, page_type: PageType, tags: 
 
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/post-index.css";
+        link rel="canonical" href=(format!("https://ezrizhu.com/{}/tags", page_name));
     };
 
     base("Tags", &format!("List of tags in my {}.", page_name), extra_headers, content, Some(state))
@@ -95,6 +96,7 @@ async fn tags_get(Path(tag): Path<String>, State(state): State<super::SiteState>
 
     let extra_headers = html! {
         link rel="stylesheet" href="/assets/css/post-index.css";
+        link rel="canonical" href=(format!("https://ezrizhu.com/{}/tags/{}", page_name, tag));
     };
 
     (StatusCode::OK, base(&tag, &format!("Posts tagged with {}.", tag), extra_headers, content, Some(state)))
