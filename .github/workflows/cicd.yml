@@ -3,8 +3,6 @@ name: Rust
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 env:
   CARGO_TERM_COLOR: always
@@ -14,7 +12,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-      
   build:
     runs-on: ubuntu-latest
     steps:
@@ -58,10 +55,3 @@ jobs:
       run: 'curl -H "X-Server-Select: www1" https://ezrizhu.com | grep ${{ github.sha }}'
     - name: Ensure that default is updated
       run: 'curl https://ezrizhu.com | grep ${{ github.sha }}'
-
-  google:
-    needs: deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: Upload sitemap
-      run: curl "www.google.com/webmasters/tools/ping?sitemap=https://ezrizhu.com/sitemap.xml"
