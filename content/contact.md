@@ -19,6 +19,10 @@ University email can be provided on request.
 
 You may also encrypt your communications to me via
 [age](https://age-encryption.org) using my [ssh keys](https://ezrizhu.com/ssh).
+(more preferred)\
+
+Some of my online identities can be verified against my pgp key via
+[keyoxide](https://keyoxide.org/wkd/me@ezrizhu.com).
 
 ---
 
@@ -53,6 +57,7 @@ Stevens Institute of Technology
 Hoboken NJ 07030 USA
 ```
 
+[keyoxide](https://keyoxide.org/wkd/me@ezrizhu.com) •
 [Github](https://github.com/ezrizhu) •
 [LinkedIn](https://linkedin.com/in/ezrizhu) •
 [Fedi](https://sleepless.cafe/ezri) •
