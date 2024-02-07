@@ -26,7 +26,7 @@ For a more asynchronous chat, below are ways you can find me.
 
 IRC: `ezri` on [libera](https://libera.chat/) and [hackint](https://www.hackint.org/)\
 Matrix: `@ezri:envs.net`\
-Telegram: `finnekit`\
+Telegram: `ezrizhu`\
 Discord: `finnekit`
 
 Discord will automatically reject requests if you're not in a mutual server with
@@ -58,6 +58,6 @@ Hoboken NJ 07030 USA
 [Fedi](https://sleepless.cafe/ezri) •
 [Bsky](https://bsky.app/profile/ezrizhu.com) •
 [Twitter](https://twitter.com/ezrizhu) •
-[Telegram](https://t.me/finnekit) •
+[Telegram](https://t.me/ezrizhu) •
 [Email](mailto:me@ezrizhu.com) •
 [Matrix](https://matrix.to/#/@ezri:envs.net)
