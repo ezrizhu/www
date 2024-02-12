@@ -31,7 +31,7 @@ For a more asynchronous chat, below are ways you can find me.
 IRC: `ezri` on [libera](https://libera.chat/) and [hackint](https://www.hackint.org/)\
 Matrix: `@ezri:envs.net`\
 Telegram: `ezrizhu`\
-Discord: `finnekit`
+Discord: `ezrieh`
 
 Discord will automatically reject requests if you're not in a mutual server with
 me, feel free to join the [Rust Programming Language Community
