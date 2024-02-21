@@ -13,15 +13,9 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
     let blogs = state.blog[0..7].to_vec();
 
     let content = html! {
-        div class="hero pure-g" {
-            div class="pure-u-1 pure-u-md-1-3" {
-                img src="/assets/img/ezripicrew.webp" alt="Picrew from https://picrew.me/en/image_maker/1272810" class="pure-img headshot";
-                p class="pronouns" { "(they/any)" };
-            }
-            div class="pure-u-1 pure-u-md-2-3" {
-                div class="biography" {
-                    { (PreEscaped(bio)) };
-                }
+        div class="hero" {
+            div class="biography" {
+                { (PreEscaped(bio)) };
             }
         }
         div class="pure-g recents" {
@@ -48,17 +42,17 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
             @for project in projects {
                 @let project = post::get(state.projects.clone(), project).unwrap();
                 div class="pure-u-1 pure-u-md-1-3" {
-                div class="home-box" {
-                    a href=(format!("/projects/{}", project.slug)) {
-                        h2 {
-                            (project.title)
+                    div class="home-box" {
+                        a href=(format!("/projects/{}", project.slug)) {
+                            h2 {
+                                (project.title)
+                            }
+                        }
+                        p {
+                            (project.description)
                         }
                     }
-                    p {
-                        (project.description)
-                    }
                 }
-            }
             }
         }
     };

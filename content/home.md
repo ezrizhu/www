@@ -1,6 +1,6 @@
 # Hey, I'm a student interested in software **development**, computer **networking**, managing **infrastructure** at **scale**, **cybersecurity**, and **DevOps**.
 
-I am a sophomore at [Stevens Institute of
+My name is Ezri Zhu (they/any), and I am a sophomore at [Stevens Institute of
 Technology](https://www.stevens.edu/school-engineering-science/departments/computer-science)
 pursuing a Bachelor of Science degree in Computer Science and a minor in
 Economics. I'm currently working with [Michael
