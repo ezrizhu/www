@@ -14,6 +14,7 @@ mod webring;
 mod pgp;
 mod ssh;
 mod security;
+mod atproto;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
@@ -101,6 +102,7 @@ async fn main() {
         .route("/.well-known/openpgpkey/hu/policy", get(pgp::policy))
         .route("/.well-known/openpgpkey/hu/s8y7oh5xrdpu9psba3i5ntk64ohouhga", get(pgp::pubkey))
         .route("/.well-known/security.txt", get(security::securitytxt))
+        .route("/.well-known/atproto-did", get(atproto::did))
         .route("/ssh", get(ssh::sshpub))
         .fallback(site::not_found::not_found)
         .with_state(state);
