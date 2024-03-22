@@ -1,12 +1,13 @@
-# Now (February 2024 Edition)
+# Now (March 2024 Edition)
 
-Surviving school!
+Surviving school! - post spring break edition
 
 ## My current focuses
 
 * School
 * Research work with PaSh
 * Deploying and learn k8s on my network
+* Deploying new PoPs, and writing nix for my anycast network
 
 ## My current roles
 
@@ -26,9 +27,6 @@ Surviving school!
 * Webdev at [Castle Point Anime Convention](https://www.castlepointanime.com)
   Currently I'm working on websocket and PWA integration for the website, CI/CD,
   and integration tests for our application.
-* Secretary of the Stevens Linux User Group, deploying our public UNIX server
-  and other public hosted services for students with the help of the university
-  IT department.
 * Volunteer at [NYCMesh](https://www.nycmesh.net/).
 
 ## What I'm reading
@@ -45,19 +43,18 @@ Monster Speak?: Report to an Academy of Psychoanalysts.
 
 ## What I'm playing
 
-* LETHAL COMPANYYY
 * CS2
 * Valorant
+* Overwatch 2
 
 (been super busy these days to even touch them)
 
 ## What I'm watching
 
-* Gabriel Dropout
-* Money Heist
+* New Amsterdam
 
 ---
 
-Updated Feb 1, 2024
+Updated Mar 22, 2024
 
 Part of the [/now page](https://nownownow.com/about) movement.
