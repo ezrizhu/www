@@ -1,4 +1,4 @@
-# Now (March 2024 Edition)
+# Now (April 2024 Edition)
 
 Surviving school! - post spring break edition
 
@@ -43,15 +43,15 @@ Monster Speak?: Report to an Academy of Psychoanalysts.
 
 ## What I'm playing
 
-* CS2
 * Valorant
+* CS2
 * Overwatch 2
 
 (been super busy these days to even touch them)
 
 ## What I'm watching
 
-* New Amsterdam
+Nothing at this moment.
 
 ---
 

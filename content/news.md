@@ -1,3 +1,10 @@
+* Mar 2024: I will be joining the [Stevens Student Managed Investment
+  Fund](https://www.stevens.edu/school-business/student-managed-investment-fund)
+  as a Quantitative Analyst in the development team starting this fall!
+
+* Mar 2024: I have been reelected as the VP Tech of
+  [Blueprint@Stevens](https://sitblueprint.com/).
+
 * Oct 2023: I attended and gave a talk at the third [PaSh
   workshop](https://binpa.sh) at Brown.
 
