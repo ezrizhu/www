@@ -1,3 +1,10 @@
+* Apr 2024: I will be joining the [PEERING BGP
+  Testbed](https://peering.ee.columbia.edu/) at Columbia University this summer!
+
+* Apr 2024: My security advisory for [Authelia](https://www.authelia.com/) has
+  been published by Github and the Go Security Team
+  [GO-2024-2744](https://pkg.go.dev/vuln/GO-2024-2744) [GHSA-x883-2vmg-xwf7](https://github.com/advisories/GHSA-x883-2vmg-xwf7).
+
 * Mar 2024: I will be joining the [Stevens Student Managed Investment
   Fund](https://www.stevens.edu/school-business/student-managed-investment-fund)
   as a Quantitative Analyst in the development team starting this fall!
