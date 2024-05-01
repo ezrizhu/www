@@ -1,10 +1,10 @@
-# Now (April 2024 Edition)
+# Now (May 2024 Edition)
 
-Surviving school! - post spring break edition
+(Barely) surviving school! - FINALS SEASON
 
 ## My current focuses
 
-* School
+* School - two exams left
 * Research work with PaSh
 * Deploying and learn k8s on my network
 * Deploying new PoPs, and writing nix for my anycast network
@@ -45,16 +45,15 @@ Monster Speak?: Report to an Academy of Psychoanalysts.
 
 * Valorant
 * CS2
-* Overwatch 2
 
 (been super busy these days to even touch them)
 
 ## What I'm watching
 
-Nothing at this moment.
+Hopefully three body problem soon.
 
 ---
 
-Updated Mar 22, 2024
+Updated May 1, 2024
 
 Part of the [/now page](https://nownownow.com/about) movement.
