@@ -1,26 +1,21 @@
 # Now (May 2024 Edition)
 
-(Barely) surviving school! - FINALS SEASON
+SUMMERR
 
 ## My current focuses
 
-* School - two exams left
-* Research work with PaSh
+* Research work with [the PEERING Testbed](https://peering.ee.columbia.edu/) at
+  Columbia
+* Research work with [PaSH](https://binpa.sh/)
 * Deploying and learn k8s on my network
 * Deploying new PoPs, and writing nix for my anycast network
 
 ## My current roles
 
+* Research assistant with [the PEERING
+  Testbed](https://peering.ee.columbia.edu/) at Columbia.
 * Research assistant with the [PaSh group](https://binpa.sh/) working on
   benchmarking and [try](https://github.com/binpash/try).
-* Full-time Computer Science Undergrad at
-  [Stevens](https://www.stevens.edu/school-engineering-science/departments/computer-science).
-  I'm currently taking the following courses.
-    - Systems Programming, Princ. of Programming Languages
-    - Operating Systems
-    - Intermediate Statistics
-    - Biology and Biotechnology
-    - Independent Study into the portability of Linux programs
 * VP of Tech at [Blueprint@Stevens](https://sitblueprint.com/). I am leading the
   techops, wiki, site, and devops team along with my other VP of Tech. I also
   assist with the project teams.
@@ -28,6 +23,9 @@
   Currently I'm working on websocket and PWA integration for the website, CI/CD,
   and integration tests for our application.
 * Volunteer at [NYCMesh](https://www.nycmesh.net/).
+* Full-time Computer Science Undergrad at
+  [Stevens](https://www.stevens.edu/school-engineering-science/departments/computer-science).
+  I'm currently not taking any courses for this summer.
 
 ## What I'm reading
 
@@ -54,6 +52,6 @@ Hopefully three body problem soon.
 
 ---
 
-Updated May 1, 2024
+Updated May 9, 2024
 
 Part of the [/now page](https://nownownow.com/about) movement.
