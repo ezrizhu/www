@@ -17,3 +17,5 @@ In the future, the website will do more dynamic-ey things, perhaps a comment sec
 ## CICD
 
 ![a graph describing how CICD is done with this website](https://not-a.link/4AT2e5E.png)
+
+Pride corner taken from https://git.arimelody.me/ari/prideflag

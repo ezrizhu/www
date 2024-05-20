@@ -164,3 +164,29 @@ ul {
     image-rendering: pixelated;
     image-rendering: -webkit-optimize-contrast;
 }
+
+/* pride corner */
+#prideflag img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 120px;
+    transform-origin: 100% 0%;
+    transition: transform .5s cubic-bezier(.32,1.63,.41,1.01);
+    z-index: 8008135;
+}
+#prideflag img:hover {
+    transform: scale(110%);
+}
+#prideflag img:active {
+    transform: scale(110%);
+}
+#prideflag img * {
+    pointer-events: all;
+}
+#prideflag img {
+    width: unset;
+    height: unset;
+    border-radius: unset;
+    margin-right: unset;
+}
