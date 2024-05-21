@@ -65,7 +65,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         news.remove(0);
 
         let (date_str, title) = news.split_once(": ").unwrap();
-        let content = title.clone();
+        let content = title;
         // link (id) has to be unique
         let link = format!("{}#{}", "https://ezrizhu.com/news", (news_len - count).to_string());
         count+=1;
