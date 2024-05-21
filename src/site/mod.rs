@@ -66,7 +66,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                     (extra_headers)
                 }
                 body {
-                    div id="prideflag" { a href="https://www.hrw.org/topic/lgbt-rights" target="_blank" { img src="/assets/img/pride.svg"; } }
+                    a id="prideflag" href="https://www.hrw.org/topic/lgbt-rights" target="_blank" { img src="/assets/img/pride.svg" alt="progressive pride flag"; }
                     div class="home-menu pure-menu pure-menu-horizontal" {
                         a href="/" {
                             img class="logo" src="/assets/img/logo.svg" alt="Tianyu (Ezri) Zhu";
