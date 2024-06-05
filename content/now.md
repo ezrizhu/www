@@ -1,12 +1,13 @@
-# Now (May 2024 Edition)
+# Now (June 2024 Edition)
 
-SUMMERR
+It's way too hot outside.
 
 ## My current focuses
 
 * Research work with [the PEERING Testbed](https://peering.ee.columbia.edu/) at
   Columbia
 * Research work with [PaSH](https://binpa.sh/)
+* Shortening developer onboarding time at Stevens Blueprint
 * Deploying and learn k8s on my network
 * Deploying new PoPs, and writing nix for my anycast network
 
@@ -44,14 +45,14 @@ Monster Speak?: Report to an Academy of Psychoanalysts.
 * Valorant
 * CS2
 
-(been super busy these days to even touch them)
-
 ## What I'm watching
 
 Hopefully three body problem soon.
 
+![How winter fans view summer: big sun on top of
+playground](https://not-a.link/9hG8Gei.png)
 ---
 
-Updated May 9, 2024
+Updated June 5, 2024
 
 Part of the [/now page](https://nownownow.com/about) movement.
