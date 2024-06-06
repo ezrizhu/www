@@ -170,7 +170,6 @@ ul {
     position: absolute;
     top: 0;
     right: 0;
-    width: 120px;
     transform-origin: 100% 0%;
     transition: transform .5s cubic-bezier(.32,1.63,.41,1.01);
     z-index: 8008135;
@@ -185,8 +184,18 @@ ul {
     pointer-events: all;
 }
 #prideflag img {
-    width: unset;
+    width: 15vw;
     height: unset;
     border-radius: unset;
     margin-right: unset;
+}
+@media screen and (min-width:768px) {
+    #prideflag img {
+        width: 10vw;
+    }
+}
+@media screen and (min-width:1920px) {
+    #prideflag img {
+        width: 5vw;
+    }
 }
