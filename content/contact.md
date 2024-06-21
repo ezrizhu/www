@@ -9,6 +9,14 @@ The best way to reach me is via email at [me@ezrizhu.com](mailto:me@ezrizhu.com)
 If you wish to send encrypted email to me, I have a PGP key
 [0xFA287E7234E9F186](/files/publickey.asc) (wkd is also setup on this domain).
 
+You may also send a S/MIME encrypted email to
+[ezri@basednetworking.com](mailto:ezri@basednetworking.com) with my S/MIME cert
+below.
+
+* [my S/MIME cert](/files/ezri_zhu.crt)
+* [DigiCert Signing Cert](/files/DigiCertCA.crt)
+* [DigiCert Root CA](/files/TrustedRoot.crt)
+
 Backup email if above doesn't work:
 
 * [ezri@tuta.com](mailto:ezri@tuta.com)
@@ -28,6 +36,7 @@ Some of my online identities can be verified against my pgp key via
 
 For a more asynchronous chat, below are ways you can find me.
 
+XMPP: `ezri@semtex.net`
 IRC: `ezri` on [libera](https://libera.chat/) and [hackint](https://www.hackint.org/)\
 Matrix: `@ezri:envs.net`\
 Telegram: `ezrizhu`\
