@@ -22,9 +22,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                              );
 
     let title: String = if title.is_empty() {
-        "Tianyu (Ezri) Zhu".to_string()
+        "ezri zhu".to_string()
     } else {
-        title.to_string() + " - Tianyu (Ezri) Zhu"
+        title.to_string() + " - ezri zhu"
     };
 
     let mut webring_enabled = false;
@@ -47,7 +47,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
 
                     title { (title) };
                     meta name="description" content=(description);
-                    meta name="author" content="Tianyu (Ezri) Zhu";
+                    meta name="author" content="ezri zhu";
 
                     link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png";
                     link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png";
@@ -68,9 +68,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                 body {
                     a id="prideflag" href="https://www.hrw.org/topic/lgbt-rights" target="_blank" { img src="/assets/img/pride.svg" alt="progressive pride flag"; }
                     div class="home-menu pure-menu pure-menu-horizontal" {
-                        a href="/" {
-                            img class="logo" src="/assets/img/logo.svg" alt="Tianyu (Ezri) Zhu";
-                        }
+                        //a href="/" {
+                        //    img class="logo" src="/assets/img/logo.svg" alt="ezri zhu";
+                        //}
                         ul class="pure-menu-list" {
                             li class="pure-menu-item" {
                                 a class="pure-menu-link" href="/" {
@@ -138,6 +138,8 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                         }
 
                         p {
+                            "⎈-657a7269"
+                                br;
                             "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present."
                                 br;
                             "Copyright 2018-2023 • All text here are released under "
@@ -196,7 +198,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
 
                         div class="h-card" style="display: none" {
                             a class="u-email" href="mailto:me@ezrizhu.com" {};
-                            a class="u-url u-uid p-name" href="https://ezrizhu.com" { "Tianyu (Ezri) Zhu" };
+                            a class="u-url u-uid p-name" href="https://ezrizhu.com" { "ezri zhu" };
                             p class="p-note" { "I’m a student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps" };
                         }
                     }

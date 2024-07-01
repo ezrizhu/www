@@ -1,3 +1,6 @@
+* Jun 2024: I will be joining the Stevens CIO Student Advisory Committee as the
+  Vice President of Infrastructure starting this fall.
+
 * Apr 2024: I will be joining the [PEERING BGP
   Testbed](https://peering.ee.columbia.edu/) at Columbia University this summer!
 

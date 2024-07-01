@@ -38,7 +38,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
 
         XmlEvent::start_element("author").into(),
         XmlEvent::start_element("name").into(),
-        XmlEvent::characters("Tianyu (Ezri) Zhu").into(),
+        XmlEvent::characters("ezri zhu").into(),
         XmlEvent::end_element().into(),
         XmlEvent::start_element("email").into(),
         XmlEvent::characters("me@ezrizhu.com").into(),

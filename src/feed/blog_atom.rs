@@ -23,7 +23,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
         XmlEvent::start_element("feed").attr("xmlns", "http://www.w3.org/2005/Atom").into(),
 
         XmlEvent::start_element("title").into(),
-        XmlEvent::characters("Ezri's blog").into(),
+        XmlEvent::characters("ezri's blog").into(),
         XmlEvent::end_element().into(),
 
         XmlEvent::start_element("id").into(),
@@ -36,7 +36,7 @@ pub async fn get(State(state): State<super::SiteState>) -> Response {
 
         XmlEvent::start_element("author").into(),
         XmlEvent::start_element("name").into(),
-        XmlEvent::characters("Tianyu (Ezri) Zhu").into(),
+        XmlEvent::characters("ezri zhu").into(),
         XmlEvent::end_element().into(),
         XmlEvent::start_element("email").into(),
         XmlEvent::characters("me@ezrizhu.com").into(),
