@@ -18,6 +18,5 @@ page](/now).
 
 [Github](https://github.com/ezrizhu) •
 [LinkedIn](https://linkedin.com/in/ezrizhu) •
-[Fedi](https://sleepless.cafe/ezri) • [Bsky](https://bsky.app/profile/ezrizhu.com) •
 [Twitter](https://twitter.com/ezrizhu) • [Email](mailto:me@ezrizhu.com) •
 [Matrix](https://matrix.to/#/@ezri:envs.net)
