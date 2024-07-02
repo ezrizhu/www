@@ -22,9 +22,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                              );
 
     let title: String = if title.is_empty() {
-        "ezri zhu".to_string()
+        "ezri".to_string()
     } else {
-        title.to_string() + " - ezri zhu"
+        title.to_string() + " - ezri"
     };
 
     let mut webring_enabled = false;
