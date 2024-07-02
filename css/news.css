@@ -7,8 +7,8 @@ ul {
 }
 
 .news {
+    background: var(--dark2)
     padding: 1rem;
-    background: var(--nord1);
     border-radius: 1vh;
     max-width: 100ch;
     margin: auto;

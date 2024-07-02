@@ -1,9 +1,21 @@
+:root {
+    --dark: oklch(21.56% 0.01 285.56);
+    --dark2: oklch(27.15% 0.009 293.7);
+    --light: oklch(98.52% 0.0076 1.58);
+    --pink: oklch(78.23% 0.1513 336.5);
+    --pink2: oklch(70.77% 0.1548 355.76);
+    --pink3: oklch(76.52% 0.124 316.74);
+    --purple: oklch(76.41% 0.1234 299.64);
+    --blue: oklch(80.58% 0.0962 265.46);
+    --green: oklch(79.67% 0.1409 167.72);
+}
+
 body {
-    background-color: var(--nord0);
+    background-color: var(--dark);
     display: flex;
     flex-direction: column;
     font-size: 1rem;
-    color: var(--nord4);
+    color: var(--light);
     font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     margin-left: auto;
     margin-right: auto;
@@ -15,23 +27,19 @@ p {
 }
 
 a {
-    color: var(--nord8);
+    color: var(--purple);
 }
 
 a:hover {
-    color: var(--nord7);
+    color: var(--pink3);
 }
 
 a:visited {
-    color: var(--nord9);
-}
-
-a:hover {
-    color: var(--nord7);
+    color: var(--pink2);
 }
 
 hr {
-    color: var(--nord3);
+    color: var(--pink);
 }
 
 li {
@@ -113,7 +121,7 @@ ul {
 }
 
 .pure-menu-link {
-    color: var(--nord6) !important;
+    color: var(--light) !important;
     padding: 3vw 5vw 3vw 0;
 }
 
@@ -129,7 +137,7 @@ ul {
 
 /* banner */
 .banner {
-    color: var(--nord15);
+    color: var(--green);
     text-align: center;
     font-style: italic;
     margin: 0 0 1vw 0;
@@ -150,7 +158,7 @@ ul {
 .footer {
     padding: 1rem;
     font-size: 0.75rem;
-    color: var(--nord4);
+    color: var(light);
     text-align: center;
 }
 

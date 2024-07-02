@@ -3,11 +3,11 @@
 }
 
 pre {
-    background: var(--nord1);
+    background: var(--dark2);
     padding: 1rem;
     white-space: pre-wrap;
     border-radius: 1%;
-    border: solid var(--nord2);
+    border: solid var(--pink);
     border-width: thin;
 }
 
