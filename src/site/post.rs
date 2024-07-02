@@ -46,7 +46,7 @@ fn post(post: Post, state: SiteState, page_type: PageType) -> Markup {
             h1 class="p-name" { (post.title) };
             div class="byline" {
                 p {
-                    "by " a class="p-author h-card" href="https://ezrizhu.com" target="_blank" { "Ezri" }
+                    "by " a class="p-author h-card" href="https://ezrizhu.com" target="_blank" { "ezri" }
                     @if matches!(page_type, PageType::Blog) {
                         @let date_str = post.date.format("%B %d, %Y").to_string();
                         @let date_rfc3339 = post.date.to_rfc3339();

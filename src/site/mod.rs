@@ -60,7 +60,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                     meta property="og:title" content=(title);
                     meta property="og:description" content=(description);
                     meta property="og:theme-color" content="#19191e";
-                    meta property="og:site_name" content="Ezri's Blog";
+                    meta property="og:site_name" content="ezri";
 
                     link rel="stylesheet" href="/assets/css/main.css";
                     (extra_headers)
