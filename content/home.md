@@ -1,6 +1,6 @@
 # Student interested in software **development**, computer **networking**, managing **infrastructure** at **scale**, **cybersecurity**, and **DevOps**.
 
-My name is *ezri*, I am a rising junior at the [Stevens Institute of
+My name is *Ezri Zhu*, I am a rising junior at the [Stevens Institute of
 Technology](https://www.stevens.edu/school-engineering-science/departments/computer-science)
 pursuing a degree in *Computer Science* and a minor in *Economics*. I'm
 currently working with [Prof. Michael Greenberg](https://greenberg.science/) and

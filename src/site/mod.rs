@@ -22,9 +22,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                              );
 
     let title: String = if title.is_empty() {
-        "ezri".to_string()
+        "Ezri".to_string()
     } else {
-        title.to_string() + " - ezri"
+        title.to_string() + " - Ezri"
     };
 
     let mut webring_enabled = false;
@@ -47,7 +47,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
 
                     title { (title) };
                     meta name="description" content=(description);
-                    meta name="author" content="ezri zhu";
+                    meta name="author" content="Ezri Zhu";
 
                     link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png";
                     link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png";
@@ -60,7 +60,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                     meta property="og:title" content=(title);
                     meta property="og:description" content=(description);
                     meta property="og:theme-color" content="#19191e";
-                    meta property="og:site_name" content="ezri";
+                    meta property="og:site_name" content="Ezri";
 
                     link rel="stylesheet" href="/assets/css/main.css";
                     (extra_headers)
