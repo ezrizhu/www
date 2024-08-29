@@ -154,8 +154,6 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                         }
 
                         div class="badges" {
-                            details {
-                                summary { "Show Badges" }
                                 a target="_blank" href="https://ezri.pet" {
                                     img src="/assets/img/badges/ezri.png" alt="Ezri";
                                 }
@@ -193,7 +191,6 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 a target="_blank" href="https://validator.w3.org/feed/" {
                                     img src="/assets/img/badges/valid-rss-rogers.png" alt="valid rss";
                                 }
-                            }
                         }
 
                         div class="h-card" style="display: none" {
