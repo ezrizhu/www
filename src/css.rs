@@ -63,7 +63,7 @@ pub async fn get(Path(name): Path<String>, State(state): State<super::SiteState>
     resp_header.insert("Content-Type", "text/css".parse().unwrap());
     resp_header.insert("Cache-Control", "max-age=86400".parse().unwrap());
     match name.replace(".css", "").as_str() {
-        "main" => resp_body = make_css(vec!["nord", "pure-min", "main"], &state.css),
+        "main" => resp_body = make_css(vec!["pure-min", "main"], &state.css),
         "home" => resp_body = make_css(vec!["grids-responsive-min", "home"], &state.css),
         // contact is currently not being used
         "contact" => resp_body = make_css(vec!["grids-responsive-min", "contact"], &state.css),
