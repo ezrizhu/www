@@ -6,10 +6,13 @@ ask me about something. If you think I am wrong about something, please let me
 know!
 
 The best way to reach me is via email at
-[me@ezrizhu.com](mailto:me@ezrizhu.com).\ If you wish to send encrypted email to
-me, I have a PGP key
-[0xf74a3b4bf4ccd1ffe1bcc1ffd62ab51ef84aca4b](/files/publickey.asc) (wkd is also
-setup on this domain).
+[me@ezrizhu.com](mailto:me@ezrizhu.com).\
+
+You can encrypt your communications to me via [age](https://age-encryption.org)
+using my [ssh keys](https://ezri.pub). (more preferred)\
+
+I also have a PGP key [0xD62AB51EF84ACA4B](/files/publickey.asc) (wkd is also
+setup on this domain), should you wish to use pgp.\
 
 You may also send a S/MIME encrypted email to
 [ezri@basednetworking.com](mailto:ezri@basednetworking.com) with my S/MIME cert
@@ -25,11 +28,7 @@ Backup email if above doesn't work:
 * [ezrizhu@icloud.com](mailto:ezrizhu@icloud.com)
 * [ezrizhu@gmail.com](mailto:ezrizhu@gmail.com)
 
-University email can be provided on request.
-
-You may also encrypt your communications to me via
-[age](https://age-encryption.org) using my [ssh keys](https://ezri.pub).
-(more preferred)\
+University/work email can be provided on request.
 
 Some of my online identities can be verified against my pgp key via
 [keyoxide](https://keyoxide.org/wkd/me@ezrizhu.com).
@@ -38,7 +37,7 @@ Some of my online identities can be verified against my pgp key via
 
 For a more asynchronous chat, below are ways you can find me.
 
-XMPP: `ezri@semtex.net`
+XMPP: `ezri@disroot.org`
 IRC: `ezri` on [libera](https://libera.chat/) and [hackint](https://www.hackint.org/)\
 Matrix: `@ezri:envs.net`\
 Telegram: `ezrizhu`\
@@ -59,20 +58,17 @@ I currently live in the New York Metropolitan Area (Hoboken and Queens), so my
 timezone is the U.S. Eastern Time Zone (GMT-5), with daylight savings time
 (GMT-4) from March to November.
 
-Mailing address:
+Mailing address (Post Office Box):
 
 ```plain
-Student Ezri Zhu
-Stevens Institute of Technology
-1 Castle Point Terrace
-Hoboken NJ 07030 USA
+7802 37th Ave
+# 721471
+Jackson Heights, NY 11372, USA
 ```
 
 [keyoxide](https://keyoxide.org/wkd/me@ezrizhu.com) •
 [Github](https://github.com/ezrizhu) •
 [LinkedIn](https://linkedin.com/in/ezrizhu) •
-[Fedi](https://sleepless.cafe/ezri) •
-[Bsky](https://bsky.app/profile/ezrizhu.com) •
 [Twitter](https://twitter.com/ezrizhu) •
 [Telegram](https://t.me/ezrizhu) •
 [Email](mailto:me@ezrizhu.com) •
