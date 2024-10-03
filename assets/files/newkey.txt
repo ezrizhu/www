@@ -4,8 +4,7 @@ Hash: SHA512
 I am switching to a new PGP key.
 
 This message's signing key is the old one.
-4242 912C 2CA5 5EB5 64C7
-3668 C15E CEC5 2397 343B
+C97794641C694A3109E6724EFA287E7234E9F186
 
 New key
 
@@ -13,17 +12,15 @@ type: ed25519
 Ezri Zhu <me@ezrizhu.com>
 
 fingerprint
-C977 9464 1C69 4A31 09E6
-724E FA28 7E72 34E9 F186
+f74a3b4bf4ccd1ffe1bcc1ffd62ab51ef84aca4b
 
-short ID: 0x34E9F186
-long ID: 0xFA287E7234E9F186
+old statement: https://ezrizhu.com/files/newkey2.txt
 
 Ezri
 -----BEGIN PGP SIGNATURE-----
 
-iIUEARYKAC0WIQRCQpEsLKVetWTHNmjBXs7FI5c0OwUCZbITmg8cZXJpY0Brb3J6
-cS54eXoACgkQwV7OxSOXNDuxYAEAz06h2LtdKkOglY+4CrySOJe2yVo/uyEAmYTI
-+7spWX0BAIqNlUtwcqoShegZo0lGbnX6yFOOKPMIUfLJrz2FqPYN
-=yGL5
+iIUEARYKAC0WIQTJd5RkHGlKMQnmck76KH5yNOnxhgUCZv4nRQ8cbWVAZXpyaXpo
+dS5jb20ACgkQ+ih+cjTp8YY6QAEAnnd182AQKTG28WX+q2M4/AS9ty+krSh2uyq6
+J6a2cHcA/RAUbuiNeqQ2qWLnJi7cRnGg7AbdvY8DpF37lmkvY78G
+=2zNG
 -----END PGP SIGNATURE-----

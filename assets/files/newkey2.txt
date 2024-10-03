@@ -1,0 +1,29 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+I am switching to a new PGP key.
+
+This message's signing key is the old one.
+4242 912C 2CA5 5EB5 64C7
+3668 C15E CEC5 2397 343B
+
+New key
+
+type: ed25519
+Ezri Zhu <me@ezrizhu.com>
+
+fingerprint
+C977 9464 1C69 4A31 09E6
+724E FA28 7E72 34E9 F186
+
+short ID: 0x34E9F186
+long ID: 0xFA287E7234E9F186
+
+Ezri
+-----BEGIN PGP SIGNATURE-----
+
+iIUEARYKAC0WIQRCQpEsLKVetWTHNmjBXs7FI5c0OwUCZbITmg8cZXJpY0Brb3J6
+cS54eXoACgkQwV7OxSOXNDuxYAEAz06h2LtdKkOglY+4CrySOJe2yVo/uyEAmYTI
++7spWX0BAIqNlUtwcqoShegZo0lGbnX6yFOOKPMIUfLJrz2FqPYN
+=yGL5
+-----END PGP SIGNATURE-----

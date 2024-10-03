@@ -5,9 +5,11 @@ feel free to contact me if you want me to read your blog, share your ideas, or
 ask me about something. If you think I am wrong about something, please let me
 know!
 
-The best way to reach me is via email at [me@ezrizhu.com](mailto:me@ezrizhu.com).\
-If you wish to send encrypted email to me, I have a PGP key
-[0xFA287E7234E9F186](/files/publickey.asc) (wkd is also setup on this domain).
+The best way to reach me is via email at
+[me@ezrizhu.com](mailto:me@ezrizhu.com).\ If you wish to send encrypted email to
+me, I have a PGP key
+[0xf74a3b4bf4ccd1ffe1bcc1ffd62ab51ef84aca4b](/files/publickey.asc) (wkd is also
+setup on this domain).
 
 You may also send a S/MIME encrypted email to
 [ezri@basednetworking.com](mailto:ezri@basednetworking.com) with my S/MIME cert
