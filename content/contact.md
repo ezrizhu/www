@@ -68,7 +68,7 @@ Jackson Heights, NY 11372, USA
 
 [keyoxide](https://keyoxide.org/wkd/me@ezrizhu.com) •
 [Github](https://github.com/ezrizhu) •
-[LinkedIn](https://linkedin.com/in/ezrizhu) •
+[LinkedIn](https://linkedin.com/in/~ezri) •
 [Twitter](https://twitter.com/ezrizhu) •
 [Telegram](https://t.me/ezrizhu) •
 [Email](mailto:me@ezrizhu.com) •
