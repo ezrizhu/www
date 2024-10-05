@@ -160,6 +160,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 a target="_blank" href="https://as206628.net" {
                                     img src="/assets/img/badges/ezricloud.png" alt="EzriCloud";
                                 }
+                                img src="/assets/img/badges/wolfgirl.gif" alt="wolfgirl.systems";
                                 a target="_blank" href="https://www.debian.org/" {
                                     img src="/assets/img/badges/debian.gif" alt="Powered by Debian";
                                 }
