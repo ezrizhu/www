@@ -6,13 +6,13 @@ ask me about something. If you think I am wrong about something, please let me
 know!
 
 The best way to reach me is via email at
-[me@ezrizhu.com](mailto:me@ezrizhu.com).\
+[me@ezrizhu.com](mailto:me@ezrizhu.com).
 
 You can encrypt your communications to me via [age](https://age-encryption.org)
-using my [ssh keys](https://ezri.pub). (more preferred)\
+using my [ssh keys](https://ezri.pub). (more preferred)
 
 I also have a PGP key [0xD62AB51EF84ACA4B](/files/publickey.asc) (wkd is also
-setup on this domain), should you wish to use pgp.\
+setup on this domain), should you wish to use pgp.
 
 You may also send a S/MIME encrypted email to
 [ezri@basednetworking.com](mailto:ezri@basednetworking.com) with my S/MIME cert
