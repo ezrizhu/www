@@ -64,6 +64,12 @@ ul {
 
 @media screen and (min-width:2304px) {
     body {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:3840px) {
+    body {
         width: 30%;
     }
 }
