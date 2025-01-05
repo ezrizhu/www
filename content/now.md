@@ -5,7 +5,7 @@ Happy new year
 ## My current focuses
 
 * Winter Break :D
-* Working on infrastructure for the Stevens Student
+* Working on an end-to-end data pipeline for financial data and modeling for the Stevens Student
   Managed Investment Fund.
 * Research work with [the PEERING Testbed](https://peering.ee.columbia.edu/) at
   Columbia
