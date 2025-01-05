@@ -1,12 +1,10 @@
-# Now (Sep 2024 Edition)
+# Now (Jan 2025 Edition)
 
-SCHOOL STARTEDD
+Happy new year
 
 ## My current focuses
 
-* School, currently I'm taking Theory of Computation, Security,
-  Privacy and Society, Distributed Systems and Cloud Computing,
-  and Advanced Programming in the UNIX Environment.
+* Winter Break :D
 * Working on infrastructure for the Stevens Student
   Managed Investment Fund.
 * Research work with [the PEERING Testbed](https://peering.ee.columbia.edu/) at
@@ -21,14 +19,17 @@ SCHOOL STARTEDD
 
 ## What I'm playing
 
-Nothing atm.
+* Valorant
+* Overwatch 2
+* The Finals
 
 ## What I'm watching
 
-Nothing atm.
+* kakegurui
+* severance
 
 ---
 
-Updated Sep 5, 2024
+Updated Jan 5, 2025
 
 Part of the [/now page](https://nownownow.com/about) movement.
