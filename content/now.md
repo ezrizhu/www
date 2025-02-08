@@ -1,10 +1,10 @@
-# Now (Jan 2025 Edition)
+# Now (Feb 2025 Edition)
 
-Happy new year
+Wow Jan is already over
 
 ## My current focuses
 
-* Winter Break :D
+* Coursework
 * Working on an end-to-end data pipeline for financial data and modeling for the Stevens Student
   Managed Investment Fund.
 * Research work with [the PEERING Testbed](https://peering.ee.columbia.edu/) at
@@ -16,20 +16,20 @@ Happy new year
 ## What I'm reading
 
 * This Is How You Lose the Time War
+* No bad parts
 
 ## What I'm playing
 
 * Valorant
 * Overwatch 2
-* The Finals
 
 ## What I'm watching
 
-* kakegurui
+* kakegurui twin
 * severance
 
 ---
 
-Updated Jan 5, 2025
+Updated Feb 8, 2025
 
 Part of the [/now page](https://nownownow.com/about) movement.
