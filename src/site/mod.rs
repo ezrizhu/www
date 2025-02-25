@@ -117,7 +117,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                         }
                     }
                     div class="banner" {
-                        "I'm open to employment for summer of 2025 internships! Please contact me via the "
+                        "I'm open to employment for newgrad positions starting June 2026! Please contact me via the "
                             a href="/contact" { "contacts page." }
                     }
                     div class="main" {
