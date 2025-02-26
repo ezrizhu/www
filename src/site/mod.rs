@@ -124,6 +124,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                         (content)
                     }
                     div class="footer" {
+                        div class="rc-scout" {}
                         @if webring_enabled {
                             p {
                                 "<- " a target="_blank" href=(ring_left.url) { (ring_left.name) } " • "
@@ -202,6 +203,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                             p class="p-note" { "I’m a student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps" };
                         }
                     }
+                    script async defer src="https://www.recurse-scout.com/loader.js?t=b5dda155bba0bc72c97da128e1929d96" {}
                 }
             }
     }
