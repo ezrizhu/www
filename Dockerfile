@@ -1,5 +1,5 @@
 # Build stage
-FROM rust:1.75-alpine3.19 as builder
+FROM rust:1.85-alpine as builder
 
 # RUN apt-get update
 # RUN apt-get install pkg-config libssl-dev -y
@@ -13,7 +13,7 @@ RUN --mount=type=cache,target=/usr/local/cargo/registry \
     cargo build --release
 
 # Final stage
-FROM alpine:3.19
+FROM alpine
 
 ARG REF=""
 ARG COMMIT=""
