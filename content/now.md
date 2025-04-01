@@ -1,17 +1,17 @@
-# Now (Feb 2025 Edition)
+# Now (Apr 2025 Edition)
 
-Wow Jan is already over
+Oh my is it almost finals season.
 
 ## My current focuses
 
 * Coursework
 * Working on an end-to-end data pipeline for financial data and modeling for the Stevens Student
-  Managed Investment Fund.
+  Managed Investment Fund on k3s.
 * Research work with [the PEERING Testbed](https://peering.ee.columbia.edu/) at
   Columbia
 * Research work with [PaSH](https://binpa.sh/)
 * Writing personal projects with serverless software
-* Working on my k3s infra with Cilium
+* Working on my k3s infra with Cilium and NixOS
 
 ## What I'm reading
 
@@ -25,11 +25,11 @@ Wow Jan is already over
 
 ## What I'm watching
 
-* kakegurui twin
 * severance
+* Arcane S2
 
 ---
 
-Updated Feb 8, 2025
+Updated Apr 1, 2025
 
 Part of the [/now page](https://nownownow.com/about) movement.
