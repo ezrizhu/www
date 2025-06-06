@@ -67,6 +67,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                 }
                 body {
                     a id="prideflag" href="https://www.hrw.org/topic/lgbt-rights" target="_blank" { img src="/assets/img/pride.svg" alt="progressive pride flag"; }
+                    nav {
                     div class="home-menu pure-menu pure-menu-horizontal" {
                         //a href="/" {
                         //    img class="logo" src="/assets/img/logo.svg" alt="ezri zhu";
@@ -116,9 +117,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                             }
                         }
                     }
+                    }
                     div class="banner" {
-                        "I'm open to employment for newgrad positions starting June 2026! Please contact me via the "
-                            a href="/contact" { "contacts page." }
+                        "I'm open to employment for newgrad positions starting June 2026!"
                     }
                     div class="main" {
                         (content)
@@ -164,6 +165,9 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 a target="_blank" href="https://wolfgirl.systems/" {
                                     img src="/assets/img/badges/wolfgirl.gif" alt="wolfgirl.systems";
                                 }
+                                a target="_blank" href="https://www.recurse.com/scout/click?t=b5dda155bba0bc72c97da128e1929d96" {
+                                    img src="/assets/img/badges/rc.png" alt="Join the Recurse Center";
+                                }
                                 a target="_blank" href="https://www.debian.org/" {
                                     img src="/assets/img/badges/debian.gif" alt="Powered by Debian";
                                 }
@@ -178,22 +182,6 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 }
                                 a target="_blank" href="https://store.steampowered.com/app/400/Portal/" {
                                     img src="/assets/img/badges/aperture_labs.jpg" alt="aperture_labs";
-                                }
-                                a target="_blank" href="https://en.pronouns.page/terminology#nonbinary" {
-                                    img src="/assets/img/badges/nb_noproblem.jpg" alt="nonbinary_noproblem";
-                                }
-                                a target="_blank" href="https://en.pronouns.page/terminology#pansexual" {
-                                    img src="/assets/img/badges/flag-pan.png" alt="flag-pan";
-                                }
-                                img src="/assets/img/badges/sun.gif" alt="sun microsystems";
-                                a target="_blank" href="https://jigsaw.w3.org/css-validator/" {
-                                    img src="/assets/img/badges/vcss-blue.gif" alt="vcss-blue";
-                                }
-                                a target="_blank" href="https://validator.w3.org/feed/" {
-                                    img src="/assets/img/badges/valid-atom.png" alt="valid atom";
-                                }
-                                a target="_blank" href="https://validator.w3.org/feed/" {
-                                    img src="/assets/img/badges/valid-rss-rogers.png" alt="valid rss";
                                 }
                         }
 
