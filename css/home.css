@@ -41,10 +41,14 @@
     border-radius: 0.5rem;
     text-decoration: none;
     margin: 1.5rem auto;
+    margin-top: 0;
 }
 
 .cta:visited {
     color: var(--purple);
+}
+.cta-primary:hover {
+    color: var(--pink2);
 }
 .cta-primary:visited {
     color: var(--dark2);

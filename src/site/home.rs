@@ -17,7 +17,6 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
             div class="biography" {
                 { (PreEscaped(bio)) };
             }
-        }
         nav {
             a href="/projects" class="cta-primary cta" {
                 "See what I've done"
@@ -25,6 +24,7 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
             a href="/contact" class="cta" {
                 "or get in touch"
             }
+        }
         }
         div class="pure-g recents" {
             div class="pure-u-1 pure-u-md-1-2" {

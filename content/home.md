@@ -14,7 +14,3 @@ testbed*](https://peering.ee.columbia.edu).
 In my free time, I enjoy reading, writing my blog, and skateboarding around the
 city. You can find what my current focuses are, what I'm reading, watching, and
 what I have been playing on my [now page](/now).
-
-[Github](https://github.com/ezrizhu) •
-[LinkedIn](https://linkedin.com/in/ezrizhu) •
-[Email](mailto:me@ezrizhu.com)

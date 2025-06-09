@@ -1,3 +1,7 @@
+* May 2025: I will be joining the [Stevens Graduate Student Managed Investment
+  Fund](https://www.stevens.edu/news/stevens-launches-graduate-student-investment-fund)
+  to lead the Portfolio Management team this fall.
+
 * Feb 2025: I've been admitted to the [Recurse
   Center](https://www.recurse.com/scout/click?t=b5dda155bba0bc72c97da128e1929d96)
   for the summer I batch.
@@ -24,8 +28,6 @@
 
 * Oct 2023: I attended and gave a talk at the third [PaSh
   workshop](https://binpa.sh) at Brown.
-
-* Sep 2023: I started my second undergraduate year for computer science!
 
 * Jul 2023: I will be joining [Blueprint@Stevens](https://sitblueprint.com/)'s
   executive board as VP of Technology starting fall of 2023.
