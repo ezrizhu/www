@@ -18,6 +18,7 @@ pub fn init_news() -> String {
 pub fn md_to_html(md: &str) -> String {
     let mut options = ComrakOptions::default();
     options.parse.smart = true;
+    options.render.unsafe_ = true;
     let md = markdown_to_html(&md, &options);
     let md = add_target_blank_to_links(md);
     md.trim().to_string()

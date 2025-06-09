@@ -18,7 +18,7 @@ pub async fn home(State(state): State<super::SiteState>) -> Markup {
                 { (PreEscaped(bio)) };
             }
         nav {
-            a href="/projects" class="cta-primary cta" {
+            a href="/resume" class="cta-primary cta" {
                 "See what I've done"
             }
             a href="/contact" class="cta" {

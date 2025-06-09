@@ -12,6 +12,7 @@ pub mod wip;
 pub mod post;
 pub mod tags;
 pub mod now;
+pub mod resume;
 
 pub fn base(title: &str, description: &str, extra_headers: Markup, content: Markup, state: Option<SiteState>) -> Markup {
     let build_info = format!("Built on: {} • Ref: {} • Commit: {} • CT: {}",
@@ -69,6 +70,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                     a id="prideflag" href="https://www.hrw.org/topic/lgbt-rights" target="_blank" { img src="/assets/img/pride.svg" alt="progressive pride flag"; }
                     nav {
                     div class="home-menu pure-menu pure-menu-horizontal" {
+                        // p class="name" { "Ezri" }
                         //a href="/" {
                         //    img class="logo" src="/assets/img/logo.svg" alt="ezri zhu";
                         //}
@@ -106,7 +108,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                }
                                */
                             li class="pure-menu-item" {
-                                a class="pure-menu-link" href="/files/Ezri_Tianyu_Zhu_Resume.pdf" {
+                                a class="pure-menu-link" href="/resume" {
                                     "Resume"
                                 }
                             }

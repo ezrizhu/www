@@ -97,8 +97,12 @@ ul {
     }
 }
 
-.home-menu {
-    margin-top: 1rem;
+.name {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
+    margin-bottom: 0.5rem;
 }
 
 .pure-menu-list {
@@ -107,6 +111,9 @@ ul {
 
 @media screen and (min-width:768px) {
     .pure-menu-list {
+        margin-top: 1rem;
+    }
+    .name {
         margin-top: 1rem;
     }
 }

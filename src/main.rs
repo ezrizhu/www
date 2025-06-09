@@ -31,6 +31,7 @@ pub struct SiteState {
     css: Vec<css::Css>,
     home: String,
     now: String,
+    resume: String,
     five_news: String,
     news_vec: Vec<String>,
     contact: String,
@@ -54,6 +55,7 @@ async fn main() {
         contact: utils::path_to_html(&"content/contact.md"),
         news: utils::path_to_html(&"content/news.md"),
         home: utils::path_to_html(&"content/home.md"),
+        resume: utils::path_to_html(&"content/resume.md"),
         now: utils::path_to_html(&"content/now.md"),
         projects: post::init(&"content/projects"),
         blog: post::init(&"content/blog"),
@@ -79,6 +81,7 @@ async fn main() {
         .route("/news.atom", get(feed::news_atom::get))
         .route("/news.xml", get(feed::news_rss::get))
         .route("/now", get(site::now::now))
+        .route("/resume", get(site::resume::resume))
         .route("/projects", get(site::projects::project_index))
         .route("/projects/", get(site::projects::project_index))
         .route("/projects/:name", get(site::post::project_handler))
