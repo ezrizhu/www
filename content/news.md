@@ -9,9 +9,6 @@
 * Dec 2024: I am now the head of Quant Development & Optimization at the [Stevens Student Managed Investment
   Fund](https://www.stevens.edu/school-business/student-managed-investment-fund)
 
-* Jun 2024: I will be joining the Stevens CIO Student Advisory Committee as the
-  Vice President of Infrastructure starting this fall.
-
 * Apr 2024: I will be joining the [PEERING BGP
   Testbed](https://peering.ee.columbia.edu/) at Columbia University this summer!
 
