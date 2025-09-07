@@ -37,8 +37,7 @@ Some of my online identities can be verified against my pgp key via
 
 For a more asynchronous chat, below are ways you can find me.
 
-XMPP: `ezri@disroot.org`
-IRC: `ezri` on [libera](https://libera.chat/) and [hackint](https://www.hackint.org/)\
+IRC: `ezri` on [libera](https://libera.chat/)
 Matrix: `@ezri:envs.net`\
 Telegram: `ezrizhu`\
 Discord: `ezrieh`
@@ -68,7 +67,7 @@ Jackson Heights, NY 11372, USA
 
 [keyoxide](https://keyoxide.org/wkd/me@ezrizhu.com) •
 [Github](https://github.com/ezrizhu) •
-[LinkedIn](https://linkedin.com/in/~ezri) •
+[LinkedIn](https://linkedin.com/in/ezrizhu) •
 [Twitter](https://twitter.com/ezrizhu) •
 [Telegram](https://t.me/ezrizhu) •
 [Email](mailto:me@ezrizhu.com) •
