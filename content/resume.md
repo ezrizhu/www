@@ -7,12 +7,21 @@ pdf version available [here](/files/Ezri_Tianyu_Zhu_Resume.pdf).
 ## Experience
 
 ### Portfolio Management Team Lead - [GSMIF](https://www.stevens.edu/news/stevens-launches-graduate-student-investment-fund)
-(incoming) 2025-09 - 2025-12 @ Hoboken, NJ
+2025-09 - 2025-12 @ Hoboken, NJ
+
+* Leading a team of 5 to adapt the work I did in SSMIF(below) into the newly
+  created graduate student investment fund.
 
 ### Recurser - [Recurse Center](https://www.recurse.com)
 2025-05 - 2025-08 @ Brooklyn, NY
 
-Currently in batch! Check back later.
+* Contributed 5+ package improvements to Nixpkgs, spanning simple dependency
+updates to complex tooling restructures
+* Prototyped and implemented an embedded project that bitbanged a 125khz HID
+Prox card signal to emulate a real HID Prox fob using Embedded Rust, as well as
+various ESP32 sensor and ambient lighting projects.
+* Contributed to various other Recursor’s projects by pair programming with them
+on a daily basis.
 
 ### Visiting Research Intern - [Columbia University](https://www.engineering.columbia.edu/)
 2024-05 - 2025-05 @ New York, NY

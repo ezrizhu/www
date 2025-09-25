@@ -1,6 +1,7 @@
-# Student interested in software **development**, computer **networking**, managing **infrastructure** at **scale**, **cybersecurity**, and **DevOps**.
+# Technical **generalist** who thrives on challenging problems across **software engineering**, **networking**, and **infrastructure** - from strategic work to operational **firefighting**, with a **security**-first mindset.
 
-My name is *Ezri Zhu*, I am a rising senior at the [Stevens Institute of
+
+My name is *Ezri*, I am a senior at the [Stevens Institute of
 Technology](https://www.stevens.edu/school-engineering-science/departments/computer-science)
 pursuing a degree in *Computer Science* and a minor in *Economics*. I'm
 currently working with [Prof. Michael Greenberg](https://greenberg.science/) and

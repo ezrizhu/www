@@ -39,12 +39,7 @@ For a more asynchronous chat, below are ways you can find me.
 
 IRC: `ezri` on [libera](https://libera.chat/)
 Matrix: `@ezri:envs.net`\
-Telegram: `ezrizhu`\
 Discord: `ezrieh`
-
-Discord will automatically reject requests if you're not in a mutual server with
-me, feel free to join the [Rust Programming Language Community
-Server](https://discord.gg/rust-lang-community) if you need a mutual.
 
 iMessage, Signal, and SMS can be provided on request.
 
@@ -57,18 +52,8 @@ I currently live in the New York Metropolitan Area (Hoboken and Queens), so my
 timezone is the U.S. Eastern Time Zone (GMT-5), with daylight savings time
 (GMT-4) from March to November.
 
-Mailing address (Post Office Box):
-
-```plain
-7802 37th Ave
-# 721471
-Jackson Heights, NY 11372, USA
-```
-
-[keyoxide](https://keyoxide.org/wkd/me@ezrizhu.com) •
 [Github](https://github.com/ezrizhu) •
 [LinkedIn](https://linkedin.com/in/ezrizhu) •
 [Twitter](https://twitter.com/ezrizhu) •
-[Telegram](https://t.me/ezrizhu) •
 [Email](mailto:me@ezrizhu.com) •
 [Matrix](https://matrix.to/#/@ezri:envs.net)
