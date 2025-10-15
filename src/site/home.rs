@@ -4,7 +4,7 @@ use super::base;
 use crate::post;
 
 pub async fn home(State(state): State<super::SiteState>) -> Markup {
-    let description = "Student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps";
+    let description = "Technical generalist who thrives on challenging problems across software engineering, networking, and infrastructure - from strategic work to operational firefighting, with a security-first mindset.";
 
     let bio = state.home.clone();
     let news = state.five_news.clone();

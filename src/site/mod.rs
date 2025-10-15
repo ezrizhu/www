@@ -194,7 +194,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                         div class="h-card" style="display: none" {
                             a class="u-email" href="mailto:me@ezrizhu.com" {};
                             a class="u-url u-uid p-name" href="https://ezrizhu.com" { "ezri zhu" };
-                            p class="p-note" { "I’m a student interested in software development, computer networking, managing infrastructure at scale, cybersecurity, and DevOps" };
+                            p class="p-note" { (description) };
                         }
                     }
                     script async defer src="https://www.recurse-scout.com/loader.js?t=b5dda155bba0bc72c97da128e1929d96" {}
