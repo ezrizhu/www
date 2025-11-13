@@ -121,7 +121,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                     }
                     }
                     div class="banner" {
-                        "I'm open to employment for newgrad positions starting May 2026, please "
+                        "I'm open to employment for newgrad positions starting 2026, please "
                         a target="_blank" href="mailto:me@ezrizhu.com" {
                             "get in touch"
                         }
