@@ -22,7 +22,8 @@ below.
 * [DigiCert Signing Cert](/files/DigiCertCA.crt)
 * [DigiCert Root CA](/files/TrustedRoot.crt)
 
-I'd love to get letters and postcards! Please contact me for my PO box!!
+**I'd love to get letters and postcards!** Please contact me for my PO box or run
+`whois ezri-ripe | grep address`
 
 IRC: `ezri` on [libera](https://libera.chat/)
 Matrix: `@ezri:envs.net`\
