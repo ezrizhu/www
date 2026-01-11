@@ -43,4 +43,4 @@ timezone is the U.S. Eastern Time Zone (GMT-5), with daylight savings time
 [LinkedIn](https://linkedin.com/in/ezrizhu) •
 [Twitter](https://twitter.com/ezrizhu) •
 [Email](mailto:me@ezrizhu.com) •
-[Matrix](https://matrix.to/#/@ezri:envs.net)
+[Matrix](https://matrix.to/#/@ezri:private.coffee)
