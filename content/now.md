@@ -1,10 +1,11 @@
-# Now (Jan 2026 Edition)
+# Now (Mar 2026 Edition)
 
-Happy new year!
+Work :D
 
 ## My current focuses
 
-* Recover from the flu
+* Finishing school
+* My employment
 
 ## What I'm reading
 
@@ -12,6 +13,6 @@ Happy new year!
 
 ---
 
-Updated Jan 11, 2026
+Updated Mar 3, 2026
 
 Part of the [/now page](https://nownownow.com/about) movement.
