@@ -3,7 +3,7 @@
 
 My name is *Ezri*, I am a senior at the [Stevens Institute of
 Technology](https://www.stevens.edu/school-engineering-science/departments/computer-science)
-finishing my degree in *Computer Science*, I am also currently working for a
+finishing my degree in *Computer Science*. I am also currently working for a
 small team working on DevOps and HPC clusters for a small engineering firm.
 
 In my free time, I enjoy reading, writing my blog, and skateboarding around the
