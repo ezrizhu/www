@@ -1,10 +1,13 @@
+* May 2026: I have graduated with a B.Sc. in Computer Science from the [Stevens
+Institute of Technology](https://stevens.edu).
+
 * May 2025: I will be joining the [Stevens Graduate Student Managed Investment
   Fund](https://www.stevens.edu/news/stevens-launches-graduate-student-investment-fund)
   to lead the Portfolio Management team this fall.
 
 * Feb 2025: I've been admitted to the [Recurse
   Center](https://www.recurse.com/scout/click?t=b5dda155bba0bc72c97da128e1929d96)
-  for the summer I batch.
+  for the Summer I batch.
 
 * Dec 2024: I am now the head of Quant Development & Optimization at the [Stevens Student Managed Investment
   Fund](https://www.stevens.edu/school-business/student-managed-investment-fund)

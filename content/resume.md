@@ -137,13 +137,14 @@ Rust, Docker, CI/CD, responsive web design, high availability, SEO
 ---
 
 ## Education
-### B.S. in Computer Science @ [Stevens Institute of Technology](https://www.stevens.edu/school-engineering-science/departments/computer-science)
+### B.Sc. in Computer Science @ [Stevens Institute of Technology](https://www.stevens.edu/school-engineering-science/departments/computer-science)
 2022-09 - 2026-05 @ Hoboken NJ
 
 **Relevant Coursework**: Data Structures, Discrete Structures, Algorithms, Statistics,
 Computer Architecture, Systems Programming, Programming Languages, Operating
 Systems, Systems Administration, Theory of Computation, Distributed Systems &
-Cloud Computing, Automated Techniques for Security, Privacy & Reliability
+Cloud Computing, Automated Techniques for Security, Privacy & Reliability,
+DevOps
 
 ---
 

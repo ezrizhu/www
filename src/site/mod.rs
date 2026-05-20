@@ -80,11 +80,13 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                     "Home"
                                 }
                             }
+                            /*
                             li class="pure-menu-item" {
                                 a class="pure-menu-link" href="/now" {
                                     "Now"
                                 }
                             }
+                            */
                             li class="pure-menu-item" {
                                 a class="pure-menu-link" href="/news" {
                                     "News"
@@ -152,7 +154,7 @@ pub fn base(title: &str, description: &str, extra_headers: Markup, content: Mark
                                 br;
                             "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present."
                                 br;
-                            "Copyright 2018-2025 • All text here are released under "
+                            "Copyright 2018-2026 • All text here are released under "
                                 a target="_blank" href="https://creativecommons.org/licenses/by/4.0/" { "(CC BY 4.0)" }
                             " • Source code "
                                 a target="_blank" href="https://github.com/ezrizhu/www" { "available here" }
