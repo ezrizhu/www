@@ -1,5 +1,5 @@
 # Build stage
-FROM rust:1.86-alpine as builder
+FROM rust:1.89-alpine as builder
 
 # RUN apt-get update
 # RUN apt-get install pkg-config libssl-dev -y
