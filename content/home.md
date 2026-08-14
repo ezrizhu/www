@@ -1,4 +1,4 @@
-# Technical **generalist** who thrives on challenging problems across **software engineering**, **networking**, and **infrastructure** - from strategic work to operational **firefighting**, with a **security**-first mindset.
+# I *love* Software **Engineering**, Dev**Ops**, and Cyber*security*.
 
 I'm *Ezri*, I love computers and understanding how the world works. I am
 currently working in a small engineering firm on HPC, DevOps, and production

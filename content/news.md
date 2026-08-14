@@ -1,3 +1,6 @@
+* Jun 2026: I started my first proper job working on DevOps, HPC Clusters, and
+edge infrastructure.
+
 * May 2026: I have graduated with a B.Sc. in Computer Science from the [Stevens
 Institute of Technology](https://stevens.edu).
 
